@@ -1,0 +1,6 @@
+{
+  "name": "FluentCards",
+  "description": "Anki-like flashcard app powered by FSRS algorithm, featuring TTS pronunciation and mnemonic images.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

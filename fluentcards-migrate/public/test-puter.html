@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://js.puter.com/v2/"></script>
+</head>
+<body>
+  <script>
+    setTimeout(() => {
+      puter.ai.txt2img("a cute cat").then(img => {
+        document.body.appendChild(img);
+        fetch("/test-puter-result", {
+          method: "POST",
+          body: JSON.stringify({
+            isImage: img instanceof HTMLImageElement,
+            src: img.src || "no src",
+            toString: Object.prototype.toString.call(img),
+            keys: Object.keys(img)
+          })
+        });
+      }).catch(e => {
+        fetch("/test-puter-result", { method: "POST", body: "error: " + e.message })
+      });
+    }, 1000);
+  </script>
+</body>
+</html>
