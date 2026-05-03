@@ -9,7 +9,7 @@ import { Button } from '../components/ui/Button';
 import { Input } from '../components/ui/Input';
 import { v4 as uuidv4 } from 'uuid';
 import { getEmptyFSRSCard, fsrcCardToFlashcardProperties } from '../lib/fsrs';
-import { Deck, Flashcard } from '../types';
+import type { Deck, Flashcard } from '../types';
 import { toast } from 'sonner';
 
 export function Home() {
@@ -25,9 +25,9 @@ export function Home() {
 
   useEffect(() => {
     if (!user) return;
-    
+
     const unsubscribeDecks = onSnapshot(
-      query(collection(db, 'decks'), where('userId', '==', user.uid)), 
+      query(collection(db, 'decks'), where('userId', '==', user.uid)),
       (snapshot) => {
         setDecks(snapshot.docs.map(doc => doc.data() as Deck));
       },
@@ -51,7 +51,7 @@ export function Home() {
   const handleCreateDeck = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!deckName.trim() || !user) return;
-    
+
     try {
       const newDeckId = uuidv4();
       await setDoc(doc(db, 'decks', newDeckId), {
@@ -73,16 +73,16 @@ export function Home() {
   const handleDeleteDeck = async (id: string, e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    
+
     if (deletingDeckId !== id) {
       setDeletingDeckId(id);
       setTimeout(() => setDeletingDeckId(null), 3000);
       return;
     }
-    
+
     try {
       await deleteDoc(doc(db, 'decks', id));
-      
+
       const q = query(collection(db, 'cards'), where('deckId', '==', id), where('userId', '==', user!.uid));
       const cardsSnapshot = await getDocs(q);
       const batch = writeBatch(db);
@@ -129,7 +129,7 @@ export function Home() {
             back: c.back,
             language: c.language || 'en-US',
             useMnemonic: c.useMnemonic ?? true,
-            due: fsrsData.due!.toISOString(), // Store dates as ISO strings
+            due: fsrsData.due!.toISOString(),
             stability: fsrsData.stability,
             difficulty: fsrsData.difficulty,
             elapsed_days: fsrsData.elapsed_days,
@@ -157,97 +157,98 @@ export function Home() {
     const now = new Date();
     return cards.filter(c => c.deckId === deckId && new Date(c.due) <= now).length;
   };
-  
+
   const getTotalCount = (deckId: string) => {
     return cards.filter(c => c.deckId === deckId).length;
   };
 
   return (
-    <div className="p-6 space-y-6">
+    <div className="p-5 space-y-5">
       <div className="flex items-center justify-between">
-        <h1 className="text-3xl font-bold tracking-tight text-slate-800 dark:text-slate-100">Your Decks</h1>
+        <h1 className="font-display text-2xl font-bold tracking-tight text-ink-800 dark:text-sumi-50">Your Decks</h1>
         <div className="flex gap-2">
-          <input 
-            type="file" 
-            accept=".json" 
-            className="hidden" 
-            ref={fileInputRef} 
-            onChange={handleImportDeck} 
+          <input
+            type="file"
+            accept=".json"
+            className="hidden"
+            ref={fileInputRef}
+            onChange={handleImportDeck}
           />
-          <Button variant="outline" size="sm" onClick={() => fileInputRef.current?.click()} title="Import Deck" className="border-slate-300 dark:border-slate-600 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg">
+          <Button variant="outline" size="sm" onClick={() => fileInputRef.current?.click()} title="Import Deck" className="border-parchment-200 dark:border-sumi-600 text-ink-500 dark:text-sumi-300 hover:bg-cream dark:hover:bg-sumi-600 rounded-lg">
             <DownloadCloud size={20} />
           </Button>
-          <Button onClick={() => setIsCreating(!isCreating)} size="sm" className="bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg shadow-md border-b-4 border-indigo-600 active:border-b-0 active:translate-y-1">
+          <Button onClick={() => setIsCreating(!isCreating)} size="sm" className="bg-cinnabar-500 hover:bg-cinnabar-600 text-white rounded-lg shadow-sm">
             <Plus size={20} className="mr-2" /> New Deck
           </Button>
         </div>
       </div>
 
       {isCreating && (
-        <form onSubmit={handleCreateDeck} className="p-5 bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-700 rounded-xl space-y-3 shadow-lg shadow-indigo-100/50">
-          <h2 className="text-sm font-bold tracking-widest text-slate-400 dark:text-slate-500 dark:text-slate-400 mb-2">Create New Deck</h2>
-          <Input 
-            placeholder="Deck Name (e.g., JLPT N5 Vocabulary)" 
-            value={deckName} 
+        <form onSubmit={handleCreateDeck} className="p-5 bg-white dark:bg-sumi-700 border-2 border-parchment-200 dark:border-sumi-600 rounded-xl space-y-3 shadow-sm">
+          <h2 className="text-xs font-bold tracking-widest text-ink-400 dark:text-sumi-300 mb-1">Create New Deck</h2>
+          <Input
+            placeholder="Deck Name (e.g., JLPT N5 Vocabulary)"
+            value={deckName}
             onChange={(e) => setDeckName(e.target.value)}
             autoFocus
-            className="rounded-lg border-slate-300 dark:border-slate-600 focus:border-indigo-600 focus:ring-indigo-200"
+            className="rounded-lg border-parchment-200 dark:border-sumi-600 focus:border-cinnabar-400 focus:ring-cinnabar-200"
           />
           <div className="flex gap-2 justify-end pt-2">
-            <Button type="button" variant="ghost" size="sm" onClick={() => setIsCreating(false)} className="text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg">Cancel</Button>
-            <Button type="submit" size="sm" disabled={!deckName.trim()} className="bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg">Create</Button>
+            <Button type="button" variant="ghost" size="sm" onClick={() => setIsCreating(false)} className="text-ink-500 dark:text-sumi-300 hover:bg-cinnabar-50 dark:hover:bg-sumi-600 rounded-lg">Cancel</Button>
+            <Button type="submit" size="sm" disabled={!deckName.trim()} className="bg-cinnabar-500 hover:bg-cinnabar-600 text-white rounded-lg">Create</Button>
           </div>
         </form>
       )}
 
       {decks && decks.length === 0 && !isCreating && (
-        <div className="text-center py-16 flex flex-col items-center bg-white dark:bg-slate-900/50 rounded-xl border-2 border-dashed border-slate-300 dark:border-slate-600">
-          <div className="w-24 h-24 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
-            <BookOpen className="w-12 h-12 text-slate-400 dark:text-slate-500 dark:text-slate-400" />
+        <div className="text-center py-16 flex flex-col items-center bg-white dark:bg-sumi-700/50 rounded-xl border-2 border-dashed border-parchment-200 dark:border-sumi-600">
+          <div className="w-20 h-20 bg-cinnabar-100 dark:bg-cinnabar-900/30 rounded-full flex items-center justify-center mb-4">
+            <BookOpen className="w-10 h-10 text-ink-400 dark:text-sumi-400" />
           </div>
-          <p className="text-slate-600 dark:text-slate-300 font-medium text-lg">No decks yet. Create one to start learning!</p>
+          <p className="text-ink-500 dark:text-sumi-300 font-semibold text-base">No decks yet. Create one to start learning!</p>
         </div>
       )}
 
-      <div className="space-y-4">
-        {decks?.map(deck => {
+      <div className="space-y-3">
+        {decks?.map((deck, index) => {
           const dueCount = getDueCount(deck.id);
           const totalCount = getTotalCount(deck.id);
-          
+
           return (
-            <div 
-              key={deck.id} 
+            <div
+              key={deck.id}
               onClick={() => navigate(`/deck/${deck.id}`)}
-              className="cursor-pointer block p-5 bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-700 rounded-xl shadow-sm hover:shadow-md hover:border-slate-400 hover:-translate-y-1 transition-all duration-300 group"
+              className="cursor-pointer block p-5 bg-white dark:bg-sumi-700 border-2 border-parchment-200 dark:border-sumi-600 rounded-xl shadow-sm hover:shadow-md hover:border-cinnabar-200 dark:hover:border-cinnabar-700 hover:-translate-y-0.5 transition-all duration-300 group"
+              style={{ animation: `fadeInUp 0.4s ease-out ${index * 0.08}s both` }}
             >
-              <div className="flex justify-between items-start mb-4">
+              <div className="flex justify-between items-start mb-3">
                 <div className="flex flex-col">
-                  <h3 className="font-bold text-xl text-slate-700 dark:text-slate-200 flex items-center gap-2">
+                  <h3 className="font-display text-xl font-bold text-ink-700 dark:text-sumi-100 flex items-center gap-2">
                     {deck.name}
-                    {deck.isPublic && <span className="px-2 py-0.5 rounded-full bg-blue-100 text-blue-500 text-xs font-bold uppercase tracking-wider">Public</span>}
+                    {deck.isPublic && <span className="px-2 py-0.5 rounded-full bg-slateblue-50 dark:bg-slateblue-900/40 text-slateblue-500 dark:text-slateblue-300 text-[10px] font-bold uppercase tracking-wider">Public</span>}
                   </h3>
                 </div>
-                <button 
+                <button
                   onClick={(e) => handleDeleteDeck(deck.id, e)}
                   title={deletingDeckId === deck.id ? "Click again to delete" : "Delete deck"}
                   className={`p-2 rounded-full transition-all z-10 ${
-                    deletingDeckId === deck.id 
-                      ? "text-rose-500 bg-rose-100 opacity-100" 
-                      : "text-indigo-200 hover:text-rose-400 hover:bg-rose-50 opacity-100 sm:opacity-0 group-hover:opacity-100"
+                    deletingDeckId === deck.id
+                      ? "text-cinnabar-500 bg-cinnabar-100 dark:bg-cinnabar-900/40 opacity-100"
+                      : "text-ink-200 dark:text-sumi-500 hover:text-cinnabar-400 hover:bg-cinnabar-50 dark:hover:bg-sumi-600 opacity-100 sm:opacity-0 group-hover:opacity-100"
                   }`}
                 >
-                  <Trash2 size={22} />
+                  <Trash2 size={20} />
                 </button>
               </div>
               <div className="flex items-center justify-between text-sm">
-                <div className="flex items-center gap-2 px-3 py-1.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg">
-                  <span className={`font-black text-lg leading-none ${dueCount > 0 ? 'text-slate-800 dark:text-slate-100' : 'text-slate-400 dark:text-slate-500 dark:text-slate-400'}`}>
+                <div className="flex items-center gap-2 px-3 py-1.5 bg-cream dark:bg-sumi-600 border border-parchment-200 dark:border-sumi-500 rounded-lg">
+                  <span className={`font-bold text-lg leading-none ${dueCount > 0 ? 'text-ink-800 dark:text-sumi-50' : 'text-ink-400 dark:text-sumi-400'}`}>
                     {dueCount}
                   </span>
-                  <span className="text-slate-600 dark:text-slate-300/80 font-medium">Due reviews</span>
+                  <span className="text-ink-500 dark:text-sumi-300 font-semibold">Due reviews</span>
                 </div>
-                <div className="text-slate-400 dark:text-slate-500 dark:text-slate-400 font-medium flex items-center gap-1">
-                  <div className="w-1.5 h-1.5 rounded-full bg-blue-300"></div>{totalCount} cards
+                <div className="text-ink-400 dark:text-sumi-400 font-semibold flex items-center gap-1.5">
+                  <div className="w-1.5 h-1.5 rounded-full bg-slateblue-300 dark:bg-slateblue-600"></div>{totalCount} cards
                 </div>
               </div>
             </div>

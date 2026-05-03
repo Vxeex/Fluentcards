@@ -1,0 +1,115 @@
+---
+import "../styles/main.css"
+import Nav from "../components/Nav.astro"
+import Footer from "../components/Footer.astro"
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - FluentCards</title>
+  <meta name="description" content="FluentCards privacy policy. Learn how we collect, use, and protect your data when using our flashcard app for language learning. Includes AdSense and cookie disclosures." />
+  <link rel="canonical" href="https://fluentcards.org/privacy/" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4482389932723468" crossorigin="anonymous"></script>
+</head>
+<body class="font-body bg-cream text-ink-900 antialiased overflow-x-hidden">
+
+<Nav currentPath="/privacy/" />
+
+<main class="pt-32 pb-20 px-6">
+  <div class="max-w-2xl mx-auto reveal-up">
+    <h1 class="font-display text-4xl sm:text-5xl font-bold tracking-tight text-ink-900 mb-2">Privacy Policy</h1>
+    <p class="text-sm text-ink-400 mb-10">Last updated: May 3, 2026</p>
+
+    <div class="space-y-6">
+      <section>
+        <h2 class="font-display text-xl font-bold text-ink-800 mb-3">What data we collect</h2>
+        <p class="text-ink-500 leading-relaxed">
+          FluentCards uses <strong class="text-ink-700">Firebase Authentication</strong> (Google sign-in) to manage accounts.
+          We receive your email address and display name when you sign in with Google.
+          We do not store passwords — Google handles that.
+        </p>
+        <p class="text-ink-500 leading-relaxed">
+          Your flashcard data (decks, cards, review history) is stored in <strong class="text-ink-700">Firebase Firestore</strong>
+          and is only accessible to you unless you choose to publish a deck to the marketplace.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-xl font-bold text-ink-800 mb-3">How we use your data</h2>
+        <ul class="text-ink-500 leading-relaxed space-y-1 list-disc list-inside">
+          <li>To authenticate you and keep your data private</li>
+          <li>To sync your flashcards across devices</li>
+          <li>To enable the community marketplace (shared decks only)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="font-display text-xl font-bold text-ink-800 mb-3">Advertising</h2>
+        <p class="text-ink-500 leading-relaxed mb-3">
+          FluentCards uses <strong class="text-ink-700">Google AdSense</strong> to display advertisements.
+          Google, as a third-party vendor, uses cookies to serve ads based on your previous visits to our site and other websites across the internet.
+        </p>
+        <ul class="text-ink-500 leading-relaxed space-y-1 list-disc list-inside">
+          <li>Google's use of advertising cookies enables it and its partners to serve ads based on your visit to our site and other sites on the internet.</li>
+          <li>You can opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener" class="text-cinnabar-500 underline underline-offset-2">Google's Ads Settings</a>.</li>
+          <li>You can also opt out of third-party vendor cookies by visiting the <a href="https://www.networkadvertising.org/managing/opt_out.asp" target="_blank" rel="noopener" class="text-cinnabar-500 underline underline-offset-2">Network Advertising Initiative opt-out page</a>.</li>
+        </ul>
+        <p class="text-ink-500 leading-relaxed">
+          For more information about Google's advertising practices, visit
+          <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener" class="text-cinnabar-500 underline underline-offset-2">Google's Advertising Page</a>.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-xl font-bold text-ink-800 mb-3">Cookies</h2>
+        <p class="text-ink-500 leading-relaxed">
+          We use essential cookies for authentication (Firebase Auth) and session management.
+          AdSense may use cookies for personalized advertising. You can manage cookie settings in your browser.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-xl font-bold text-ink-800 mb-3">Third-party services</h2>
+        <ul class="text-ink-500 leading-relaxed space-y-1 list-disc list-inside">
+          <li><strong class="text-ink-700">Google Firebase</strong> — Authentication, Firestore database, hosting</li>
+          <li><strong class="text-ink-700">Google AdSense</strong> — Advertising (if enabled)</li>
+          <li><strong class="text-ink-700">Google Gemini AI</strong> — AI-powered mnemonic generation (when you opt in)</li>
+          <li><strong class="text-ink-700">Cloudflare</strong> — CDN and hosting infrastructure</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="font-display text-xl font-bold text-ink-800 mb-3">Data retention</h2>
+        <p class="text-ink-500 leading-relaxed">
+          You can delete your account and all associated data at any time by contacting us.
+          Flashcard data is retained until you delete it or your account.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-xl font-bold text-ink-800 mb-3">Your rights</h2>
+        <p class="text-ink-500 leading-relaxed">
+          You can request access to, correction of, or deletion of your personal data at any time.
+          Contact us at the email below.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-xl font-bold text-ink-800 mb-3">Contact</h2>
+        <p class="text-ink-500 leading-relaxed">For privacy questions: <a href="mailto:privacy@fluentcards.org" class="text-cinnabar-500 underline underline-offset-2">privacy@fluentcards.org</a></p>
+      </section>
+
+      <a href="/" class="inline-flex items-center gap-1.5 text-sm font-semibold text-cinnabar-500 hover:text-cinnabar-600 transition-colors">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        Back to FluentCards
+      </a>
+    </div>
+  </div>
+</main>
+
+<Footer />
+</body>
+</html>

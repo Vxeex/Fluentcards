@@ -1,11 +1,251 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import "../styles/main.css"
+import Nav from "../components/Nav.astro"
+import Footer from "../components/Footer.astro"
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FluentCards - Smart Flashcard App for Language Learning</title>
+  <meta name="description" content="FluentCards is a free flashcard app for learning Japanese, Korean, Spanish, and more. Features spaced repetition, furigana, TTS pronunciation, and AI-powered mnemonics." />
+  <meta name="keywords" content="flashcard app, language learning, japanese study, korean vocabulary, spanish flashcards, spaced repetition, anki alternative, furigana, tts pronunciation" />
+  <link rel="canonical" href="https://fluentcards.org/" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "FluentCards",
+    "url": "https://fluentcards.org/",
+    "description": "Smart flashcard app for language learning with spaced repetition."
+  }
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4482389932723468" crossorigin="anonymous"></script>
+</head>
+<body class="font-body bg-cream text-ink-900 antialiased overflow-x-hidden">
+
+<Nav currentPath={Astro.url.pathname} />
+
+<!-- ========== Hero ========== -->
+<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20">
+  <!-- Decorative paper texture overlay -->
+  <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIj48ZmlsdGVyIGlkPSJmIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjc1IiBudW1PY3RhdmVzPSIzIiAvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNmKSIgb3BhY2l0eT0iMC4wNCIgLz48L3N2Zz4=')] opacity-60 pointer-events-none"></div>
+
+  <!-- Ambient decorative shapes -->
+  <div class="absolute inset-0 pointer-events-none overflow-hidden">
+    <div class="absolute w-[420px] h-[420px] bg-cinnabar-100/40 rounded-full -top-[160px] -left-[160px] animate-drift"></div>
+    <div class="absolute w-[320px] h-[320px] bg-gold-100/30 rounded-full -bottom-[120px] -right-[120px] animate-drift-slow"></div>
+    <div class="absolute w-[200px] h-[200px] bg-slateblue-100/30 rounded-full top-[25%] right-[8%] animate-float-up-slow"></div>
+    <!-- Floating serif characters as decorative elements -->
+    <div class="absolute text-[11rem] sm:text-[16rem] font-display font-bold text-cream-200/50 -top-8 -right-8 select-none pointer-events-none leading-none">学</div>
+    <div class="absolute text-[7rem] sm:text-[10rem] font-display font-bold text-cream-200/40 bottom-8 left-6 select-none pointer-events-none leading-none">言</div>
+  </div>
+
+  <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+    <div class="inline-flex items-center gap-2 bg-cinnabar-50 text-cinnabar-600 px-4 py-1.5 rounded-full text-sm font-semibold mb-6 border border-cinnabar-100">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2H2v10l9.29 9.29a1 1 0 0 0 1.42 0l9.29-9.29a1 1 0 0 0 0-1.42L12 2Z"/><path d="M7 7h.01"/></svg>
+      Built for language learners
+    </div>
+
+    <h1 class="font-display text-[3rem] sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.06] tracking-tight text-ink-900">
+      Master languages with<br class="hidden xs:inline" /> <span class="text-cinnabar-500 italic">smart</span> flashcards
+    </h1>
+
+    <p class="mt-6 text-lg sm:text-xl text-ink-500 max-w-2xl mx-auto leading-relaxed font-[500]">
+      FluentCards uses the FSRS spaced repetition algorithm to show you the right card at the right time — so you learn faster and remember longer. With furigana, TTS pronunciation, and AI mnemonics.
+    </p>
+
+    <div class="mt-10 flex items-center justify-center gap-4 flex-wrap">
+      <a href="/app/" class="group inline-flex items-center gap-2.5 bg-cinnabar-500 text-white px-8 py-3.5 rounded-lg font-bold text-base shadow-md shadow-cinnabar-200 hover:shadow-lg hover:shadow-cinnabar-300 hover:bg-cinnabar-600 active:scale-[0.97] transition-all duration-200">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Start Learning Free
+      </a>
+      <a href="#features" class="inline-flex items-center gap-2 bg-white text-ink-700 px-8 py-3.5 rounded-lg font-bold text-base border border-parchment-200 shadow-sm hover:border-cinnabar-200 hover:text-cinnabar-600 active:scale-[0.97] transition-all duration-200">
+        See Features
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m7 15 5-5 5 5"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Bottom gradient fade -->
+  <div class="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-cream to-transparent pointer-events-none"></div>
+</section>
+
+<!-- ========== Features ========== -->
+<section id="features" class="py-24 sm:py-32 px-6 bg-white border-y border-parchment-100">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-16 reveal-up">
+      <h2 class="font-display text-3xl sm:text-4xl font-bold tracking-tight text-ink-900">Everything you need to learn</h2>
+      <p class="mt-4 text-lg text-ink-500 font-[500]">Powerful tools built for serious language learners, from beginner to advanced.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <!-- Feature 1 -->
+      <div class="group bg-cream rounded-xl p-7 border border-parchment-200 hover:border-cinnabar-200 hover:bg-cinnabar-50/30 hover:-translate-y-1 transition-all duration-300 reveal-up delay-1">
+        <div class="w-11 h-11 rounded-lg bg-cinnabar-500 flex items-center justify-center text-white shadow-sm mb-4">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <h3 class="font-display text-lg font-bold text-ink-800 mb-1.5">Spaced Repetition (FSRS)</h3>
+        <p class="text-sm text-ink-500 leading-relaxed">Advanced algorithm schedules reviews at optimal intervals so you remember more with less effort.</p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="group bg-cream rounded-xl p-7 border border-parchment-200 hover:border-gold-300 hover:bg-gold-50/30 hover:-translate-y-1 transition-all duration-300 reveal-up delay-2">
+        <div class="w-11 h-11 rounded-lg bg-gold-500 flex items-center justify-center text-white shadow-sm mb-4">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h3 class="font-display text-lg font-bold text-ink-800 mb-1.5">Furigana Support</h3>
+        <p class="text-sm text-ink-500 leading-relaxed">Automatically adds reading aids to Japanese text. Just type 漢字[かんじ] and it renders beautifully with ruby annotations.</p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="group bg-cream rounded-xl p-7 border border-parchment-200 hover:border-slateblue-300 hover:bg-slateblue-50/30 hover:-translate-y-1 transition-all duration-300 reveal-up delay-3">
+        <div class="w-11 h-11 rounded-lg bg-slateblue-500 flex items-center justify-center text-white shadow-sm mb-4">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 8 14 13 10 16 6 4 9 3 18 0 12 8"/><path d="M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6"/></svg>
+        </div>
+        <h3 class="font-display text-lg font-bold text-ink-800 mb-1.5">Native TTS Pronunciation</h3>
+        <p class="text-sm text-ink-500 leading-relaxed">Hear correct pronunciation with Microsoft Edge TTS engine. Adjust speed and auto-play on cards.</p>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="group bg-cream rounded-xl p-7 border border-parchment-200 hover:border-cinnabar-200 hover:bg-cinnabar-50/30 hover:-translate-y-1 transition-all duration-300 reveal-up delay-1">
+        <div class="w-11 h-11 rounded-lg bg-cinnabar-500 flex items-center justify-center text-white shadow-sm mb-4">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-1.04A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-1.04A2.5 2.5 0 0 0 14.5 2Z"/></svg>
+        </div>
+        <h3 class="font-display text-lg font-bold text-ink-800 mb-1.5">AI Mnemonics</h3>
+        <p class="text-sm text-ink-500 leading-relaxed">Gemini AI generates visual memory aids to help you remember difficult words and characters.</p>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="group bg-cream rounded-xl p-7 border border-parchment-200 hover:border-gold-300 hover:bg-gold-50/30 hover:-translate-y-1 transition-all duration-300 reveal-up delay-2">
+        <div class="w-11 h-11 rounded-lg bg-gold-500 flex items-center justify-center text-white shadow-sm mb-4">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3 class="font-display text-lg font-bold text-ink-800 mb-1.5">Review History</h3>
+        <p class="text-sm text-ink-500 leading-relaxed">Track your progress with FSRS metrics — stability, difficulty, and retention over time.</p>
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="group bg-cream rounded-xl p-7 border border-parchment-200 hover:border-slateblue-300 hover:bg-slateblue-50/30 hover:-translate-y-1 transition-all duration-300 reveal-up delay-3">
+        <div class="w-11 h-11 rounded-lg bg-slateblue-500 flex items-center justify-center text-white shadow-sm mb-4">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 14 4-4 4 4"/></svg>
+        </div>
+        <h3 class="font-display text-lg font-bold text-ink-800 mb-1.5">Community Marketplace</h3>
+        <p class="text-sm text-ink-500 leading-relaxed">Discover shared decks made by other learners. Clone them to your library instantly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== How It Works ========== -->
+<section class="py-24 sm:py-32 px-6 bg-cream">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center max-w-xl mx-auto mb-16 reveal-up">
+      <h2 class="font-display text-3xl sm:text-4xl font-bold tracking-tight text-ink-900">How It Works</h2>
+      <p class="mt-4 text-lg text-ink-500 font-[500]">Three simple steps to start learning effectively.</p>
+    </div>
+
+    <div class="relative">
+      <!-- Connecting line -->
+      <div class="absolute left-[27px] top-0 bottom-0 w-[2px] bg-gradient-to-b from-cinnabar-300 via-cinnabar-200 to-cream hidden sm:block"></div>
+
+      <!-- Step 1 -->
+      <div class="relative flex gap-6 mb-14 reveal-up">
+        <div class="relative z-10 w-14 h-14 rounded-xl bg-cinnabar-500 flex items-center justify-center text-white font-bold text-xl shadow-md flex-shrink-0 font-display">1</div>
+        <div class="pt-2">
+          <h3 class="font-display text-xl font-bold text-ink-800 mb-2">Create a deck</h3>
+          <p class="text-ink-500 leading-relaxed">Name your deck and start adding flashcards. For Japanese, type kanji with furigana like <code class="bg-parchment-100 text-ink-700 px-1.5 py-0.5 rounded text-sm font-semibold">漢字[かんじ]</code> and it renders automatically. Use Gemini AI to auto-generate translations.</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="relative flex gap-6 mb-14 reveal-up delay-1">
+        <div class="relative z-10 w-14 h-14 rounded-xl bg-cinnabar-500 flex items-center justify-center text-white font-bold text-xl shadow-md flex-shrink-0 font-display">2</div>
+        <div class="pt-2">
+          <h3 class="font-display text-xl font-bold text-ink-800 mb-2">Study every day</h3>
+          <p class="text-ink-500 leading-relaxed">Flip cards and rate your recall (Again / Hard / Good / Easy). The FSRS algorithm adapts to your memory and schedules the next review at the perfect time.</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="relative flex gap-6 reveal-up delay-2">
+        <div class="relative z-10 w-14 h-14 rounded-xl bg-cinnabar-500 flex items-center justify-center text-white font-bold text-xl shadow-md flex-shrink-0 font-display">3</div>
+        <div class="pt-2">
+          <h3 class="font-display text-xl font-bold text-ink-800 mb-2">Track and improve</h3>
+          <p class="text-ink-500 leading-relaxed">Watch your retention grow as the system learns what you need to practice. Review your stats and stay motivated.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Testimonials ========== -->
+<section class="py-24 sm:py-32 px-6 bg-white border-y border-parchment-100">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center max-w-xl mx-auto mb-16 reveal-up">
+      <h2 class="font-display text-3xl sm:text-4xl font-bold tracking-tight text-ink-900">What learners say</h2>
+      <p class="mt-4 text-lg text-ink-500 font-[500]">Join hundreds of language learners using FluentCards daily.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div class="bg-cream rounded-xl p-8 border border-parchment-200 text-center reveal-up delay-1 hover:shadow-sm hover:-translate-y-0.5 transition-all duration-300">
+        <div class="w-14 h-14 rounded-full bg-cinnabar-100 flex items-center justify-center mx-auto mb-5 shadow-sm">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cinnabar-500"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </div>
+        <blockquote class="text-sm text-ink-500 italic leading-relaxed mb-5">&ldquo;The TTS pronunciation is a game-changer for Japanese. I can hear native pronunciation for every card.&rdquo;</blockquote>
+        <div class="w-8 h-[2px] bg-cinnabar-200 mx-auto mb-4"></div>
+        <p class="text-sm font-bold text-ink-800">Sarah K.</p>
+        <p class="text-xs text-ink-400 mt-0.5">Learning Japanese</p>
+      </div>
+
+      <div class="bg-cream rounded-xl p-8 border border-parchment-200 text-center reveal-up delay-2 hover:shadow-sm hover:-translate-y-0.5 transition-all duration-300">
+        <div class="w-14 h-14 rounded-full bg-gold-100 flex items-center justify-center mx-auto mb-5 shadow-sm">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold-600"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>
+        </div>
+        <blockquote class="text-sm text-ink-500 italic leading-relaxed mb-5">&ldquo;I switched from Anki because of the furigana support and AI mnemonics. Much easier to remember kanji now.&rdquo;</blockquote>
+        <div class="w-8 h-[2px] bg-gold-200 mx-auto mb-4"></div>
+        <p class="text-sm font-bold text-ink-800">Mike T.</p>
+        <p class="text-xs text-ink-400 mt-0.5">JLPT N4 Learner</p>
+      </div>
+
+      <div class="bg-cream rounded-xl p-8 border border-parchment-200 text-center reveal-up delay-3 hover:shadow-sm hover:-translate-y-0.5 transition-all duration-300">
+        <div class="w-14 h-14 rounded-full bg-slateblue-100 flex items-center justify-center mx-auto mb-5 shadow-sm">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slateblue-500"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <blockquote class="text-sm text-ink-500 italic leading-relaxed mb-5">&ldquo;The marketplace is awesome — I found shared decks for JLPT vocabulary and started studying immediately.&rdquo;</blockquote>
+        <div class="w-8 h-[2px] bg-slateblue-200 mx-auto mb-4"></div>
+        <p class="text-sm font-bold text-ink-800">Yuki M.</p>
+        <p class="text-xs text-ink-400 mt-0.5">Intermediate Japanese</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section class="py-24 sm:py-32 px-6 bg-gradient-to-b from-cream via-white to-cream border-t border-parchment-100">
+  <div class="max-w-xl mx-auto text-center reveal-up">
+    <h2 class="font-display text-3xl sm:text-4xl font-bold tracking-tight text-ink-900 mb-4">Ready to start learning?</h2>
+    <p class="text-lg text-ink-500 mb-10 leading-relaxed font-[500]">Join learners around the world. FluentCards is free to use with no ads.</p>
+    <a href="/app/" class="group inline-flex items-center gap-2.5 bg-cinnabar-500 text-white px-10 py-4 rounded-lg font-bold text-lg shadow-md shadow-cinnabar-200 hover:shadow-lg hover:shadow-cinnabar-300 hover:bg-cinnabar-600 active:scale-[0.97] transition-all duration-200">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+      Open FluentCards
+    </a>
+  </div>
+</section>
+
+<Footer />
+
+<!-- Scroll animation observer -->
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.reveal-up, .reveal-scale').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

@@ -4,10 +4,10 @@ import { collection, query, where, getDocs, doc, setDoc, writeBatch, getCountFro
 import { db } from '../lib/firebase';
 import { handleFirestoreError, OperationType } from '../lib/firebaseUtils';
 import { useAuth } from '../components/AuthProvider';
-import { Search, Globe, Download, Users, Copy, Layers } from 'lucide-react';
+import { Search, Globe, Copy, Users, Layers } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { Input } from '../components/ui/Input';
-import { Deck, Flashcard } from '../types';
+import type { Deck, Flashcard } from '../types';
 import { v4 as uuidv4 } from 'uuid';
 import { getEmptyFSRSCard, fsrcCardToFlashcardProperties } from '../lib/fsrs';
 import { toast } from 'sonner';
@@ -25,7 +25,7 @@ export function Marketplace() {
       const q = query(collection(db, 'decks'), where('isPublic', '==', true));
       const snapshot = await getDocs(q);
       const fetchedDecks = snapshot.docs.map(doc => doc.data() as Deck);
-      
+
       const decksWithCounts = await Promise.all(fetchedDecks.map(async (deck) => {
         try {
           const cardsQuery = query(collection(db, 'cards'), where('deckId', '==', deck.id), where('isPublic', '==', true));
@@ -53,15 +53,13 @@ export function Marketplace() {
       toast.error("Please log in to clone decks.");
       return;
     }
-    
+
     setImportingId(deck.id);
     try {
-      // 1. Fetch public cards for this deck
       const cardsQuery = query(collection(db, 'cards'), where('deckId', '==', deck.id));
       const cardsSnapshot = await getDocs(cardsQuery);
       const originalCards = cardsSnapshot.docs.map(doc => doc.data() as Flashcard);
 
-      // 2. Create a local clone of the deck
       const newDeckId = uuidv4();
       const newDeck: Deck = {
         id: newDeckId,
@@ -69,12 +67,11 @@ export function Marketplace() {
         name: `Clone of ${deck.name}`,
         description: deck.description,
         createdAt: Date.now(),
-        isPublic: false, // cloned decks default to private
+        isPublic: false,
       };
 
       await setDoc(doc(db, 'decks', newDeckId), newDeck);
 
-      // 3. Clone cards using batch
       const batch = writeBatch(db);
       originalCards.forEach(c => {
         const fsrsData = fsrcCardToFlashcardProperties(getEmptyFSRSCard());
@@ -110,86 +107,87 @@ export function Marketplace() {
     }
   };
 
-  const filteredDecks = publicDecks.filter(d => 
-    d.name.toLowerCase().includes(search.toLowerCase()) || 
+  const filteredDecks = publicDecks.filter(d =>
+    d.name.toLowerCase().includes(search.toLowerCase()) ||
     (d.description && d.description.toLowerCase().includes(search.toLowerCase())) ||
     (d.authorName && d.authorName.toLowerCase().includes(search.toLowerCase()))
   );
 
   return (
-    <div className="p-6 space-y-6">
+    <div className="p-5 space-y-5">
       <div className="flex items-center justify-between">
-        <h1 className="text-3xl font-bold tracking-tight text-slate-800 dark:text-slate-100 flex items-center gap-2">
-          <Globe className="text-slate-600 dark:text-slate-300" size={32} /> Discover Decks
+        <h1 className="font-display text-2xl font-bold tracking-tight text-ink-800 dark:text-sumi-50 flex items-center gap-2">
+          <Globe className="text-ink-500 dark:text-sumi-300" size={28} /> Discover Decks
         </h1>
       </div>
 
-      <div className="sticky top-0 bg-white dark:bg-slate-900/60 backdrop-blur-md pt-2 pb-4 z-10 -mx-6 px-6">
+      <div className="sticky top-0 bg-cream dark:bg-sumi-800/60 backdrop-blur-md pt-2 pb-4 z-10 -mx-5 px-5">
          <div className="relative">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500 pointer-events-none" size={20} />
-            <Input 
-              placeholder="Search public decks..." 
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-ink-400 dark:text-sumi-400 pointer-events-none" size={20} />
+            <Input
+              placeholder="Search public decks..."
               value={search}
               onChange={e => setSearch(e.target.value)}
-              className="pl-11 h-12 text-base rounded-lg border-slate-300 dark:border-slate-600 focus:border-indigo-600 focus:ring-indigo-200 w-full"
+              className="pl-11 h-12 text-base rounded-lg border-parchment-200 dark:border-sumi-600 focus:border-cinnabar-400 focus:ring-cinnabar-200 w-full"
             />
          </div>
       </div>
 
       {loading ? (
         <div className="flex justify-center p-12">
-          <div className="animate-spin text-slate-600 dark:text-slate-300">
-             <Globe size={40} />
+          <div className="animate-spin text-ink-500 dark:text-sumi-300">
+             <Globe size={36} />
           </div>
         </div>
       ) : filteredDecks.length === 0 ? (
-        <div className="text-center py-16 flex flex-col items-center bg-white dark:bg-slate-900/50 rounded-xl border-2 border-dashed border-slate-300 dark:border-slate-600">
-          <div className="w-24 h-24 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
-            <Search className="w-12 h-12 text-slate-400 dark:text-slate-500" />
+        <div className="text-center py-16 flex flex-col items-center bg-white dark:bg-sumi-700/50 rounded-xl border-2 border-dashed border-parchment-200 dark:border-sumi-600">
+          <div className="w-20 h-20 bg-cinnabar-100 dark:bg-cinnabar-900/30 rounded-full flex items-center justify-center mb-4">
+            <Search className="w-10 h-10 text-ink-400 dark:text-sumi-400" />
           </div>
-          <p className="text-slate-600 dark:text-slate-300 font-medium text-lg">No public decks found. Be the first to share one!</p>
+          <p className="text-ink-500 dark:text-sumi-300 font-semibold text-base">No public decks found. Be the first to share one!</p>
         </div>
       ) : (
-        <div className="space-y-4">
-          {filteredDecks.map(deck => (
-            <div 
-              key={deck.id} 
-              className="p-5 bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-700 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 group"
+        <div className="space-y-3">
+          {filteredDecks.map((deck, index) => (
+            <div
+              key={deck.id}
+              className="p-5 bg-white dark:bg-sumi-700 border-2 border-parchment-200 dark:border-sumi-600 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 group"
+              style={{ animation: `fadeInUp 0.4s ease-out ${index * 0.06}s both` }}
             >
               <div className="flex justify-between items-start mb-2">
                 <div>
-                  <h3 className="font-bold text-2xl text-slate-700 dark:text-slate-200">{deck.name}</h3>
-                  <div className="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-300 mt-1">
+                  <h3 className="font-display text-xl font-bold text-ink-700 dark:text-sumi-100">{deck.name}</h3>
+                  <div className="flex items-center gap-3 text-sm text-ink-500 dark:text-sumi-300 mt-1.5">
                     <div className="flex items-center gap-1.5">
-                      <Users size={16} /> 
-                      <span className="font-medium text-base">{deck.authorName || 'Anonymous'}</span>
+                      <Users size={16} />
+                      <span className="font-semibold">{deck.authorName || 'Anonymous'}</span>
                     </div>
                     {deck.cardCount !== undefined && (
                       <div className="flex items-center gap-1.5">
                         <Layers size={16} />
-                        <span className="font-medium text-base">{deck.cardCount} {deck.cardCount === 1 ? 'card' : 'cards'}</span>
+                        <span className="font-semibold">{deck.cardCount} {deck.cardCount === 1 ? 'card' : 'cards'}</span>
                       </div>
                     )}
                   </div>
                 </div>
-                <Button 
+                <Button
                   onClick={() => handleCloneDeck(deck)}
                   size="sm"
                   disabled={importingId === deck.id}
-                  className="bg-slate-50 dark:bg-slate-800 hover:bg-indigo-100 text-indigo-600 dark:text-indigo-400 rounded-xl px-3 h-10"
+                  className="bg-cream dark:bg-sumi-600 hover:bg-cinnabar-50 dark:hover:bg-sumi-500 text-cinnabar-500 dark:text-cinnabar-300 rounded-lg px-3 h-10"
                   title="Clone to my library"
                 >
                   {importingId === deck.id ? (
-                    <div className="w-5 h-5 border-2 border-indigo-600 border-t-transparent rounded-full animate-spin" />
+                    <div className="w-5 h-5 border-2 border-cinnabar-500 border-t-transparent rounded-full animate-spin" />
                   ) : (
                     <Copy size={18} />
                   )}
-                  <span className="ml-1.5 font-bold text-base">Clone</span>
+                  <span className="ml-1.5 font-bold text-sm">Clone</span>
                 </Button>
               </div>
-              
+
               {deck.description && (
-                <p className="text-sm text-slate-500 dark:text-slate-400 mb-3 line-clamp-2 leading-relaxed">
+                <p className="text-sm text-ink-500 dark:text-sumi-300 mb-2 line-clamp-2 leading-relaxed">
                   {deck.description}
                 </p>
               )}

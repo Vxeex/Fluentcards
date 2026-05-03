@@ -1,0 +1,22 @@
+---
+// Shared navigation bar for the main site
+const { currentPath = '/' } = Astro.props;
+const isActive = (path: string) => currentPath.startsWith(path);
+---
+
+<nav class="fixed top-0 left-0 right-0 z-50 bg-cream/80 backdrop-blur-lg border-b border-parchment-200">
+  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="/" class="font-display text-2xl font-bold text-ink-900 tracking-tight hover:text-cinnabar-500 transition-colors">
+      Fluent<span class="text-cinnabar-500">Cards</span>
+    </a>
+    <div class="flex items-center gap-5">
+      <a href="/blog/" class="hidden sm:inline text-sm font-semibold text-ink-500 hover:text-cinnabar-500 transition-colors">Blog</a>
+      <a href="/about/" class="hidden sm:inline text-sm font-semibold text-ink-500 hover:text-cinnabar-500 transition-colors">About</a>
+      <a href="/contact/" class="hidden sm:inline text-sm font-semibold text-ink-500 hover:text-cinnabar-500 transition-colors">Contact</a>
+      <a href="/app/" class="inline-flex items-center gap-1.5 bg-cinnabar-500 text-white px-5 py-2.5 rounded-lg text-sm font-bold hover:bg-cinnabar-600 transition-all duration-200 shadow-sm shadow-cinnabar-200 hover:shadow-md hover:shadow-cinnabar-300 active:scale-[0.97]">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Open App
+      </a>
+    </div>
+  </div>
+</nav>
