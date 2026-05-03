@@ -1,4 +1,5 @@
-import { FSRS, createEmptyCard, Card as FSRSCard } from 'ts-fsrs';
+import { FSRS, createEmptyCard } from 'ts-fsrs';
+import type { Card as FSRSCard } from 'ts-fsrs';
 import type { Flashcard } from '../types';
 
 const fsrs = new FSRS({});

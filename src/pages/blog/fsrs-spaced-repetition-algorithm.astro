@@ -1,0 +1,51 @@
+---
+import BlogLayout from "../../layouts/BlogLayout.astro"
+---
+<BlogLayout
+  title="FSRS: The Next Generation Spaced Repetition Algorithm | FluentCards"
+  description="Learn how FSRS improves on traditional spaced repetition algorithms like SM-2. Understand stability, difficulty, and how FSRS optimizes review schedules."
+  canonical="/blog/fsrs-spaced-repetition-algorithm/"
+  headline="FSRS: The Next Generation Spaced Repetition Algorithm"
+  datePublished="May 3, 2026"
+  readTime="7 min"
+  tag="Tech"
+>
+<p>FSRS (Free Spaced Repetition Scheduler) is a modern spaced repetition algorithm that is quickly becoming the new standard for flashcard applications. It offers significant improvements over traditional algorithms like Anki's SM-2, providing more accurate scheduling and better retention with fewer reviews.</p>
+
+<h2>The Problem with Traditional Algorithms</h2>
+<p>The SM-2 algorithm, developed by SuperMemo in the 1980s, has been the backbone of most flashcard apps for decades. While it was revolutionary for its time, it has several limitations:</p>
+<ul>
+<li><strong>Simplistic scheduling:</strong> SM-2 uses a simple multiplier to increase intervals. It does not account for differences between cards or learners.</li>
+<li><strong>No difficulty tracking:</strong> All cards are treated the same way. A hard card and an easy card get the same interval progression.</li>
+<li><strong>Fixed interval steps:</strong> SM-2 uses predetermined interval steps (1 day, 4 days, 7 days, etc.) that may not be optimal for every card.</li>
+</ul>
+
+<h2>How FSRS Works</h2>
+<p>FSRS uses a more sophisticated model with three key parameters for each card:</p>
+
+<h3>Stability</h3>
+<p>Stability represents how well you know a card, measured in days. If a card has a stability of 30, it means the algorithm predicts you will remember it for about 30 days. After each successful review, stability increases. After a failed review, stability decreases. Over time, cards you consistently recall develop high stability, meaning you need to review them less often.</p>
+
+<h3>Difficulty</h3>
+<p>Difficulty measures how hard a card is for you personally. Some cards are naturally harder to remember than others. FSRS tracks difficulty separately from stability, so two cards with the same stability can have different difficulty values. This allows the algorithm to treat each card individually.</p>
+
+<h3>Elapsed Days</h3>
+<p>This is simply how many days have passed since your last review of the card. FSRS uses elapsed days together with stability and difficulty to calculate the optimal time for the next review.</p>
+
+<h2>FSRS vs. SM-2: Key Differences</h2>
+<ul>
+<li><strong>Personalization:</strong> FSRS adapts to each user's memory patterns. SM-2 applies the same rules to everyone.</li>
+<li><strong>Card-level optimization:</strong> FSRS tracks each card individually, recognizing that some cards are harder than others.</li>
+<li><strong>Fewer reviews:</strong> Studies show that FSRS requires 20–30% fewer reviews to achieve the same retention rate as SM-2.</li>
+<li><strong>Better for long-term learning:</strong> FSRS models memory more accurately over long timeframes, making it better for years-long study.</li>
+</ul>
+
+<h2>Why This Matters for Language Learners</h2>
+<p>Language learners typically have thousands of cards spanning years of study. With SM-2, the number of daily reviews can become overwhelming as the card count grows. FSRS reduces this burden by more accurately identifying which cards truly need review and which ones are already well-established in your memory.</p>
+<p>For example, a beginner learning 10 new Japanese vocabulary words per day will accumulate over 3,600 cards in a year. With SM-2, daily reviews might reach 80–100 cards per day. With FSRS, this can drop to 50–70 reviews per day for the same retention rate. That is a significant time saving.</p>
+
+<h2>FSRS in FluentCards</h2>
+<p>FluentCards uses FSRS for all its spaced repetition scheduling. When you review a card and rate it (Again, Hard, Good, or Easy), the algorithm updates the card's stability and difficulty values. Over time, the system learns your personal memory patterns and optimizes your review schedule accordingly. You can track your progress through metrics like stability and retention to see how your knowledge is growing.</p>
+
+<em>Also read: <a href="/blog/how-to-use-spaced-repetition/">How to Use Spaced Repetition</a> &middot; <a href="/blog/how-to-create-effective-flashcards/">How to Create Effective Flashcards</a></em>
+</BlogLayout>
