@@ -38,7 +38,7 @@ const fullUrl = `https://fluentcards.org${canonical}`;
   </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4482389932723468" crossorigin="anonymous"></script>
 </head>
-<body class="font-body bg-cream text-ink-900 antialiased overflow-x-hidden">
+<body class="font-sans text-slate-700 bg-white antialiased overflow-x-hidden">
 
 <Nav currentPath="/blog/" />
 
@@ -47,11 +47,11 @@ const fullUrl = `https://fluentcards.org${canonical}`;
   <article class="max-w-2xl mx-auto">
     <!-- Header -->
     <div class="mb-10 reveal-up">
-      <span class="inline-block bg-cinnabar-50 text-cinnabar-600 px-3.5 py-1 rounded-full text-xs font-bold mb-4 border border-cinnabar-100">{tag}</span>
-      <h1 class="font-display text-3xl sm:text-4xl font-bold tracking-tight text-ink-900 leading-tight">{headline}</h1>
-      <div class="mt-4 flex items-center gap-4 text-sm text-ink-400">
+      <span class="inline-block bg-primary-light text-primary px-3.5 py-1 rounded-full text-xs font-bold mb-4 border border-primary-light">{tag}</span>
+      <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 leading-tight">{headline}</h1>
+      <div class="mt-4 flex items-center gap-4 text-sm text-slate-400">
         <span>{datePublished}</span>
-        <span class="w-1 h-1 rounded-full bg-parchment-200"></span>
+        <span class="w-1 h-1 rounded-full bg-slate-200"></span>
         <span>{readTime} read</span>
       </div>
     </div>
@@ -62,10 +62,10 @@ const fullUrl = `https://fluentcards.org${canonical}`;
     </div>
 
     <!-- CTA -->
-    <div class="mt-12 bg-cream rounded-xl p-8 border border-parchment-200 reveal-up">
-      <h3 class="font-display text-xl font-bold text-ink-800 mb-3">Ready to start learning?</h3>
-      <p class="text-ink-500 text-sm mb-5 leading-relaxed">Create your first deck with FluentCards and start mastering vocabulary with spaced repetition.</p>
-      <a href="/app/" class="inline-flex items-center gap-2 bg-cinnabar-500 text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:bg-cinnabar-600 transition-all duration-200 shadow-sm active:scale-[0.97]">
+    <div class="mt-12 bg-white rounded-xl p-8 border border-slate-200 reveal-up">
+      <h3 class="text-xl font-bold text-slate-800 mb-3">Ready to start learning?</h3>
+      <p class="text-slate-500 text-sm mb-5 leading-relaxed">Create your first deck with FluentCards and start mastering vocabulary with spaced repetition.</p>
+      <a href="/app/" class="inline-flex items-center gap-2 bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:bg-primary transition-all duration-200 shadow-sm active:scale-[0.97]">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3" /></svg>
         Open FluentCards
       </a>

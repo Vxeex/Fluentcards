@@ -1,0 +1,198 @@
+---
+import "../styles/main.css"
+import Nav from "../components/Nav.astro"
+import Footer from "../components/Footer.astro"
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How It Works - FluentCards</title>
+  <meta name="description" content="Learn how FluentCards works: create flashcards, study with spaced repetition, track your progress. A step-by-step guide to mastering languages efficiently." />
+  <link rel="canonical" href="https://fluentcards.org/how-it-works/" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4482389932723468" crossorigin="anonymous"></script>
+</head>
+<body class="font-sans text-slate-700 bg-white antialiased overflow-x-hidden">
+
+<Nav currentPath="/how-it-works/" />
+
+<main class="pt-32 pb-20 px-6">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto reveal-up">
+      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 mb-3">How FluentCards Works</h1>
+      <p class="text-lg text-slate-500 font-[500] mb-16">A simple, science-backed approach to language learning. Here's how to get started.</p>
+    </div>
+
+    <!-- Step 1: Sign In -->
+    <section class="mb-16 reveal-up delay-1">
+      <div class="flex items-start gap-6">
+        <div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-xl shadow-md shrink-0">1</div>
+        <div class="pt-1">
+          <span class="text-xs font-bold tracking-widest text-primary uppercase mb-1 block">Get Started</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">Sign in with Google</h2>
+          <p class="text-slate-500 leading-relaxed">
+            Click "Continue with Google" to create your account. No passwords to remember — your Google account handles authentication securely. We only access your email and display name.
+          </p>
+          <div class="mt-4 bg-slate-50 border border-slate-200 rounded-xl p-4">
+            <p class="text-sm text-slate-500"><strong class="text-slate-700">No sign-up required?</strong> FluentCards uses Firebase Authentication, so you're set up in one click. Your data is private and encrypted by default.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 2: Create a Deck -->
+    <section class="mb-16 reveal-up delay-2">
+      <div class="flex items-start gap-6">
+        <div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-xl shadow-md shrink-0">2</div>
+        <div class="pt-1">
+          <span class="text-xs font-bold tracking-widest text-primary uppercase mb-1 block">Build</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">Create a Deck & Add Cards</h2>
+          <p class="text-slate-500 leading-relaxed mb-4">
+            Name your deck and start adding flashcards. Each card has a <strong class="text-slate-700">front</strong> (the word or expression you want to learn) and a <strong class="text-slate-700">back</strong> (the meaning or translation).
+          </p>
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 space-y-4">
+            <div>
+              <h3 class="text-sm font-bold text-slate-700 mb-2">For Japanese learners:</h3>
+              <p class="text-sm text-slate-500">Type kanji with furigana using bracket syntax:</p>
+              <div class="mt-2 flex flex-wrap gap-2">
+                <code class="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-700">明日[あした]</code>
+                <code class="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-700">漢字[かんじ]</code>
+                <code class="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-700">勉強[べんきょう]</code>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-slate-700 mb-2">Smart features:</h3>
+              <ul class="text-sm text-slate-500 space-y-1.5 list-disc list-inside">
+                <li><strong>Auto-translate</strong> with Gemini AI — type the front, generate the back instantly</li>
+                <li><strong>Auto-furigana</strong> — add reading aids with one click</li>
+                <li><strong>Bulk import</strong> — paste CSV data to create many cards at once</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 3: Choose Language -->
+    <section class="mb-16 reveal-up delay-3">
+      <div class="flex items-start gap-6">
+        <div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-xl shadow-md shrink-0">3</div>
+        <div class="pt-1">
+          <span class="text-xs font-bold tracking-widest text-primary uppercase mb-1 block">Configure</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">Set Pronunciation & Voice</h2>
+          <p class="text-slate-500 leading-relaxed mb-4">
+            For each card, choose the pronunciation language. This determines the TTS voice that reads the card aloud. FluentCards supports 20+ languages with neural voices.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-sm font-semibold text-slate-600">Japanese (ja-JP)</span>
+            <span class="px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-sm font-semibold text-slate-600">Korean (ko-KR)</span>
+            <span class="px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-sm font-semibold text-slate-600">Chinese (zh-CN)</span>
+            <span class="px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-sm font-semibold text-slate-600">Spanish (es-ES)</span>
+            <span class="px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-sm font-semibold text-slate-600">French (fr-FR)</span>
+          </div>
+          <p class="text-sm text-slate-500 mt-3">Enable AI mnemonics per card for visual memory aids on difficult words.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 4: Study -->
+    <section class="mb-16 reveal-up delay-1">
+      <div class="flex items-start gap-6">
+        <div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-xl shadow-md shrink-0">4</div>
+        <div class="pt-1">
+          <span class="text-xs font-bold tracking-widest text-primary uppercase mb-1 block">Learn</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">Study with Spaced Repetition</h2>
+          <p class="text-slate-500 leading-relaxed mb-4">
+            Open a deck and tap "Study." FluentCards shows you cards due for review. Try to recall the answer, then flip the card to check. Rate your recall:
+          </p>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div class="bg-blue-50 border border-blue-200 rounded-xl p-3 text-center">
+              <p class="text-sm font-bold text-blue-700">Again</p>
+              <p class="text-xs text-blue-600 mt-0.5">Forgot completely</p>
+            </div>
+            <div class="bg-amber-50 border border-amber-200 rounded-xl p-3 text-center">
+              <p class="text-sm font-bold text-amber-700">Hard</p>
+              <p class="text-xs text-amber-600 mt-0.5">Barely remembered</p>
+            </div>
+            <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-3 text-center">
+              <p class="text-sm font-bold text-emerald-700">Good</p>
+              <p class="text-xs text-emerald-600 mt-0.5">Recalled with effort</p>
+            </div>
+            <div class="bg-green-50 border border-green-200 rounded-xl p-3 text-center">
+              <p class="text-sm font-bold text-green-700">Easy</p>
+              <p class="text-xs text-green-600 mt-0.5">Instant recall</p>
+            </div>
+          </div>
+          <p class="text-sm text-slate-500 mt-4">
+            Your rating tells the FSRS algorithm how well you know the card. It adjusts the next review interval accordingly — easier cards appear less often, harder ones more frequently.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 5: Track Progress -->
+    <section class="mb-16 reveal-up delay-2">
+      <div class="flex items-start gap-6">
+        <div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-xl shadow-md shrink-0">5</div>
+        <div class="pt-1">
+          <span class="text-xs font-bold tracking-widest text-primary uppercase mb-1 block">Improve</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">Track & Improve</h2>
+          <p class="text-slate-500 leading-relaxed mb-4">
+            Watch your retention grow. The FSRS algorithm shows you detailed metrics:
+          </p>
+          <ul class="text-slate-500 space-y-2 list-disc list-inside">
+            <li><strong class="text-slate-700">Due count</strong> — how many cards are ready for review today</li>
+            <li><strong class="text-slate-700">Stability trend</strong> — how your memory strength is improving over time</li>
+            <li><strong class="text-slate-700">Difficulty distribution</strong> — which cards challenge you most</li>
+            <li><strong class="text-slate-700">Estimated retention</strong> — your predicted recall rate</li>
+          </ul>
+          <p class="text-sm text-slate-500 mt-3">
+            Consistent daily practice — even 10 minutes — yields remarkable results. Most users see significant improvement within two weeks.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 6: Discover -->
+    <section class="reveal-up delay-3">
+      <div class="flex items-start gap-6">
+        <div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-xl shadow-md shrink-0">6</div>
+        <div class="pt-1">
+          <span class="text-xs font-bold tracking-widest text-primary uppercase mb-1 block">Share</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">Discover & Share Decks</h2>
+          <p class="text-slate-500 leading-relaxed mb-4">
+            Browse the Discover section to find public decks shared by the community. Found a useful JLPT vocabulary list? Clone it to your library with one click.
+          </p>
+          <p class="text-slate-500 leading-relaxed">
+            When you've built a great deck, publish it to the marketplace so others can learn from it too. Your contribution helps the whole community grow.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="mt-20 text-center reveal-up">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">Start your first lesson</h2>
+      <p class="text-slate-500 mb-8">It takes 30 seconds to sign up and create your first deck.</p>
+      <a href="/app/" class="group inline-flex items-center gap-2.5 bg-primary text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg shadow-blue-200 hover:shadow-xl hover:shadow-blue-300 hover:bg-primary-hover active:scale-[0.97] transition-all duration-200">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Get Started Free
+      </a>
+    </div>
+  </div>
+</main>
+
+<Footer />
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

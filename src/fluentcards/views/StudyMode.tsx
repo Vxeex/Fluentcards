@@ -25,6 +25,7 @@ export function StudyMode() {
   const { id } = useParams<{ id: string }>();
   const [sessionStartTime] = useState(Date.now());
   const [cardsReviewCount, setCardsReviewCount] = useState(0);
+  const [ratingCounts, setRatingCounts] = useState<Record<number, number>>({});
   const { user } = useAuth();
 
   const [deck, setDeck] = useState<Deck | null>(null);
@@ -131,15 +132,46 @@ export function StudyMode() {
 
   if (isFinished || dueCards.length === 0) {
     const minutes = Math.round((Date.now() - sessionStartTime) / 60000);
+    const againCount = ratingCounts[Rating.Again] || 0;
+    const hardCount = ratingCounts[Rating.Hard] || 0;
+    const goodCount = ratingCounts[Rating.Good] || 0;
+    const easyCount = ratingCounts[Rating.Easy] || 0;
+    const totalRated = againCount + hardCount + goodCount + easyCount;
+
+    const ratingBars = [
+      { label: 'Again', count: againCount, color: 'bg-cinnabar-500' },
+      { label: 'Hard', count: hardCount, color: 'bg-gold-500' },
+      { label: 'Good', count: goodCount, color: 'bg-emerald-500' },
+      { label: 'Easy', count: easyCount, color: 'bg-slateblue-500' },
+    ];
+
     return (
       <div className="flex flex-col items-center justify-center h-full p-6 text-center">
         <div className="w-24 h-24 bg-cinnabar-100 dark:bg-cinnabar-900/30 rounded-full flex items-center justify-center mb-6 shadow-sm border-[6px] border-white dark:border-sumi-700">
-          <span className="font-display text-4xl">FC</span>
+          <span className="font-display text-4xl text-cinnabar-500 dark:text-cinnabar-300">FC</span>
         </div>
         <h2 className="font-display text-3xl font-bold mb-2 text-ink-800 dark:text-sumi-50 tracking-tight">Session Complete!</h2>
         <p className="text-ink-500 dark:text-sumi-300 font-semibold mb-8 max-w-xs text-base">
           Reviewed {cardsReviewCount} cards in {minutes} {minutes === 1 ? 'minute' : 'minutes'}. Great job!
         </p>
+
+        {totalRated > 0 && (
+          <div className="w-full max-w-xs mb-8 space-y-2">
+            {ratingBars.map(bar => (
+              <div key={bar.label} className="flex items-center gap-2">
+                <span className="text-xs font-bold text-ink-500 dark:text-sumi-300 w-12 text-right">{bar.label}</span>
+                <div className="flex-1 h-5 bg-slate-100 dark:bg-sumi-600 rounded-full overflow-hidden">
+                  <div
+                    className={`h-full ${bar.color} rounded-full transition-all duration-700`}
+                    style={{ width: `${totalRated > 0 ? (bar.count / totalRated) * 100 : 0}%` }}
+                  />
+                </div>
+                <span className="text-xs font-bold text-ink-500 dark:text-sumi-300 w-6 text-left">{bar.count}</span>
+              </div>
+            ))}
+          </div>
+        )}
+
         <Link to={`/deck/${deck.id}`}>
           <Button className="bg-cinnabar-500 hover:bg-cinnabar-600 text-white rounded-lg shadow-sm px-8 text-base">Back to Deck</Button>
         </Link>
@@ -199,6 +231,7 @@ export function StudyMode() {
     }
 
     setCardsReviewCount(prev => prev + 1);
+    setRatingCounts(prev => ({ ...prev, [rating]: (prev[rating] || 0) + 1 }));
 
     if (currentCardIndex + 1 < dueCards.length) {
       setCurrentCardIndex(prev => prev + 1);

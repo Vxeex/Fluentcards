@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { Moon, Sun, LogOut, Globe, Home as HomeIcon } from 'lucide-react';
+import { Moon, Sun, LogOut, Globe, Home as HomeIcon, Search, Trophy } from 'lucide-react';
 import { Button } from './ui/Button';
 import { useAuth } from './AuthProvider';
 import { useTheme } from './ThemeProvider';
@@ -22,6 +22,16 @@ export function Layout() {
           <span className="text-ink-700 dark:text-sumi-100">FluentCards</span>
         </Link>
         <div className="flex items-center gap-1">
+          <Link to="/search">
+            <Button variant="ghost" size="icon" className="text-ink-400 hover:text-ink-700 hover:bg-cinnabar-50 dark:text-sumi-300 dark:hover:text-sumi-50 dark:hover:bg-sumi-600 rounded-full" title="Search Cards">
+              <Search size={20} />
+            </Button>
+          </Link>
+          <Link to="/achievements">
+            <Button variant="ghost" size="icon" className="text-ink-400 hover:text-ink-700 hover:bg-cinnabar-50 dark:text-sumi-300 dark:hover:text-sumi-50 dark:hover:bg-sumi-600 rounded-full" title="Achievements">
+              <Trophy size={20} />
+            </Button>
+          </Link>
           <Button variant="ghost" size="icon" onClick={() => setTheme(isDark ? 'light' : 'dark')} className="text-ink-400 hover:text-ink-700 hover:bg-cinnabar-50 dark:text-sumi-300 dark:hover:text-sumi-50 dark:hover:bg-sumi-600 rounded-full" title="Toggle Theme">
             {isDark ? <Sun size={20} /> : <Moon size={20} />}
           </Button>
