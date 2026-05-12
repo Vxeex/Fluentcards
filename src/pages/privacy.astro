@@ -2,44 +2,65 @@
 import "../styles/main.css"
 import Nav from "../components/Nav.astro"
 import Footer from "../components/Footer.astro"
+import ThemeInit from "../components/ThemeInit.astro"
 ---
 
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
+  <ThemeInit />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy - FluentCards</title>
   <meta name="description" content="FluentCards privacy policy. Learn how we collect, use, and protect your data when using our flashcard app for language learning. Includes AdSense and cookie disclosures." />
   <link rel="canonical" href="https://fluentcards.org/privacy/" />
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Privacy Policy - FluentCards" />
+  <meta property="og:description" content="FluentCards privacy policy. Learn how we collect, use, and protect your data when using our flashcard app for language learning." />
+  <meta property="og:url" content="https://fluentcards.org/privacy/" />
+  <meta property="og:site_name" content="FluentCards" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Privacy Policy - FluentCards" />
+  <meta name="twitter:description" content="FluentCards privacy policy. Learn how we collect, use, and protect your data." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Privacy Policy - FluentCards",
+    "description": "FluentCards privacy policy. Learn how we collect, use, and protect your data.",
+    "url": "https://fluentcards.org/privacy/",
+    "isPartOf": { "@type": "WebSite", "name": "FluentCards", "url": "https://fluentcards.org/" }
+  }
+  </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4482389932723468" crossorigin="anonymous"></script>
 </head>
-<body class="font-sans text-slate-700 bg-white antialiased overflow-x-hidden">
+<body class="font-sans text-slate-700 bg-white dark:bg-slate-900 dark:text-slate-400 antialiased overflow-x-hidden transition-colors duration-300">
 
 <Nav currentPath="/privacy/" />
 
 <main class="pt-32 pb-20 px-6">
   <div class="max-w-2xl mx-auto reveal-up">
-    <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 mb-2">Privacy Policy</h1>
+    <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 mb-2">Privacy Policy</h1>
     <p class="text-sm text-slate-400 mb-10">Last updated: May 3, 2026</p>
 
     <div class="space-y-6">
       <section>
-        <h2 class="text-xl font-bold text-slate-800 mb-3">What data we collect</h2>
-        <p class="text-slate-500 leading-relaxed">
-          FluentCards uses <strong class="text-slate-700">Firebase Authentication</strong> (Google sign-in) to manage accounts.
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-200 mb-3">What data we collect</h2>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+          FluentCards uses <strong class="text-slate-700 dark:text-slate-300">Firebase Authentication</strong> (Google sign-in) to manage accounts.
           We receive your email address and display name when you sign in with Google.
           We do not store passwords — Google handles that.
         </p>
-        <p class="text-slate-500 leading-relaxed">
-          Your flashcard data (decks, cards, review history) is stored in <strong class="text-slate-700">Firebase Firestore</strong>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+          Your flashcard data (decks, cards, review history) is stored in <strong class="text-slate-700 dark:text-slate-300">Firebase Firestore</strong>
           and is only accessible to you unless you choose to publish a deck to the marketplace.
         </p>
       </section>
 
       <section>
-        <h2 class="text-xl font-bold text-slate-800 mb-3">How we use your data</h2>
-        <ul class="text-slate-500 leading-relaxed space-y-1 list-disc list-inside">
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-200 mb-3">How we use your data</h2>
+        <ul class="text-slate-500 dark:text-slate-400 leading-relaxed space-y-1 list-disc list-inside">
           <li>To authenticate you and keep your data private</li>
           <li>To sync your flashcards across devices</li>
           <li>To enable the community marketplace (shared decks only)</li>
@@ -47,59 +68,59 @@ import Footer from "../components/Footer.astro"
       </section>
 
       <section>
-        <h2 class="text-xl font-bold text-slate-800 mb-3">Advertising</h2>
-        <p class="text-slate-500 leading-relaxed mb-3">
-          FluentCards uses <strong class="text-slate-700">Google AdSense</strong> to display advertisements.
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-200 mb-3">Advertising</h2>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed mb-3">
+          FluentCards uses <strong class="text-slate-700 dark:text-slate-300">Google AdSense</strong> to display advertisements.
           Google, as a third-party vendor, uses cookies to serve ads based on your previous visits to our site and other websites across the internet.
         </p>
-        <ul class="text-slate-500 leading-relaxed space-y-1 list-disc list-inside">
+        <ul class="text-slate-500 dark:text-slate-400 leading-relaxed space-y-1 list-disc list-inside">
           <li>Google's use of advertising cookies enables it and its partners to serve ads based on your visit to our site and other sites on the internet.</li>
           <li>You can opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener" class="text-primary underline underline-offset-2">Google's Ads Settings</a>.</li>
           <li>You can also opt out of third-party vendor cookies by visiting the <a href="https://www.networkadvertising.org/managing/opt_out.asp" target="_blank" rel="noopener" class="text-primary underline underline-offset-2">Network Advertising Initiative opt-out page</a>.</li>
         </ul>
-        <p class="text-slate-500 leading-relaxed">
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
           For more information about Google's advertising practices, visit
           <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener" class="text-primary underline underline-offset-2">Google's Advertising Page</a>.
         </p>
       </section>
 
       <section>
-        <h2 class="text-xl font-bold text-slate-800 mb-3">Cookies</h2>
-        <p class="text-slate-500 leading-relaxed">
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-200 mb-3">Cookies</h2>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
           We use essential cookies for authentication (Firebase Auth) and session management.
           AdSense may use cookies for personalized advertising. You can manage cookie settings in your browser.
         </p>
       </section>
 
       <section>
-        <h2 class="text-xl font-bold text-slate-800 mb-3">Third-party services</h2>
-        <ul class="text-slate-500 leading-relaxed space-y-1 list-disc list-inside">
-          <li><strong class="text-slate-700">Google Firebase</strong> — Authentication, Firestore database, hosting</li>
-          <li><strong class="text-slate-700">Google AdSense</strong> — Advertising (if enabled)</li>
-          <li><strong class="text-slate-700">Google Gemini AI</strong> — AI-powered mnemonic generation (when you opt in)</li>
-          <li><strong class="text-slate-700">Cloudflare</strong> — CDN and hosting infrastructure</li>
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-200 mb-3">Third-party services</h2>
+        <ul class="text-slate-500 dark:text-slate-400 leading-relaxed space-y-1 list-disc list-inside">
+          <li><strong class="text-slate-700 dark:text-slate-300">Google Firebase</strong> — Authentication, Firestore database, hosting</li>
+          <li><strong class="text-slate-700 dark:text-slate-300">Google AdSense</strong> — Advertising (if enabled)</li>
+          <li><strong class="text-slate-700 dark:text-slate-300">Pollinations.ai</strong> — AI-powered mnemonic image generation (when you opt in)</li>
+          <li><strong class="text-slate-700 dark:text-slate-300">Cloudflare</strong> — CDN and hosting infrastructure</li>
         </ul>
       </section>
 
       <section>
-        <h2 class="text-xl font-bold text-slate-800 mb-3">Data retention</h2>
-        <p class="text-slate-500 leading-relaxed">
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-200 mb-3">Data retention</h2>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
           You can delete your account and all associated data at any time by contacting us.
           Flashcard data is retained until you delete it or your account.
         </p>
       </section>
 
       <section>
-        <h2 class="text-xl font-bold text-slate-800 mb-3">Your rights</h2>
-        <p class="text-slate-500 leading-relaxed">
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-200 mb-3">Your rights</h2>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
           You can request access to, correction of, or deletion of your personal data at any time.
           Contact us at the email below.
         </p>
       </section>
 
       <section>
-        <h2 class="text-xl font-bold text-slate-800 mb-3">Contact</h2>
-        <p class="text-slate-500 leading-relaxed">For privacy questions: <a href="mailto:privacy@fluentcards.org" class="text-primary underline underline-offset-2">privacy@fluentcards.org</a></p>
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-200 mb-3">Contact</h2>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">For privacy questions: <a href="mailto:vxeexvxeex@gmail.com" class="text-primary underline underline-offset-2">vxeexvxeex@gmail.com</a></p>
       </section>
 
       <a href="/" class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-primary transition-colors">

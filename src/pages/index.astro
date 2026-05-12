@@ -2,17 +2,28 @@
 import "../styles/main.css"
 import Nav from "../components/Nav.astro"
 import Footer from "../components/Footer.astro"
+import ThemeInit from "../components/ThemeInit.astro"
 ---
 
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
+  <ThemeInit />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FluentCards - Smart Flashcard App for Language Learning</title>
   <meta name="description" content="FluentCards is a free flashcard app for learning Japanese, Korean, Spanish, and more. Features spaced repetition, furigana, TTS pronunciation, and AI-powered mnemonics." />
   <meta name="keywords" content="flashcard app, language learning, japanese study, korean vocabulary, spanish flashcards, spaced repetition, anki alternative, furigana, tts pronunciation" />
   <link rel="canonical" href="https://fluentcards.org/" />
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="FluentCards - Smart Flashcard App for Language Learning" />
+  <meta property="og:description" content="FluentCards is a free flashcard app for learning Japanese, Korean, Spanish, and more. Features spaced repetition, furigana, TTS pronunciation, and AI-powered mnemonics." />
+  <meta property="og:url" content="https://fluentcards.org/" />
+  <meta property="og:site_name" content="FluentCards" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FluentCards - Smart Flashcard App for Language Learning" />
+  <meta name="twitter:description" content="Free flashcard app with spaced repetition for Japanese, Korean, Spanish, and more." />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -24,29 +35,29 @@ import Footer from "../components/Footer.astro"
   </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4482389932723468" crossorigin="anonymous"></script>
 </head>
-<body class="font-sans text-slate-700 bg-white antialiased overflow-x-hidden">
+<body class="font-sans text-slate-700 bg-white dark:bg-slate-950 dark:text-slate-400 antialiased overflow-x-hidden transition-colors duration-300">
 
 <Nav currentPath={Astro.url.pathname} />
 
 <!-- ========== Hero ========== -->
 <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20">
   <!-- Subtle gradient background -->
-  <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-white pointer-events-none"></div>
-  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-100/30 via-transparent to-transparent pointer-events-none"></div>
+  <div class="absolute inset-0 bg-gradient-to-br from-green-50 via-white to-white dark:from-green-950 dark:via-slate-950 dark:to-slate-950 pointer-events-none"></div>
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-green-100/30 via-transparent to-transparent pointer-events-none"></div>
 
   <!-- Decorative shapes — neutral and subtle -->
   <div class="absolute inset-0 pointer-events-none overflow-hidden">
-    <div class="absolute w-[500px] h-[500px] border-[32px] border-slate-100/40 rounded-full -top-[200px] -right-[200px] animate-float"></div>
-    <div class="absolute w-[300px] h-[300px] border-[20px] border-slate-100/20 rounded-full bottom-[10%] -left-[100px] animate-float" style="animation-delay: -3s;"></div>
+    <div class="absolute w-[500px] h-[500px] border-[32px] border-slate-100/40 dark:border-slate-600/20 rounded-full -top-[200px] -right-[200px] animate-float"></div>
+    <div class="absolute w-[300px] h-[300px] border-[20px] border-slate-100/20 dark:border-slate-600/10 rounded-full bottom-[10%] -left-[100px] animate-float" style="animation-delay: -3s;"></div>
   </div>
 
   <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
-    <div class="inline-flex items-center gap-2 bg-blue-50 text-primary px-4 py-1.5 rounded-full text-sm font-semibold mb-6 animate-fade-in border border-blue-100">
+    <div class="inline-flex items-center gap-2 bg-green-50 text-primary px-4 py-1.5 rounded-full text-sm font-semibold mb-6 animate-fade-in border border-green-200">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
       Built for language learners
     </div>
 
-    <h1 class="text-[3rem] sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-[1.06] tracking-tight text-slate-900">
+    <h1 class="text-[3rem] sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-[1.06] tracking-tight text-slate-900 dark:text-slate-100">
       Master languages with<br class="hidden xs:inline" /> <span class="text-primary">smart</span> flashcards
     </h1>
 
@@ -55,11 +66,11 @@ import Footer from "../components/Footer.astro"
     </p>
 
     <div class="mt-10 flex items-center justify-center gap-4 flex-wrap">
-      <a href="/app/" class="group inline-flex items-center gap-2.5 bg-primary text-white px-8 py-3.5 rounded-xl font-bold text-base shadow-lg shadow-blue-200 hover:shadow-xl hover:shadow-blue-300 hover:bg-primary-hover active:scale-[0.97] transition-all duration-200">
+      <a href="/app/" class="group inline-flex items-center gap-2.5 bg-primary text-white px-8 py-3.5 rounded-xl font-bold text-base shadow-lg shadow-green-200 hover:shadow-xl hover:shadow-green-300 hover:bg-primary-hover active:scale-[0.97] transition-all duration-200">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
         Start Learning Free
       </a>
-      <a href="/features/" class="inline-flex items-center gap-2 bg-white text-slate-700 px-8 py-3.5 rounded-xl font-bold text-base border border-slate-200 shadow-sm hover:border-primary hover:text-primary active:scale-[0.97] transition-all duration-200">
+      <a href="/features/" class="inline-flex items-center gap-2 bg-white text-slate-700 dark:bg-slate-950 dark:text-slate-300 px-8 py-3.5 rounded-xl font-bold text-base border border-slate-200 dark:border-slate-600 shadow-sm hover:border-primary hover:text-primary active:scale-[0.97] transition-all duration-200">
         See Features
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m7 15 5-5 5 5"/></svg>
       </a>
@@ -67,93 +78,93 @@ import Footer from "../components/Footer.astro"
   </div>
 
   <!-- Bottom gradient fade -->
-  <div class="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+  <div class="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-white to-transparent dark:from-slate-950 pointer-events-none"></div>
 </section>
 
 <!-- ========== Features ========== -->
-<section id="features" class="py-24 sm:py-32 px-6 bg-slate-50 border-y border-slate-200">
+<section id="features" class="py-24 sm:py-32 px-6 bg-slate-50 border-y border-slate-200 dark:bg-slate-900 dark:border-slate-800">
   <div class="max-w-6xl mx-auto">
     <div class="text-center max-w-2xl mx-auto mb-16 reveal-up">
-      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">Everything you need to learn</h2>
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100">Everything you need to learn</h2>
       <p class="mt-4 text-lg text-slate-500 font-[500]">Powerful tools built for serious language learners, from beginner to advanced.</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
       <!-- Feature 1 -->
-      <div class="group bg-white rounded-xl p-7 border border-slate-200 hover:border-primary/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal-up delay-1">
+      <a href="/science/" class="group bg-white dark:bg-slate-800 rounded-xl p-7 border border-slate-200 dark:border-slate-600 hover:border-primary/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal-up delay-1">
         <div class="w-11 h-11 rounded-lg bg-primary flex items-center justify-center text-white shadow-sm mb-4">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
         </div>
-        <h3 class="text-lg font-bold text-slate-800 mb-1.5">Spaced Repetition (FSRS)</h3>
-        <p class="text-sm text-slate-500 leading-relaxed">Advanced algorithm schedules reviews at optimal intervals so you remember more with less effort.</p>
-      </div>
+        <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1.5">Spaced Repetition (FSRS)</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Advanced algorithm schedules reviews at optimal intervals so you remember more with less effort.</p>
+      </a>
 
       <!-- Feature 2 -->
-      <div class="group bg-white rounded-xl p-7 border border-slate-200 hover:border-primary/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal-up delay-2">
+      <div class="group bg-white dark:bg-slate-800 rounded-xl p-7 border border-slate-200 dark:border-slate-600 hover:border-primary/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal-up delay-2">
         <div class="w-11 h-11 rounded-lg bg-primary flex items-center justify-center text-white shadow-sm mb-4">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
         </div>
-        <h3 class="text-lg font-bold text-slate-800 mb-1.5">Furigana Support</h3>
-        <p class="text-sm text-slate-500 leading-relaxed">Automatically adds reading aids to Japanese text. Just type 漢字[かんじ] and it renders beautifully with ruby annotations.</p>
+        <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1.5">Furigana Support</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Automatically adds reading aids to Japanese text. Just type 漢字[かんじ] and it renders beautifully with ruby annotations.</p>
       </div>
 
       <!-- Feature 3 -->
-      <div class="group bg-white rounded-xl p-7 border border-slate-200 hover:border-primary/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal-up delay-3">
+      <div class="group bg-white dark:bg-slate-800 rounded-xl p-7 border border-slate-200 dark:border-slate-600 hover:border-primary/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal-up delay-3">
         <div class="w-11 h-11 rounded-lg bg-primary flex items-center justify-center text-white shadow-sm mb-4">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 8 14 13 10 16 6 4 9 3 18 0 12 8"/><path d="M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6"/></svg>
         </div>
-        <h3 class="text-lg font-bold text-slate-800 mb-1.5">Native TTS Pronunciation</h3>
-        <p class="text-sm text-slate-500 leading-relaxed">Hear correct pronunciation with Microsoft Edge TTS engine. Adjust speed and auto-play on cards.</p>
+        <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1.5">Native TTS Pronunciation</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Hear correct pronunciation with Microsoft Edge TTS engine. Adjust speed and auto-play on cards.</p>
       </div>
 
       <!-- Feature 4 -->
-      <div class="group bg-white rounded-xl p-7 border border-slate-200 hover:border-primary/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal-up delay-1">
+      <div class="group bg-white dark:bg-slate-800 rounded-xl p-7 border border-slate-200 dark:border-slate-600 hover:border-primary/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal-up delay-1">
         <div class="w-11 h-11 rounded-lg bg-primary flex items-center justify-center text-white shadow-sm mb-4">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-1.04A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-1.04A2.5 2.5 0 0 0 14.5 2Z"/></svg>
         </div>
-        <h3 class="text-lg font-bold text-slate-800 mb-1.5">AI Mnemonics</h3>
-        <p class="text-sm text-slate-500 leading-relaxed">Gemini AI generates visual memory aids to help you remember difficult words and characters.</p>
+        <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1.5">AI Mnemonics</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">AI generates visual memory aids to help you remember difficult words and characters.</p>
       </div>
 
       <!-- Feature 5 -->
-      <div class="group bg-white rounded-xl p-7 border border-slate-200 hover:border-primary/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal-up delay-2">
+      <a href="/pricing/" class="group bg-white dark:bg-slate-800 rounded-xl p-7 border border-slate-200 dark:border-slate-600 hover:border-primary/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal-up delay-2">
         <div class="w-11 h-11 rounded-lg bg-primary flex items-center justify-center text-white shadow-sm mb-4">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
         </div>
-        <h3 class="text-lg font-bold text-slate-800 mb-1.5">Review History</h3>
-        <p class="text-sm text-slate-500 leading-relaxed">Track your progress with FSRS metrics — stability, difficulty, and retention over time.</p>
-      </div>
+        <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1.5">Review History</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Track your progress with FSRS metrics — stability, difficulty, and retention over time.</p>
+      </a>
 
       <!-- Feature 6 -->
-      <div class="group bg-white rounded-xl p-7 border border-slate-200 hover:border-primary/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal-up delay-3">
+      <div class="group bg-white dark:bg-slate-800 rounded-xl p-7 border border-slate-200 dark:border-slate-600 hover:border-primary/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal-up delay-3">
         <div class="w-11 h-11 rounded-lg bg-primary flex items-center justify-center text-white shadow-sm mb-4">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 14 4-4 4 4"/></svg>
         </div>
-        <h3 class="text-lg font-bold text-slate-800 mb-1.5">Community Marketplace</h3>
-        <p class="text-sm text-slate-500 leading-relaxed">Discover shared decks made by other learners. Clone them to your library instantly.</p>
+        <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1.5">Community Marketplace</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Discover shared decks made by other learners. Clone them to your library instantly.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ========== How It Works ========== -->
-<section class="py-24 sm:py-32 px-6 bg-white">
+<section class="py-24 sm:py-32 px-6 bg-white dark:bg-slate-950">
   <div class="max-w-3xl mx-auto">
     <div class="text-center max-w-xl mx-auto mb-16 reveal-up">
-      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">How It Works</h2>
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100">How It Works</h2>
       <p class="mt-4 text-lg text-slate-500 font-[500]">Three simple steps to start learning effectively.</p>
     </div>
 
     <div class="relative">
       <!-- Connecting line -->
-      <div class="absolute left-[27px] top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary via-primary/30 to-white hidden sm:block"></div>
+      <div class="absolute left-[27px] top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary via-primary/30 to-white dark:to-transparent hidden sm:block"></div>
 
       <!-- Step 1 -->
       <div class="relative flex gap-6 mb-14 reveal-up">
         <div class="relative z-10 w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-xl shadow-md flex-shrink-0">1</div>
         <div class="pt-2">
-          <h3 class="text-xl font-bold text-slate-800 mb-2">Create a deck</h3>
-          <p class="text-slate-500 leading-relaxed">Name your deck and start adding flashcards. For Japanese, type kanji with furigana like <code class="bg-slate-100 text-slate-700 px-1.5 py-0.5 rounded text-sm font-semibold">漢字[かんじ]</code> and it renders automatically. Use Gemini AI to auto-generate translations.</p>
+          <h3 class="text-xl font-bold text-slate-800 dark:text-slate-200 mb-2">Create a deck</h3>
+          <p class="text-slate-500 dark:text-slate-400 leading-relaxed">Name your deck and start adding flashcards. For Japanese, type kanji with furigana like <code class="bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-300 px-1.5 py-0.5 rounded text-sm font-semibold">漢字[かんじ]</code> and it renders automatically. Use auto-translate to generate card backs instantly.</p>
         </div>
       </div>
 
@@ -161,8 +172,8 @@ import Footer from "../components/Footer.astro"
       <div class="relative flex gap-6 mb-14 reveal-up delay-1">
         <div class="relative z-10 w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-xl shadow-md flex-shrink-0">2</div>
         <div class="pt-2">
-          <h3 class="text-xl font-bold text-slate-800 mb-2">Study every day</h3>
-          <p class="text-slate-500 leading-relaxed">Flip cards and rate your recall (Again / Hard / Good / Easy). The FSRS algorithm adapts to your memory and schedules the next review at the perfect time.</p>
+          <h3 class="text-xl font-bold text-slate-800 dark:text-slate-200 mb-2">Study every day</h3>
+          <p class="text-slate-500 dark:text-slate-400 leading-relaxed">Flip cards and rate your recall (Again / Hard / Good / Easy). The FSRS algorithm adapts to your memory and schedules the next review at the perfect time.</p>
         </div>
       </div>
 
@@ -170,8 +181,8 @@ import Footer from "../components/Footer.astro"
       <div class="relative flex gap-6 reveal-up delay-2">
         <div class="relative z-10 w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-xl shadow-md flex-shrink-0">3</div>
         <div class="pt-2">
-          <h3 class="text-xl font-bold text-slate-800 mb-2">Track and improve</h3>
-          <p class="text-slate-500 leading-relaxed">Watch your retention grow as the system learns what you need to practice. Review your stats and stay motivated.</p>
+          <h3 class="text-xl font-bold text-slate-800 dark:text-slate-200 mb-2">Track and improve</h3>
+          <p class="text-slate-500 dark:text-slate-400 leading-relaxed">Watch your retention grow as the system learns what you need to practice. Review your stats and stay motivated.</p>
         </div>
       </div>
     </div>
@@ -179,53 +190,90 @@ import Footer from "../components/Footer.astro"
 </section>
 
 <!-- ========== Testimonials ========== -->
-<section class="py-24 sm:py-32 px-6 bg-slate-50 border-y border-slate-200">
+<section class="py-24 sm:py-32 px-6 bg-slate-50 border-y border-slate-200 dark:bg-slate-900 dark:border-slate-800">
   <div class="max-w-6xl mx-auto">
     <div class="text-center max-w-xl mx-auto mb-16 reveal-up">
-      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">What learners say</h2>
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100">What learners say</h2>
       <p class="mt-4 text-lg text-slate-500 font-[500]">Join hundreds of language learners using FluentCards daily.</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-      <div class="bg-white rounded-xl p-8 border border-slate-200 text-center reveal-up delay-1 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
-        <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center mx-auto mb-5 border border-blue-100">
+      <div class="bg-white dark:bg-slate-800 rounded-xl p-8 border border-slate-200 dark:border-slate-600 text-center reveal-up delay-1 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+        <div class="w-14 h-14 rounded-full bg-green-50 flex items-center justify-center mx-auto mb-5 border border-green-200">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
         </div>
         <blockquote class="text-sm text-slate-500 italic leading-relaxed mb-5">&ldquo;The TTS pronunciation is a game-changer for Japanese. I can hear native pronunciation for every card.&rdquo;</blockquote>
         <div class="w-8 h-[2px] bg-slate-200 mx-auto mb-4"></div>
-        <p class="text-sm font-bold text-slate-800">Sarah K.</p>
-        <p class="text-xs text-slate-400 mt-0.5">Learning Japanese</p>
+        <p class="text-sm font-bold text-slate-800 dark:text-slate-200">Sarah K.</p>
+        <p class="text-xs text-slate-400 dark:text-slate-500 mt-0.5">Learning Japanese</p>
       </div>
 
-      <div class="bg-white rounded-xl p-8 border border-slate-200 text-center reveal-up delay-2 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
-        <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center mx-auto mb-5 border border-blue-100">
+      <div class="bg-white dark:bg-slate-800 rounded-xl p-8 border border-slate-200 dark:border-slate-600 text-center reveal-up delay-2 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+        <div class="w-14 h-14 rounded-full bg-green-50 flex items-center justify-center mx-auto mb-5 border border-green-200">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>
         </div>
         <blockquote class="text-sm text-slate-500 italic leading-relaxed mb-5">&ldquo;I switched from Anki because of the furigana support and AI mnemonics. Much easier to remember kanji now.&rdquo;</blockquote>
         <div class="w-8 h-[2px] bg-slate-200 mx-auto mb-4"></div>
-        <p class="text-sm font-bold text-slate-800">Mike T.</p>
-        <p class="text-xs text-slate-400 mt-0.5">JLPT N4 Learner</p>
+        <p class="text-sm font-bold text-slate-800 dark:text-slate-200">Mike T.</p>
+        <p class="text-xs text-slate-400 dark:text-slate-500 mt-0.5">JLPT N4 Learner</p>
       </div>
 
-      <div class="bg-white rounded-xl p-8 border border-slate-200 text-center reveal-up delay-3 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
-        <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center mx-auto mb-5 border border-blue-100">
+      <div class="bg-white dark:bg-slate-800 rounded-xl p-8 border border-slate-200 dark:border-slate-600 text-center reveal-up delay-3 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+        <div class="w-14 h-14 rounded-full bg-green-50 flex items-center justify-center mx-auto mb-5 border border-green-200">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         </div>
         <blockquote class="text-sm text-slate-500 italic leading-relaxed mb-5">&ldquo;The marketplace is awesome — I found shared decks for JLPT vocabulary and started studying immediately.&rdquo;</blockquote>
         <div class="w-8 h-[2px] bg-slate-200 mx-auto mb-4"></div>
-        <p class="text-sm font-bold text-slate-800">Yuki M.</p>
-        <p class="text-xs text-slate-400 mt-0.5">Intermediate Japanese</p>
+        <p class="text-sm font-bold text-slate-800 dark:text-slate-200">Yuki M.</p>
+        <p class="text-xs text-slate-400 dark:text-slate-500 mt-0.5">Intermediate Japanese</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ========== Blog / Guides ========== -->
+<section class="py-24 sm:py-32 px-6 bg-white dark:bg-slate-950">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-16 reveal-up">
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100">Language Learning Guides</h2>
+      <p class="mt-4 text-lg text-slate-500 font-[500]">Practical guides to help you learn languages with flashcards and spaced repetition.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <a href="/blog/how-to-use-spaced-repetition/" class="group bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-600 p-6 hover:border-primary/40 hover:-translate-y-1 hover:shadow-sm transition-all duration-300 reveal-up delay-1">
+        <span class="inline-block bg-primary-light text-primary px-3 py-0.5 rounded-full text-xs font-bold mb-4 border border-primary-light">Basics</span>
+        <h3 class="text-base font-bold text-slate-800 dark:text-slate-200 mb-2 leading-snug group-hover:text-primary transition-colors">How to Use Spaced Repetition for Language Learning</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-2">Understand the science behind spaced repetition and how to apply it to memorize vocabulary, kanji, and grammar.</p>
+      </a>
+
+      <a href="/blog/learn-japanese-kanji-with-flashcards/" class="group bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-600 p-6 hover:border-primary/40 hover:-translate-y-1 hover:shadow-sm transition-all duration-300 reveal-up delay-2">
+        <span class="inline-block bg-primary-light text-primary px-3 py-0.5 rounded-full text-xs font-bold mb-4 border border-primary-light">Japanese</span>
+        <h3 class="text-base font-bold text-slate-800 dark:text-slate-200 mb-2 leading-snug group-hover:text-primary transition-colors">Learn Japanese Kanji with Flashcards</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-2">A proven flashcard-based system for memorizing kanji readings, meanings, and vocabulary.</p>
+      </a>
+
+      <a href="/blog/fsrs-spaced-repetition-algorithm/" class="group bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-600 p-6 hover:border-primary/40 hover:-translate-y-1 hover:shadow-sm transition-all duration-300 reveal-up delay-3">
+        <span class="inline-block bg-primary-light text-primary px-3 py-0.5 rounded-full text-xs font-bold mb-4 border border-primary-light">Tech</span>
+        <h3 class="text-base font-bold text-slate-800 dark:text-slate-200 mb-2 leading-snug group-hover:text-primary transition-colors">FSRS: The Next Generation Spaced Repetition Algorithm</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-2">How FSRS improves on traditional Anki algorithms and optimizes your study time.</p>
+      </a>
+    </div>
+
+    <div class="text-center mt-10 reveal-up">
+      <a href="/blog/" class="inline-flex items-center gap-2 text-primary font-bold hover:text-primary-hover transition-colors">
+        View all guides
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ========== CTA ========== -->
-<section class="py-24 sm:py-32 px-6 bg-white">
+<section class="py-24 sm:py-32 px-6 bg-slate-50 dark:bg-slate-900">
   <div class="max-w-xl mx-auto text-center reveal-up">
-    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 mb-4">Ready to start learning?</h2>
+    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 mb-4">Ready to start learning?</h2>
     <p class="text-lg text-slate-500 mb-10 leading-relaxed font-[500]">Join learners around the world. FluentCards is free to use with no ads.</p>
-    <a href="/app/" class="group inline-flex items-center gap-2.5 bg-primary text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg shadow-blue-200 hover:shadow-xl hover:shadow-blue-300 hover:bg-primary-hover active:scale-[0.97] transition-all duration-200">
+    <a href="/app/" class="group inline-flex items-center gap-2.5 bg-primary text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg shadow-green-200 hover:shadow-xl hover:shadow-green-300 hover:bg-primary-hover active:scale-[0.97] transition-all duration-200">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
       Open FluentCards
     </a>

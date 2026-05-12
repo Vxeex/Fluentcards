@@ -2,53 +2,74 @@
 import "../styles/main.css"
 import Nav from "../components/Nav.astro"
 import Footer from "../components/Footer.astro"
+import ThemeInit from "../components/ThemeInit.astro"
 ---
 
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
+  <ThemeInit />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Community - FluentCards</title>
   <meta name="description" content="Join the FluentCards community. Share decks, discover content from other learners, contribute feedback, and learn together. Free flashcard marketplace for language learners." />
   <link rel="canonical" href="https://fluentcards.org/community/" />
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Community - FluentCards" />
+  <meta property="og:description" content="Join the FluentCards community. Share decks, discover content from other learners, contribute feedback, and learn together. Free flashcard marketplace for language learners." />
+  <meta property="og:url" content="https://fluentcards.org/community/" />
+  <meta property="og:site_name" content="FluentCards" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Community - FluentCards" />
+  <meta name="twitter:description" content="Join the FluentCards community. Share decks and learn together." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Community - FluentCards",
+    "description": "Join the FluentCards community. Share decks, discover content from other learners, contribute feedback, and learn together.",
+    "url": "https://fluentcards.org/community/",
+    "isPartOf": { "@type": "WebSite", "name": "FluentCards", "url": "https://fluentcards.org/" }
+  }
+  </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4482389932723468" crossorigin="anonymous"></script>
 </head>
-<body class="font-sans text-slate-700 bg-white antialiased overflow-x-hidden">
+<body class="font-sans text-slate-700 bg-white dark:bg-slate-950 dark:text-slate-400 antialiased overflow-x-hidden transition-colors duration-300">
 
 <Nav currentPath="/community/" />
 
 <main class="pt-32 pb-20 px-6">
   <div class="max-w-3xl mx-auto">
     <div class="text-center max-w-xl mx-auto reveal-up">
-      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 mb-3">Join Our Community</h1>
+      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 mb-3">Join Our Community</h1>
       <p class="text-lg text-slate-500 font-[500] mb-16">Learn together. Share decks, discover content, and help each other grow.</p>
     </div>
 
     <!-- Deck Marketplace -->
     <section class="mb-16 reveal-up delay-1">
-      <div class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
+      <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded-2xl p-8 shadow-sm">
         <div class="flex items-center gap-4 mb-4">
           <div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-white shrink-0">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 14 4-4 4 4"/></svg>
           </div>
           <div>
-            <h2 class="text-2xl font-bold text-slate-900">Deck Marketplace</h2>
-            <p class="text-sm text-slate-500">Browse, discover, and clone shared decks</p>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100">Deck Marketplace</h2>
+            <p class="text-sm text-slate-500 dark:text-slate-400">Browse, discover, and clone shared decks</p>
           </div>
         </div>
-        <p class="text-slate-500 leading-relaxed mb-4">
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
           The FluentCards marketplace is where learners share their curated flashcard decks. Find JLPT vocabulary lists, Spanish phrase collections, Korean grammar decks, and more.
         </p>
-        <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
-          <h3 class="text-sm font-bold text-slate-700 mb-3">Popular deck categories:</h3>
+        <div class="bg-white dark:bg-slate-800 rounded-xl p-5 border border-slate-200 dark:border-slate-600">
+          <h3 class="text-sm font-bold text-slate-700 dark:text-slate-300 mb-3">Popular deck categories:</h3>
           <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-slate-600">JLPT N5-N1</span>
-            <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-slate-600">Korean Topik</span>
-            <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-slate-600">Spanish Verbs</span>
-            <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-slate-600">French Phrases</span>
-            <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-slate-600">Chinese HSK</span>
-            <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-slate-600">German Articles</span>
+            <span class="px-3 py-1.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-400">JLPT N5-N1</span>
+            <span class="px-3 py-1.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-400">Korean Topik</span>
+            <span class="px-3 py-1.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-400">Spanish Verbs</span>
+            <span class="px-3 py-1.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-400">French Phrases</span>
+            <span class="px-3 py-1.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-400">Chinese HSK</span>
+            <span class="px-3 py-1.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-400">German Articles</span>
           </div>
         </div>
       </div>
@@ -56,23 +77,23 @@ import Footer from "../components/Footer.astro"
 
     <!-- Share Your Work -->
     <section class="mb-16 reveal-up delay-2">
-      <div class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
+      <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded-2xl p-8 shadow-sm">
         <div class="flex items-center gap-4 mb-4">
           <div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-white shrink-0">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m8 14 4-4 4 4"/></svg>
           </div>
           <div>
-            <h2 class="text-2xl font-bold text-slate-900">Share Your Decks</h2>
-            <p class="text-sm text-slate-500">Publish your decks for the world to use</p>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100">Share Your Decks</h2>
+            <p class="text-sm text-slate-500 dark:text-slate-400">Publish your decks for the world to use</p>
           </div>
         </div>
-        <p class="text-slate-500 leading-relaxed mb-4">
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
           Built a great deck? You can publish it to the marketplace with one click. Choose a display name, add a description, and your deck becomes available for other learners to discover and clone.
         </p>
-        <ul class="text-slate-500 space-y-2 text-sm">
+        <ul class="text-slate-500 dark:text-slate-400 space-y-2 text-sm">
           <li class="flex gap-2">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary shrink-0 mt-0.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Open a deck, tap the <strong class="text-slate-700">Globe</strong> icon to make it public</span>
+            <span>Open a deck, tap the <strong class="text-slate-700 dark:text-slate-300">Globe</strong> icon to make it public</span>
           </li>
           <li class="flex gap-2">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary shrink-0 mt-0.5"><polyline points="20 6 9 17 4 12"/></svg>
@@ -88,17 +109,17 @@ import Footer from "../components/Footer.astro"
 
     <!-- Feedback -->
     <section class="mb-16 reveal-up delay-3">
-      <div class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
+      <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded-2xl p-8 shadow-sm">
         <div class="flex items-center gap-4 mb-4">
           <div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-white shrink-0">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           </div>
           <div>
-            <h2 class="text-2xl font-bold text-slate-900">Feedback & Feature Requests</h2>
-            <p class="text-sm text-slate-500">Help shape the future of FluentCards</p>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100">Feedback & Feature Requests</h2>
+            <p class="text-sm text-slate-500 dark:text-slate-400">Help shape the future of FluentCards</p>
           </div>
         </div>
-        <p class="text-slate-500 leading-relaxed mb-4">
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
           FluentCards is community-driven. Your feedback directly influences what we build next. Found a bug? Have an idea? We'd love to hear from you.
         </p>
         <a href="/contact/" class="inline-flex items-center gap-2 text-primary font-bold hover:text-primary-hover transition-colors">
@@ -110,37 +131,37 @@ import Footer from "../components/Footer.astro"
 
     <!-- Values -->
     <section class="mb-16 reveal-up delay-1">
-      <h2 class="text-2xl font-bold text-slate-900 mb-6 text-center">Community Values</h2>
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-6 text-center">Community Values</h2>
       <div class="grid sm:grid-cols-3 gap-4">
-        <div class="bg-slate-50 rounded-xl p-6 border border-slate-200 text-center">
+        <div class="bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-600 text-center">
           <div class="w-10 h-10 rounded-lg bg-primary-light text-primary flex items-center justify-center mx-auto mb-3">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <h3 class="text-sm font-bold text-slate-800">Collaborative</h3>
-          <p class="text-xs text-slate-500 mt-1">Share decks, tips, and study strategies</p>
+          <h3 class="text-sm font-bold text-slate-800 dark:text-slate-200">Collaborative</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Share decks, tips, and study strategies</p>
         </div>
-        <div class="bg-slate-50 rounded-xl p-6 border border-slate-200 text-center">
+        <div class="bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-600 text-center">
           <div class="w-10 h-10 rounded-lg bg-primary-light text-primary flex items-center justify-center mx-auto mb-3">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
-          <h3 class="text-sm font-bold text-slate-800">Respectful</h3>
-          <p class="text-xs text-slate-500 mt-1">All skill levels welcome. Everyone starts somewhere</p>
+          <h3 class="text-sm font-bold text-slate-800 dark:text-slate-200">Respectful</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">All skill levels welcome. Everyone starts somewhere</p>
         </div>
-        <div class="bg-slate-50 rounded-xl p-6 border border-slate-200 text-center">
+        <div class="bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-600 text-center">
           <div class="w-10 h-10 rounded-lg bg-primary-light text-primary flex items-center justify-center mx-auto mb-3">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01"/><path d="M15 9h.01"/></svg>
           </div>
-          <h3 class="text-sm font-bold text-slate-800">Helpful</h3>
-          <p class="text-xs text-slate-500 mt-1">Build resources that make learning easier for everyone</p>
+          <h3 class="text-sm font-bold text-slate-800 dark:text-slate-200">Helpful</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Build resources that make learning easier for everyone</p>
         </div>
       </div>
     </section>
 
     <!-- CTA -->
     <div class="text-center reveal-up">
-      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">Be part of something bigger</h2>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-slate-100 mb-4">Be part of something bigger</h2>
       <p class="text-slate-500 mb-8">Create your first deck and join learners around the world.</p>
-      <a href="/app/" class="group inline-flex items-center gap-2.5 bg-primary text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg shadow-blue-200 hover:shadow-xl hover:shadow-blue-300 hover:bg-primary-hover active:scale-[0.97] transition-all duration-200">
+      <a href="/app/" class="group inline-flex items-center gap-2.5 bg-primary text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg shadow-green-200 hover:shadow-xl hover:shadow-green-300 hover:bg-primary-hover active:scale-[0.97] transition-all duration-200">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
         Join the Community
       </a>

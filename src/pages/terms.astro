@@ -2,39 +2,60 @@
 import "../styles/main.css"
 import Nav from "../components/Nav.astro"
 import Footer from "../components/Footer.astro"
+import ThemeInit from "../components/ThemeInit.astro"
 ---
 
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
+  <ThemeInit />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Terms of Service - FluentCards</title>
   <meta name="description" content="FluentCards terms of service. By using our flashcard app for language learning, you agree to these terms. Includes AdSense and Google Analytics disclosures." />
   <link rel="canonical" href="https://fluentcards.org/terms/" />
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Terms of Service - FluentCards" />
+  <meta property="og:description" content="FluentCards terms of service. By using our flashcard app for language learning, you agree to these terms." />
+  <meta property="og:url" content="https://fluentcards.org/terms/" />
+  <meta property="og:site_name" content="FluentCards" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Terms of Service - FluentCards" />
+  <meta name="twitter:description" content="FluentCards terms of service for using our flashcard app." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Terms of Service - FluentCards",
+    "description": "FluentCards terms of service. By using our flashcard app for language learning, you agree to these terms.",
+    "url": "https://fluentcards.org/terms/",
+    "isPartOf": { "@type": "WebSite", "name": "FluentCards", "url": "https://fluentcards.org/" }
+  }
+  </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4482389932723468" crossorigin="anonymous"></script>
 </head>
-<body class="font-sans text-slate-700 bg-white antialiased overflow-x-hidden">
+<body class="font-sans text-slate-700 bg-white dark:bg-slate-900 dark:text-slate-400 antialiased overflow-x-hidden transition-colors duration-300">
 
 <Nav currentPath="/terms/" />
 
 <main class="pt-32 pb-20 px-6">
   <div class="max-w-2xl mx-auto reveal-up">
-    <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 mb-2">Terms of Service</h1>
+    <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 mb-2">Terms of Service</h1>
     <p class="text-sm text-slate-400 mb-10">Last updated: May 3, 2026</p>
 
     <div class="space-y-6">
       <section>
-        <h2 class="text-xl font-bold text-slate-800 mb-3">Acceptance of Terms</h2>
-        <p class="text-slate-500 leading-relaxed">
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-200 mb-3">Acceptance of Terms</h2>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
           By accessing or using FluentCards ("the Service"), you agree to be bound by these Terms of Service.
           If you do not agree to these terms, please do not use the Service.
         </p>
       </section>
 
       <section>
-        <h2 class="text-xl font-bold text-slate-800 mb-3">Description of Service</h2>
-        <p class="text-slate-500 leading-relaxed">
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-200 mb-3">Description of Service</h2>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
           FluentCards provides a web-based flashcard application for language learning. The Service includes
           spaced repetition review using the FSRS algorithm, text-to-speech pronunciation, and AI-powered
           mnemonic generation. The Service is provided free of charge and may display advertisements via Google AdSense.
@@ -42,8 +63,8 @@ import Footer from "../components/Footer.astro"
       </section>
 
       <section>
-        <h2 class="text-xl font-bold text-slate-800 mb-3">User Accounts</h2>
-        <p class="text-slate-500 leading-relaxed">
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-200 mb-3">User Accounts</h2>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
           You may be required to create an account to access certain features. You are responsible for
           maintaining the confidentiality of your account information and for all activities that occur
           under your account. You must provide accurate and complete information when creating your account.
@@ -51,8 +72,8 @@ import Footer from "../components/Footer.astro"
       </section>
 
       <section>
-        <h2 class="text-xl font-bold text-slate-800 mb-3">User Content</h2>
-        <p class="text-slate-500 leading-relaxed">
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-200 mb-3">User Content</h2>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
           You retain all rights to the flashcard decks and content you create ("User Content").
           By making a deck public, you grant other users the right to view and clone your deck.
           You represent that your User Content does not violate any third-party rights.
@@ -60,9 +81,9 @@ import Footer from "../components/Footer.astro"
       </section>
 
       <section>
-        <h2 class="text-xl font-bold text-slate-800 mb-3">Acceptable Use</h2>
-        <p class="text-slate-500 leading-relaxed mb-3">You agree not to:</p>
-        <ul class="text-slate-500 leading-relaxed space-y-1 list-disc list-inside">
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-200 mb-3">Acceptable Use</h2>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed mb-3">You agree not to:</p>
+        <ul class="text-slate-500 dark:text-slate-400 leading-relaxed space-y-1 list-disc list-inside">
           <li>Use the Service for any illegal purpose</li>
           <li>Attempt to gain unauthorized access to the Service or its systems</li>
           <li>Interfere with or disrupt the Service</li>
@@ -72,8 +93,8 @@ import Footer from "../components/Footer.astro"
       </section>
 
       <section>
-        <h2 class="text-xl font-bold text-slate-800 mb-3">Intellectual Property</h2>
-        <p class="text-slate-500 leading-relaxed">
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-200 mb-3">Intellectual Property</h2>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
           The FluentCards name, logo, and interface design are proprietary. The FSRS algorithm is used
           under license from its creators. The Service's code is built with open-source technologies
           (Astro, React, Tailwind CSS) but the overall application is protected by copyright.
@@ -81,32 +102,32 @@ import Footer from "../components/Footer.astro"
       </section>
 
       <section>
-        <h2 class="text-xl font-bold text-slate-800 mb-3">Disclaimer of Warranties</h2>
-        <p class="text-slate-500 leading-relaxed">
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-200 mb-3">Disclaimer of Warranties</h2>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
           The Service is provided "as is" without warranties of any kind, either express or implied.
           We do not guarantee that the Service will be uninterrupted, secure, or error-free.
         </p>
       </section>
 
       <section>
-        <h2 class="text-xl font-bold text-slate-800 mb-3">Limitation of Liability</h2>
-        <p class="text-slate-500 leading-relaxed">
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-200 mb-3">Limitation of Liability</h2>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
           FluentCards and its operators shall not be liable for any indirect, incidental, special,
           consequential, or punitive damages arising from your use of the Service.
         </p>
       </section>
 
       <section>
-        <h2 class="text-xl font-bold text-slate-800 mb-3">Changes to Terms</h2>
-        <p class="text-slate-500 leading-relaxed">
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-200 mb-3">Changes to Terms</h2>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
           We reserve the right to modify these terms at any time. Changes will be effective immediately
           upon posting. Your continued use of the Service after changes constitutes acceptance of the new terms.
         </p>
       </section>
 
       <section>
-        <h2 class="text-xl font-bold text-slate-800 mb-3">Contact</h2>
-        <p class="text-slate-500 leading-relaxed">For questions about these terms: <a href="mailto:support@fluentcards.org" class="text-primary underline underline-offset-2">support@fluentcards.org</a></p>
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-200 mb-3">Contact</h2>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">For questions about these terms: <a href="mailto:vxeexvxeex@gmail.com" class="text-primary underline underline-offset-2">vxeexvxeex@gmail.com</a></p>
       </section>
 
       <a href="/" class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-primary transition-colors">

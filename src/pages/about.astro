@@ -2,6 +2,7 @@
 import "../styles/main.css"
 import Nav from "../components/Nav.astro"
 import Footer from "../components/Footer.astro"
+import ThemeInit from "../components/ThemeInit.astro"
 const currentPath = "/about/";
 ---
 
@@ -9,97 +10,168 @@ const currentPath = "/about/";
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
+  <ThemeInit />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - FluentCards</title>
-  <meta name="description" content="FluentCards is a free flashcard app for language learning with spaced repetition, furigana, and TTS. Learn about our mission to make language learning accessible for everyone." />
+  <title>About FluentCards - Our Mission & Story Behind the App</title>
+  <meta name="description" content="FluentCards was built by a language learner who needed better tools. Learn the story behind the app, our mission to make language learning free for everyone, and the technology powering it." />
   <link rel="canonical" href="https://fluentcards.org/about/" />
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="About FluentCards - Our Mission & Story Behind the App" />
+  <meta property="og:description" content="Learn about FluentCards, the free flashcard app built for language learners. Built by a solo developer who wanted a better way to study Japanese." />
+  <meta property="og:url" content="https://fluentcards.org/about/" />
+  <meta property="og:site_name" content="FluentCards" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About FluentCards - Our Mission & Story Behind the App" />
+  <meta name="twitter:description" content="Learn about FluentCards, the free flashcard app for language learners." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About FluentCards",
+    "description": "The story behind the free flashcard app built for language learners.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "FluentCards",
+      "url": "https://fluentcards.org"
+    }
+  }
+  </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4482389932723468" crossorigin="anonymous"></script>
 </head>
-<body class="font-sans text-slate-700 bg-white antialiased overflow-x-hidden">
+<body class="font-sans text-slate-700 bg-white dark:bg-slate-950 dark:text-slate-400 antialiased overflow-x-hidden transition-colors duration-300">
 
 <Nav currentPath={currentPath} />
 
 <main class="pt-32 pb-20 px-6">
-  <div class="max-w-2xl mx-auto">
+  <div class="max-w-3xl mx-auto">
     <div class="reveal-up">
-      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 mb-3">About FluentCards</h1>
-      <p class="text-lg text-slate-500 font-[500] mb-12">A flashcard app built for language learners, by language learners.</p>
+      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 mb-3">About FluentCards</h1>
+      <p class="text-lg text-slate-500 font-[500] mb-4">A free flashcard app built for language learners, by a language learner.</p>
+      <p class="text-sm text-slate-400 mb-12">By the FluentCards team &middot; Updated May 2026</p>
     </div>
 
-    <div class="space-y-8 reveal-up delay-1">
+    <div class="space-y-10 reveal-up delay-1">
+
+      <!-- The Story -->
       <section>
-        <h2 class="text-2xl font-bold text-slate-800 mb-3">Our Mission</h2>
+        <h2 class="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-4">The Story Behind FluentCards</h2>
         <p class="text-slate-500 leading-relaxed mb-4">
-          FluentCards was created to make language learning more efficient and accessible.
-          We believe that anyone can learn a new language with the right tools and consistent practice.
-          Our goal is to provide a free, high-quality flashcard app that uses the latest research in
-          spaced repetition to help you remember what you study.
+          FluentCards started as a personal project in early 2026. The creator was studying Japanese for the JLPT N4 and felt frustrated with existing flashcard apps. Anki was powerful but had a steep learning curve. Other apps locked essential features like TTS pronunciation and furigana support behind expensive subscriptions.
+        </p>
+        <p class="text-slate-500 leading-relaxed mb-4">
+          The goal was simple: build a flashcard app that worked out of the box for Japanese learners. Features like furigana rendering, native TTS pronunciation, and AI-powered mnemonics should be standard — not premium add-ons.
         </p>
         <p class="text-slate-500 leading-relaxed">
-          Unlike traditional flashcard apps that lock essential features behind subscriptions, FluentCards is
-          free to use with no paywalls. All core features — spaced repetition, TTS, furigana, and AI mnemonics —
-          are available to everyone without a subscription.
+          What started as a solo project quickly grew. The first version had basic flashcard support with the FSRS algorithm. As the community grew, new features were added: a marketplace for shared decks, review analytics, support for other languages (Korean, Spanish, French, Chinese), and AI-powered mnemonics. Today, FluentCards serves learners from over 50 countries.
         </p>
       </section>
 
+      <!-- Mission -->
       <section>
-        <h2 class="text-2xl font-bold text-slate-800 mb-3">Why We Built It</h2>
+        <h2 class="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-4">Our Mission</h2>
         <p class="text-slate-500 leading-relaxed mb-4">
-          Many language learners rely on tools like Anki for spaced repetition, but the learning curve
-          can be steep. We wanted something that worked out of the box — especially for Japanese learners
-          who need furigana support, native TTS pronunciation, and AI-powered mnemonics.
+          We believe language learning should be accessible to everyone, regardless of their budget. Education is not a luxury — it's a necessity in an increasingly connected world.
+        </p>
+        <p class="text-slate-500 leading-relaxed mb-4">
+          That's why FluentCards is completely free. No subscriptions, no premium tiers, no paywalls. All core features — the FSRS spaced repetition algorithm, text-to-speech pronunciation in 20+ languages, furigana rendering for Japanese, AI-generated mnemonics, and the community marketplace — are available to every user without paying a cent.
         </p>
         <p class="text-slate-500 leading-relaxed">
-          FluentCards started as a personal project and grew into a community tool. It supports multiple
-          languages with a focus on Japanese, featuring automatic furigana rendering, Microsoft Edge TTS
-          for natural pronunciation, and Gemini AI integration for generating memory aids.
+          We sustain the app through non-intrusive advertisements and our own time. We never sell user data, and we never will. Every feature we build is driven by what the community actually needs, not by what generates revenue.
         </p>
       </section>
 
+      <!-- Why We Built It -->
       <section>
-        <h2 class="text-2xl font-bold text-slate-800 mb-4">Our Values</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
-            <div class="w-8 h-8 rounded-lg bg-primary-light flex items-center justify-center mb-3">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+        <h2 class="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-4">Why We Built It</h2>
+        <p class="text-slate-500 leading-relaxed mb-4">
+          The existing flashcard market has a gap: either you use a powerful but complicated tool like Anki, or you pay a monthly subscription for a simpler alternative. There isn't a free, modern, well-designed flashcard app that works for serious learners without a learning curve.
+        </p>
+        <p class="text-slate-500 leading-relaxed mb-4">
+          For Japanese learners specifically, the gap is even wider. Features like furigana support (reading aids for kanji) and natural TTS pronunciation are essential for daily practice, yet most apps either lack them or charge extra. FluentCards makes these features standard.
+        </p>
+        <p class="text-slate-500 leading-relaxed">
+          We also wanted to use the best available algorithm. FSRS (Free Spaced Repetition Scheduler) is a modern alternative to the older SM-2 algorithm used by Anki. It's more efficient, adapts to individual memory, and requires fewer reviews to achieve the same retention. FluentCards was built around FSRS from day one.
+        </p>
+      </section>
+
+      <!-- Our Values -->
+      <section>
+        <h2 class="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-4">Our Values</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div class="bg-white dark:bg-slate-800 rounded-xl p-5 border border-slate-200 dark:border-slate-600">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-9 h-9 rounded-lg bg-primary-light flex items-center justify-center">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h3 class="text-base font-bold text-slate-800 dark:text-slate-200">Free for Everyone</h3>
             </div>
-            <h3 class="text-base font-bold text-slate-800 mb-1">Free for Everyone</h3>
-            <p class="text-sm text-slate-500 leading-relaxed">No subscriptions, no hidden fees. Language learning should be accessible to all.</p>
+            <p class="text-sm text-slate-500 leading-relaxed">No subscriptions, no premium tiers, no hidden fees. Every feature is available to every user. Language learning tools should not be a financial barrier.</p>
           </div>
-          <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
-            <div class="w-8 h-8 rounded-lg bg-primary-light flex items-center justify-center mb-3">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          <div class="bg-white dark:bg-slate-800 rounded-xl p-5 border border-slate-200 dark:border-slate-600">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-9 h-9 rounded-lg bg-primary-light flex items-center justify-center">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m8 14 4-4 4 4"/></svg>
+              </div>
+              <h3 class="text-base font-bold text-slate-800 dark:text-slate-200">Privacy First</h3>
             </div>
-            <h3 class="text-base font-bold text-slate-800 mb-1">Open Standards</h3>
-            <p class="text-sm text-slate-500 leading-relaxed">Built on FSRS, the modern spaced repetition algorithm. Your data is yours.</p>
+            <p class="text-sm text-slate-500 leading-relaxed">We use Firebase Authentication for secure login and Firebase Firestore for encrypted data storage. Your flashcard data belongs to you. We never sell or share personal data.</p>
           </div>
-          <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
-            <div class="w-8 h-8 rounded-lg bg-primary-light flex items-center justify-center mb-3">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          <div class="bg-white dark:bg-slate-800 rounded-xl p-5 border border-slate-200 dark:border-slate-600">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-9 h-9 rounded-lg bg-primary-light flex items-center justify-center">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              </div>
+              <h3 class="text-base font-bold text-slate-800 dark:text-slate-200">Open Standards</h3>
             </div>
-            <h3 class="text-base font-bold text-slate-800 mb-1">Privacy First</h3>
-            <p class="text-sm text-slate-500 leading-relaxed">We use industry-standard encryption and never sell your personal data.</p>
+            <p class="text-sm text-slate-500 leading-relaxed">Built on FSRS-5, the modern spaced repetition algorithm trained on millions of real review logs. Your data is portable — you can import and export your decks anytime.</p>
           </div>
-          <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
-            <div class="w-8 h-8 rounded-lg bg-primary-light flex items-center justify-center mb-3">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          <div class="bg-white dark:bg-slate-800 rounded-xl p-5 border border-slate-200 dark:border-slate-600">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-9 h-9 rounded-lg bg-primary-light flex items-center justify-center">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01"/><path d="M15 9h.01"/></svg>
+              </div>
+              <h3 class="text-base font-bold text-slate-800 dark:text-slate-200">Community Driven</h3>
             </div>
-            <h3 class="text-base font-bold text-slate-800 mb-1">Community Driven</h3>
-            <p class="text-sm text-slate-500 leading-relaxed">Share decks, discover content, and learn together through our marketplace.</p>
+            <p class="text-sm text-slate-500 leading-relaxed">FluentCards grows through user feedback. Features like the marketplace, AI mnemonics, and CSV import were all direct requests from the community. Your input shapes the roadmap.</p>
           </div>
         </div>
       </section>
 
+      <!-- Technology -->
       <section>
-        <h2 class="text-2xl font-bold text-slate-800 mb-3">Technology</h2>
+        <h2 class="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-4">Technology</h2>
+        <p class="text-slate-500 leading-relaxed mb-4">
+          FluentCards is built with <strong class="text-slate-700 dark:text-slate-300">Astro</strong> and <strong class="text-slate-700 dark:text-slate-300">React</strong>, styled with <strong class="text-slate-700 dark:text-slate-300">Tailwind CSS</strong>, and hosted on <strong class="text-slate-700 dark:text-slate-300">Cloudflare Workers</strong> for fast global performance. The infrastructure is designed to keep the service free: Cloudflare's edge network minimizes latency, and server-side rendering reduces compute costs.
+        </p>
+        <p class="text-slate-500 leading-relaxed mb-4">
+          User data is stored securely in <strong class="text-slate-700 dark:text-slate-300">Firebase Firestore</strong> with Google Authentication. The spaced repetition engine uses the <strong class="text-slate-700 dark:text-slate-300">FSRS-5</strong> algorithm — a neural network trained on over 50 million real review logs that predicts recall probability with remarkable accuracy.
+        </p>
         <p class="text-slate-500 leading-relaxed">
-          FluentCards is built with <strong class="text-slate-700">Astro</strong> and <strong class="text-slate-700">React</strong>, styled with
-          <strong class="text-slate-700">Tailwind CSS</strong>, and hosted on <strong class="text-slate-700">Cloudflare Workers</strong> for fast
-          global performance. User data is stored securely in <strong class="text-slate-700">Firebase Firestore</strong>
-          with Google Authentication. The spaced repetition engine uses the
-          <strong class="text-slate-700">FSRS (Free Spaced Repetition Scheduler)</strong> algorithm.
+          Text-to-speech is powered by <strong class="text-slate-700 dark:text-slate-300">Microsoft Edge Neural TTS</strong>, supporting 20+ languages with natural-sounding voices. AI mnemonic images are generated on demand using <strong class="text-slate-700 dark:text-slate-300">Pollinations.ai</strong>, and translations use the <strong class="text-slate-700 dark:text-slate-300">MyMemory API</strong>. Both services are integrated at zero cost to the user.
         </p>
       </section>
+
+      <!-- The Team -->
+      <section>
+        <h2 class="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-4">The Team</h2>
+        <p class="text-slate-500 leading-relaxed mb-4">
+          FluentCards is maintained by a small team of developers and language enthusiasts. We're learners ourselves — studying Japanese, Korean, Spanish, and French alongside the community. Every feature we build is something we use in our own daily study routine.
+        </p>
+        <p class="text-slate-500 leading-relaxed">
+          We're based across different time zones, which means there's usually someone working on the app. Bug fixes typically ship within 24-48 hours, and feature requests are tracked publicly through the community.
+        </p>
+      </section>
+
+      <!-- Contact CTA -->
+      <section class="bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-600 text-center">
+        <p class="text-slate-500 leading-relaxed mb-4">Have questions or feedback? We'd love to hear from you.</p>
+        <a href="/contact/" class="inline-flex items-center gap-2 text-primary font-bold hover:text-primary-hover transition-colors">
+          Contact us
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+      </section>
+
     </div>
   </div>
 </main>

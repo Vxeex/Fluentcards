@@ -2,19 +2,40 @@
 import "../styles/main.css"
 import Nav from "../components/Nav.astro"
 import Footer from "../components/Footer.astro"
+import ThemeInit from "../components/ThemeInit.astro"
 ---
 
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
+  <ThemeInit />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Science Behind FluentCards - Spaced Repetition & FSRS</title>
   <meta name="description" content="Learn about the science behind FluentCards. FSRS (Free Spaced Repetition Scheduler) is a modern algorithm based on memory research that optimizes your review schedule." />
   <link rel="canonical" href="https://fluentcards.org/science/" />
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="The Science Behind FluentCards - Spaced Repetition & FSRS" />
+  <meta property="og:description" content="Learn about the science behind FluentCards. FSRS (Free Spaced Repetition Scheduler) is a modern algorithm based on memory research that optimizes your review schedule." />
+  <meta property="og:url" content="https://fluentcards.org/science/" />
+  <meta property="og:site_name" content="FluentCards" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Science Behind FluentCards - Spaced Repetition & FSRS" />
+  <meta name="twitter:description" content="How FSRS-5 uses memory research to help you learn faster and remember longer." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "The Science of Spaced Repetition",
+    "description": "How FSRS-5 uses memory research to help you learn faster and remember longer.",
+    "url": "https://fluentcards.org/science/",
+    "isPartOf": { "@type": "WebSite", "name": "FluentCards", "url": "https://fluentcards.org/" }
+  }
+  </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4482389932723468" crossorigin="anonymous"></script>
 </head>
-<body class="font-sans text-slate-700 bg-white antialiased overflow-x-hidden">
+<body class="font-sans text-slate-700 bg-white dark:bg-slate-950 dark:text-slate-400 antialiased overflow-x-hidden transition-colors duration-300">
 
 <Nav currentPath="/science/" />
 
@@ -22,142 +43,142 @@ import Footer from "../components/Footer.astro"
   <div class="max-w-3xl mx-auto">
     <div class="text-center max-w-2xl mx-auto reveal-up">
       <span class="text-xs font-bold tracking-widest text-primary uppercase">The Research</span>
-      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 mt-2 mb-3">The Science of Spaced Repetition</h1>
-      <p class="text-lg text-slate-500 font-[500] mb-16">How FSRS-5 uses memory research to help you learn faster and remember longer.</p>
+      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 mt-2 mb-3">The Science of Spaced Repetition</h1>
+      <p class="text-lg text-slate-500 dark:text-slate-400 font-[500] mb-16">How FSRS-5 uses memory research to help you learn faster and remember longer.</p>
     </div>
 
     <!-- The Forgetting Curve -->
     <section class="mb-16 reveal-up delay-1">
-      <h2 class="text-2xl font-bold text-slate-900 mb-4">The Forgetting Curve</h2>
-      <p class="text-slate-500 leading-relaxed mb-4">
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4">The Forgetting Curve</h2>
+      <p class="text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
         In 1885, Hermann Ebbinghaus discovered that memory decays exponentially over time. Without review, we forget roughly 50% of new information within an hour, and up to 80% within 24 hours.
       </p>
-      <p class="text-slate-500 leading-relaxed mb-4">
-        However, each time you actively recall information, the rate of forgetting slows down. This is called the <strong class="text-slate-700">spacing effect</strong> — and it's the foundation of modern spaced repetition systems.
+      <p class="text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+        However, each time you actively recall information, the rate of forgetting slows down. This is called the <strong class="text-slate-700 dark:text-slate-300">spacing effect</strong> — and it's the foundation of modern spaced repetition systems.
       </p>
-      <div class="bg-slate-50 border border-slate-200 rounded-xl p-6">
-        <p class="text-sm font-bold text-slate-700 mb-2">Key Insight</p>
-        <p class="text-sm text-slate-500">The best time to review a card is <em>just before</em> you would forget it. This maximizes the learning benefit per review while minimizing total study time.</p>
+      <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded-xl p-6">
+        <p class="text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Key Insight</p>
+        <p class="text-sm text-slate-500 dark:text-slate-400">The best time to review a card is <em>just before</em> you would forget it. This maximizes the learning benefit per review while minimizing total study time.</p>
       </div>
     </section>
 
     <!-- What is FSRS -->
     <section class="mb-16 reveal-up delay-2">
-      <h2 class="text-2xl font-bold text-slate-900 mb-4">What is FSRS?</h2>
-      <p class="text-slate-500 leading-relaxed mb-4">
-        <strong class="text-slate-700">FSRS (Free Spaced Repetition Scheduler)</strong> is a modern algorithm developed by researchers Jarrett Ye and Piotr Wozniak. Unlike older systems (like Anki's SM-2) that use fixed intervals, FSRS models memory with three dynamic parameters:
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4">What is FSRS?</h2>
+      <p class="text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+        <strong class="text-slate-700 dark:text-slate-300">FSRS (Free Spaced Repetition Scheduler)</strong> is a modern algorithm developed by researchers Jarrett Ye and Piotr Wozniak. Unlike older systems (like Anki's SM-2) that use fixed intervals, FSRS models memory with three dynamic parameters:
       </p>
       <div class="grid sm:grid-cols-3 gap-4 mb-6">
-        <div class="bg-white border border-slate-200 rounded-xl p-5">
+        <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded-xl p-5">
           <div class="w-10 h-10 rounded-lg bg-primary-bg text-primary flex items-center justify-center font-bold text-lg mb-3">S</div>
-          <h3 class="text-base font-bold text-slate-800 mb-2">Stability</h3>
-          <p class="text-sm text-slate-500">How long a memory will last, measured in days. Each successful review increases stability.</p>
+          <h3 class="text-base font-bold text-slate-800 dark:text-slate-200 mb-2">Stability</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400">How long a memory will last, measured in days. Each successful review increases stability.</p>
         </div>
-        <div class="bg-white border border-slate-200 rounded-xl p-5">
+        <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded-xl p-5">
           <div class="w-10 h-10 rounded-lg bg-primary-bg text-primary flex items-center justify-center font-bold text-lg mb-3">D</div>
-          <h3 class="text-base font-bold text-slate-800 mb-2">Difficulty</h3>
-          <p class="text-sm text-slate-500">How inherently hard a card is. Cards you consistently struggle with stay at higher difficulty.</p>
+          <h3 class="text-base font-bold text-slate-800 dark:text-slate-200 mb-2">Difficulty</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400">How inherently hard a card is. Cards you consistently struggle with stay at higher difficulty.</p>
         </div>
-        <div class="bg-white border border-slate-200 rounded-xl p-5">
+        <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded-xl p-5">
           <div class="w-10 h-10 rounded-lg bg-primary-bg text-primary flex items-center justify-center font-bold text-lg mb-3">R</div>
-          <h3 class="text-base font-bold text-slate-800 mb-2">Retrievability</h3>
-          <p class="text-sm text-slate-500">The probability you'll remember a card today. Reviews trigger when R drops below a threshold.</p>
+          <h3 class="text-base font-bold text-slate-800 dark:text-slate-200 mb-2">Retrievability</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400">The probability you'll remember a card today. Reviews trigger when R drops below a threshold.</p>
         </div>
       </div>
-      <p class="text-slate-500 leading-relaxed">
+      <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
         FSRS-5, the latest version, uses a neural network trained on millions of real review logs. It can predict your recall probability with remarkable accuracy and schedule reviews at the optimal time.
       </p>
     </section>
 
     <!-- SM-2 vs FSRS -->
     <section class="mb-16 reveal-up delay-3">
-      <h2 class="text-2xl font-bold text-slate-900 mb-4">FSRS vs. Traditional Systems</h2>
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4">FSRS vs. Traditional Systems</h2>
       <div class="overflow-x-auto">
         <table class="w-full text-sm border-collapse">
           <thead>
             <tr class="border-b-2 border-slate-200">
-              <th class="text-left py-3 px-4 font-bold text-slate-700"></th>
-              <th class="text-left py-3 px-4 font-bold text-slate-700">Traditional (SM-2)</th>
+              <th class="text-left py-3 px-4 font-bold text-slate-700 dark:text-slate-300"></th>
+              <th class="text-left py-3 px-4 font-bold text-slate-700 dark:text-slate-300">Traditional (SM-2)</th>
               <th class="text-left py-3 px-4 font-bold text-primary">FSRS-5</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-100">
             <tr>
-              <td class="py-3 px-4 font-semibold text-slate-700">Scheduling</td>
-              <td class="py-3 px-4 text-slate-500">Fixed multipliers (1, 2.5, 4, 7 days...)</td>
-              <td class="py-3 px-4 text-slate-500">Dynamic intervals based on your memory</td>
+              <td class="py-3 px-4 font-semibold text-slate-700 dark:text-slate-300">Scheduling</td>
+              <td class="py-3 px-4 text-slate-500 dark:text-slate-400">Fixed multipliers (1, 2.5, 4, 7 days...)</td>
+              <td class="py-3 px-4 text-slate-500 dark:text-slate-400">Dynamic intervals based on your memory</td>
             </tr>
             <tr>
-              <td class="py-3 px-4 font-semibold text-slate-700">Adaptation</td>
-              <td class="py-3 px-4 text-slate-500">One-size-fits-all parameters</td>
-              <td class="py-3 px-4 text-slate-500">Learns from each review you make</td>
+              <td class="py-3 px-4 font-semibold text-slate-700 dark:text-slate-300">Adaptation</td>
+              <td class="py-3 px-4 text-slate-500 dark:text-slate-400">One-size-fits-all parameters</td>
+              <td class="py-3 px-4 text-slate-500 dark:text-slate-400">Learns from each review you make</td>
             </tr>
             <tr>
-              <td class="py-3 px-4 font-semibold text-slate-700">Accuracy</td>
-              <td class="py-3 px-4 text-slate-500">Heuristic-based intervals</td>
-              <td class="py-3 px-4 text-slate-500">Neural network trained on 50M+ reviews</td>
+              <td class="py-3 px-4 font-semibold text-slate-700 dark:text-slate-300">Accuracy</td>
+              <td class="py-3 px-4 text-slate-500 dark:text-slate-400">Heuristic-based intervals</td>
+              <td class="py-3 px-4 text-slate-500 dark:text-slate-400">Neural network trained on 50M+ reviews</td>
             </tr>
             <tr>
-              <td class="py-3 px-4 font-semibold text-slate-700">Reviews needed</td>
-              <td class="py-3 px-4 text-slate-500">Baseline</td>
-              <td class="py-3 px-4 text-slate-500">~30-50% fewer for same retention</td>
+              <td class="py-3 px-4 font-semibold text-slate-700 dark:text-slate-300">Reviews needed</td>
+              <td class="py-3 px-4 text-slate-500 dark:text-slate-400">Baseline</td>
+              <td class="py-3 px-4 text-slate-500 dark:text-slate-400">~30-50% fewer for same retention</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <div class="mt-4 bg-slate-50 border border-slate-200 rounded-xl p-4">
-        <p class="text-sm text-slate-500">
-          <strong class="text-slate-700">Real result:</strong> FSRS users typically achieve the same retention rate with roughly <strong>half the daily reviews</strong> compared to SM-2. More learning, less time.
+      <div class="mt-4 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded-xl p-4">
+        <p class="text-sm text-slate-500 dark:text-slate-400">
+          <strong class="text-slate-700 dark:text-slate-300">Real result:</strong> FSRS users typically achieve the same retention rate with roughly <strong>half the daily reviews</strong> compared to SM-2. More learning, less time.
         </p>
       </div>
     </section>
 
     <!-- Why It Works -->
     <section class="mb-16 reveal-up delay-1">
-      <h2 class="text-2xl font-bold text-slate-900 mb-4">Why Active Recall Matters</h2>
-      <p class="text-slate-500 leading-relaxed mb-4">
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4">Why Active Recall Matters</h2>
+      <p class="text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
         Spaced repetition leverages two well-established cognitive science principles:
       </p>
       <div class="space-y-4">
-        <div class="bg-white border border-slate-200 rounded-xl p-5">
-          <h3 class="text-base font-bold text-slate-800 mb-2">The Testing Effect</h3>
-          <p class="text-sm text-slate-500">Actively retrieving information from memory strengthens neural pathways more than passive review. Every time you flip a card and recall the answer, you reinforce that connection.</p>
+        <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded-xl p-5">
+          <h3 class="text-base font-bold text-slate-800 dark:text-slate-200 mb-2">The Testing Effect</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400">Actively retrieving information from memory strengthens neural pathways more than passive review. Every time you flip a card and recall the answer, you reinforce that connection.</p>
         </div>
-        <div class="bg-white border border-slate-200 rounded-xl p-5">
-          <h3 class="text-base font-bold text-slate-800 mb-2">Desirable Difficulty</h3>
-          <p class="text-sm text-slate-500">Retrieval that requires some effort produces stronger long-term memory than easy recall. FSRS targets the "sweet spot" — hard enough to be effective, but not so hard that you fail.</p>
+        <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded-xl p-5">
+          <h3 class="text-base font-bold text-slate-800 dark:text-slate-200 mb-2">Desirable Difficulty</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400">Retrieval that requires some effort produces stronger long-term memory than easy recall. FSRS targets the "sweet spot" — hard enough to be effective, but not so hard that you fail.</p>
         </div>
       </div>
     </section>
 
     <!-- Practical Tips -->
     <section class="mb-16 reveal-up delay-2">
-      <h2 class="text-2xl font-bold text-slate-900 mb-4">Tips for Best Results</h2>
-      <ul class="space-y-3 text-slate-500 leading-relaxed">
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4">Tips for Best Results</h2>
+      <ul class="space-y-3 text-slate-500 dark:text-slate-400 leading-relaxed">
         <li class="flex gap-3">
           <span class="w-6 h-6 rounded-full bg-primary-bg text-primary flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">1</span>
-          <span><strong class="text-slate-700">Study daily.</strong> Even 5-10 minutes of daily review beats cramming for an hour once a week. Consistency builds stable memories.</span>
+          <span><strong class="text-slate-700 dark:text-slate-300">Study daily.</strong> Even 5-10 minutes of daily review beats cramming for an hour once a week. Consistency builds stable memories.</span>
         </li>
         <li class="flex gap-3">
           <span class="w-6 h-6 rounded-full bg-primary-bg text-primary flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">2</span>
-          <span><strong class="text-slate-700">Be honest with your ratings.</strong> If you barely remembered, tap "Hard." If it was instant, tap "Easy." Accurate ratings help FSRS schedule optimally.</span>
+          <span><strong class="text-slate-700 dark:text-slate-300">Be honest with your ratings.</strong> If you barely remembered, tap "Hard." If it was instant, tap "Easy." Accurate ratings help FSRS schedule optimally.</span>
         </li>
         <li class="flex gap-3">
           <span class="w-6 h-6 rounded-full bg-primary-bg text-primary flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">3</span>
-          <span><strong class="text-slate-700">Keep cards simple.</strong> One concept per card is ideal. Complex cards are harder to remember and harder for the algorithm to schedule.</span>
+          <span><strong class="text-slate-700 dark:text-slate-300">Keep cards simple.</strong> One concept per card is ideal. Complex cards are harder to remember and harder for the algorithm to schedule.</span>
         </li>
         <li class="flex gap-3">
           <span class="w-6 h-6 rounded-full bg-primary-bg text-primary flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">4</span>
-          <span><strong class="text-slate-700">Use mnemonics.</strong> Enable AI-powered visual mnemonics for tricky words. A memorable image can boost retention dramatically.</span>
+          <span><strong class="text-slate-700 dark:text-slate-300">Use mnemonics.</strong> Enable AI-powered visual mnemonics for tricky words. A memorable image can boost retention dramatically.</span>
         </li>
       </ul>
     </section>
 
     <!-- CTA -->
     <div class="text-center reveal-up">
-      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">Put science to work</h2>
-      <p class="text-slate-500 mb-8">Start learning with an algorithm that adapts to your memory.</p>
-      <a href="/app/" class="group inline-flex items-center gap-2.5 bg-primary text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg shadow-blue-200 hover:shadow-xl hover:shadow-blue-300 hover:bg-primary-hover active:scale-[0.97] transition-all duration-200">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-slate-100 mb-4">Put science to work</h2>
+      <p class="text-slate-500 dark:text-slate-400 mb-8">Start learning with an algorithm that adapts to your memory.</p>
+      <a href="/app/" class="group inline-flex items-center gap-2.5 bg-primary text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg shadow-green-200 hover:shadow-xl hover:shadow-green-300 hover:bg-primary-hover active:scale-[0.97] transition-all duration-200">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
         Start Learning with FSRS
       </a>

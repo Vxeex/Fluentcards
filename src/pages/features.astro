@@ -2,27 +2,48 @@
 import "../styles/main.css"
 import Nav from "../components/Nav.astro"
 import Footer from "../components/Footer.astro"
+import ThemeInit from "../components/ThemeInit.astro"
 ---
 
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
+  <ThemeInit />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Features - FluentCards</title>
   <meta name="description" content="Explore all FluentCards features: FSRS spaced repetition, furigana support, native TTS pronunciation, AI mnemonics, community marketplace, and progress tracking — all free." />
   <link rel="canonical" href="https://fluentcards.org/features/" />
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Features - FluentCards" />
+  <meta property="og:description" content="Explore all FluentCards features: FSRS spaced repetition, furigana support, native TTS pronunciation, AI mnemonics, community marketplace, and progress tracking — all free." />
+  <meta property="og:url" content="https://fluentcards.org/features/" />
+  <meta property="og:site_name" content="FluentCards" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Features - FluentCards" />
+  <meta name="twitter:description" content="FSRS spaced repetition, furigana, TTS, AI mnemonics, and more — all free." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Features - FluentCards",
+    "description": "Explore all FluentCards features: FSRS spaced repetition, furigana support, native TTS pronunciation, AI mnemonics, community marketplace, and progress tracking — all free.",
+    "url": "https://fluentcards.org/features/",
+    "isPartOf": { "@type": "WebSite", "name": "FluentCards", "url": "https://fluentcards.org/" }
+  }
+  </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4482389932723468" crossorigin="anonymous"></script>
 </head>
-<body class="font-sans text-slate-700 bg-white antialiased overflow-x-hidden">
+<body class="font-sans text-slate-700 bg-white dark:bg-slate-950 dark:text-slate-400 antialiased overflow-x-hidden transition-colors duration-300">
 
 <Nav currentPath="/features/" />
 
 <main class="pt-32 pb-20 px-6">
   <div class="max-w-4xl mx-auto">
     <div class="text-center max-w-2xl mx-auto reveal-up">
-      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 mb-3">Everything You Need to Learn</h1>
-      <p class="text-lg text-slate-500 font-[500] mb-16">Powerful features designed for serious language learners — all completely free.</p>
+      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 mb-3">Everything You Need to Learn</h1>
+      <p class="text-lg text-slate-500 dark:text-slate-400 font-[500] mb-16">Powerful features designed for serious language learners — all completely free.</p>
     </div>
 
     <div class="space-y-16">
@@ -30,32 +51,110 @@ import Footer from "../components/Footer.astro"
       <section class="grid md:grid-cols-2 gap-8 items-center reveal-up delay-1">
         <div class="order-2 md:order-1">
           <span class="text-xs font-bold tracking-widest text-primary uppercase">Core Engine</span>
-          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2 mb-4">FSRS Spaced Repetition</h2>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-slate-100 mt-2 mb-4">FSRS Spaced Repetition</h2>
           <p class="text-slate-500 leading-relaxed mb-4">
-            FluentCards uses the <strong class="text-slate-700">Free Spaced Repetition Scheduler (FSRS)</strong>, a modern algorithm that replaces the traditional Anki SM-2 system. FSRS adapts to your memory by tracking three key metrics:
+            The <strong class="text-slate-700 dark:text-slate-300">Ebbinghaus Forgetting Curve</strong> shows that without review, we forget ~50% of new information within hours. FluentCards counteracts this with the <strong class="text-slate-700 dark:text-slate-300">Free Spaced Repetition Scheduler (FSRS)</strong> — a modern algorithm that replaces the traditional SM-2 system. By reviewing cards at optimal moments, FSRS keeps your memory retention high with fewer reviews overall.
           </p>
+          <p class="text-slate-500 leading-relaxed mb-4">FSRS adapts to your memory by tracking three key metrics:</p>
           <ul class="space-y-3 text-slate-500">
             <li class="flex gap-3">
               <span class="w-6 h-6 rounded-full bg-primary-bg text-primary flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">S</span>
-              <span><strong class="text-slate-700">Stability</strong> — How long the memory will last. FSRS increases stability for cards you recall easily.</span>
+              <span><strong class="text-slate-700 dark:text-slate-300">Stability</strong> — How long the memory will last. FSRS increases stability for cards you recall easily.</span>
             </li>
             <li class="flex gap-3">
               <span class="w-6 h-6 rounded-full bg-primary-bg text-primary flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">D</span>
-              <span><strong class="text-slate-700">Difficulty</strong> — How hard the card is intrinsically. Difficult cards appear more often.</span>
+              <span><strong class="text-slate-700 dark:text-slate-300">Difficulty</strong> — How hard the card is intrinsically. Difficult cards appear more often.</span>
             </li>
             <li class="flex gap-3">
               <span class="w-6 h-6 rounded-full bg-primary-bg text-primary flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">R</span>
-              <span><strong class="text-slate-700">Retrievability</strong> — The probability you'll remember the card today. Reviews trigger when it drops below target.</span>
+              <span><strong class="text-slate-700 dark:text-slate-300">Retrievability</strong> — The probability you'll remember the card today. Reviews trigger when it drops below target.</span>
             </li>
           </ul>
         </div>
-        <div class="order-1 md:order-2 bg-slate-50 rounded-2xl p-8 border border-slate-200">
-          <div class="text-center">
-            <div class="w-16 h-16 rounded-xl bg-primary flex items-center justify-center mx-auto mb-4">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-            </div>
-            <p class="text-sm text-slate-400 font-semibold mb-1">FSRS-5 Algorithm</p>
-            <p class="text-2xl font-bold text-slate-900">Up to 2x fewer reviews</p>
+        <div class="order-1 md:order-2 bg-white dark:bg-slate-800 rounded-2xl p-6 sm:p-8 border border-slate-200 dark:border-slate-600">
+          <div class="text-center mb-4">
+            <p class="text-sm text-slate-400 font-semibold">Ebbinghaus Forgetting Curve</p>
+            <p class="text-xs text-slate-400">How FSRS reviews counteract natural memory decay</p>
+          </div>
+          <!-- Forgetting Curve SVG -->
+          <svg viewBox="0 0 400 250" class="w-full max-w-[360px] mx-auto" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="curveFade" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#0fbd4f" stop-opacity="0.2"/>
+                <stop offset="100%" stop-color="#0fbd4f" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="curveFadeGray" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#94a3b8" stop-opacity="0.15"/>
+                <stop offset="100%" stop-color="#94a3b8" stop-opacity="0"/>
+              </linearGradient>
+              <filter id="shadow1" x="-20%" y="-20%" width="140%" height="140%">
+                <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#0fbd4f" flood-opacity="0.3"/>
+              </filter>
+            </defs>
+
+            <!-- Grid -->
+            <line x1="55" y1="215" x2="375" y2="215" stroke="#e2e8f0" stroke-width="1"/>
+            <line x1="55" y1="165" x2="375" y2="165" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3,4"/>
+            <line x1="55" y1="115" x2="375" y2="115" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3,4"/>
+            <line x1="55" y1="65" x2="375" y2="65" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3,4"/>
+            <line x1="55" y1="15" x2="375" y2="15" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3,4"/>
+
+            <!-- Axes -->
+            <line x1="55" y1="10" x2="55" y2="215" stroke="#cbd5e1" stroke-width="1.5"/>
+            <line x1="55" y1="215" x2="375" y2="215" stroke="#cbd5e1" stroke-width="1.5"/>
+
+            <!-- Y-axis labels -->
+            <text x="50" y="218" text-anchor="end" class="text-[9px] fill-slate-400" font-family="Inter, sans-serif">0%</text>
+            <text x="50" y="168" text-anchor="end" class="text-[9px] fill-slate-400" font-family="Inter, sans-serif">25%</text>
+            <text x="50" y="118" text-anchor="end" class="text-[9px] fill-slate-400" font-family="Inter, sans-serif">50%</text>
+            <text x="50" y="68" text-anchor="end" class="text-[9px] fill-slate-400" font-family="Inter, sans-serif">75%</text>
+            <text x="50" y="18" text-anchor="end" class="text-[9px] fill-slate-400" font-family="Inter, sans-serif">100%</text>
+
+            <!-- X-axis labels -->
+            <text x="55" y="230" text-anchor="middle" class="text-[9px] fill-slate-400" font-family="Inter, sans-serif">0</text>
+            <text x="100" y="230" text-anchor="middle" class="text-[9px] fill-slate-400" font-family="Inter, sans-serif">1</text>
+            <text x="146" y="230" text-anchor="middle" class="text-[9px] fill-slate-400" font-family="Inter, sans-serif">2</text>
+            <text x="192" y="230" text-anchor="middle" class="text-[9px] fill-slate-400" font-family="Inter, sans-serif">3</text>
+            <text x="238" y="230" text-anchor="middle" class="text-[9px] fill-slate-400" font-family="Inter, sans-serif">4</text>
+            <text x="284" y="230" text-anchor="middle" class="text-[9px] fill-slate-400" font-family="Inter, sans-serif">5</text>
+            <text x="330" y="230" text-anchor="middle" class="text-[9px] fill-slate-400" font-family="Inter, sans-serif">6</text>
+            <text x="370" y="230" text-anchor="middle" class="text-[9px] fill-slate-400" font-family="Inter, sans-serif">7</text>
+            <text x="215" y="247" text-anchor="middle" class="text-[9px] fill-slate-400" font-family="Inter, sans-serif">Days</text>
+
+            <!-- Natural forgetting curve area fill -->
+            <path d="M55 10 Q72 85 96 132 Q120 150 146 156 Q192 163 284 166 Q330 167 370 168 L370 215 L55 215 Z"
+                  fill="url(#curveFadeGray)"/>
+
+            <!-- Natural forgetting curve (gray) -->
+            <path d="M55 10 Q72 85 96 132 Q120 150 146 156 Q192 163 284 166 Q330 167 370 168"
+                  fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6,3"/>
+
+            <!-- Label: Without review -->
+            <text x="280" y="178" text-anchor="start" class="text-[9px] fill-slate-400" font-family="Inter, sans-serif">without review</text>
+
+            <!-- FSRS curve area fill -->
+            <path d="M55 10 Q80 28 100 38 Q130 50 146 55 Q180 62 220 65 Q260 67 300 68 Q340 68 370 69 L370 215 L55 215 Z"
+                  fill="url(#curveFade)"/>
+
+            <!-- FSRS curve (green) -->
+            <path d="M55 10 Q80 28 100 38 Q130 50 146 55 Q180 62 220 65 Q260 67 300 68 Q340 68 370 69"
+                  fill="none" stroke="#0fbd4f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow1)"/>
+
+            <!-- Review markers on FSRS curve -->
+            <circle cx="100" cy="38" r="3.5" fill="#0fbd4f" stroke="white" stroke-width="1.5"/>
+            <circle cx="146" cy="55" r="3.5" fill="#0fbd4f" stroke="white" stroke-width="1.5"/>
+            <circle cx="192" cy="63" r="3.5" fill="#0fbd4f" stroke="white" stroke-width="1.5"/>
+            <circle cx="260" cy="67" r="3.5" fill="#0fbd4f" stroke="white" stroke-width="1.5"/>
+            <circle cx="330" cy="68" r="3.5" fill="#0fbd4f" stroke="white" stroke-width="1.5"/>
+
+            <!-- Label: With FSRS -->
+            <text x="260" y="80" text-anchor="start" class="text-[9px] font-bold fill-primary" font-family="Inter, sans-serif">with FSRS reviews</text>
+
+            <!-- Arrow on natural curve -->
+            <line x1="140" y1="168" x2="140" y2="158" stroke="#94a3b8" stroke-width="1" marker-end="url(#arrowGray)"/>
+          </svg>
+          <div class="text-center mt-4">
+            <p class="text-2xl font-bold text-slate-900 dark:text-slate-100">Up to 2x fewer reviews</p>
             <p class="text-sm text-slate-500 mt-1">vs. traditional spaced repetition systems</p>
           </div>
         </div>
@@ -63,18 +162,18 @@ import Footer from "../components/Footer.astro"
 
       <!-- Furigana Support -->
       <section class="grid md:grid-cols-2 gap-8 items-center reveal-up delay-2">
-        <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-600">
           <div class="text-center">
             <div class="w-16 h-16 rounded-xl bg-primary flex items-center justify-center mx-auto mb-4">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
             </div>
-            <ruby class="text-3xl font-bold text-slate-900">漢字<rt class="text-primary text-sm">かんじ</rt></ruby>
+            <ruby class="text-3xl font-bold text-slate-900 dark:text-slate-100">漢字<rt class="text-primary text-sm">かんじ</rt></ruby>
             <p class="text-sm text-slate-400 font-semibold mt-3">Automatic Ruby Annotation Rendering</p>
           </div>
         </div>
         <div>
           <span class="text-xs font-bold tracking-widest text-primary uppercase">Japanese Learning</span>
-          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2 mb-4">Smart Furigana Rendering</h2>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-slate-100 mt-2 mb-4">Smart Furigana Rendering</h2>
           <p class="text-slate-500 leading-relaxed mb-4">
             Type kanji with furigana using the simple <code class="bg-slate-100 text-slate-700 px-1.5 py-0.5 rounded text-sm font-semibold">漢字[かんじ]</code> syntax and FluentCards renders it beautifully with browser-native ruby annotations.
           </p>
@@ -94,7 +193,7 @@ import Footer from "../components/Footer.astro"
       <section class="grid md:grid-cols-2 gap-8 items-center reveal-up delay-3">
         <div class="order-2 md:order-1">
           <span class="text-xs font-bold tracking-widest text-primary uppercase">Audio Learning</span>
-          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2 mb-4">Native TTS Pronunciation</h2>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-slate-100 mt-2 mb-4">Native TTS Pronunciation</h2>
           <p class="text-slate-500 leading-relaxed mb-4">
             Hear how words are pronounced by native speakers using Microsoft Edge's neural TTS engine. Supports Japanese, Chinese, Korean, Spanish, French, German, and many more languages.
           </p>
@@ -108,20 +207,20 @@ import Footer from "../components/Footer.astro"
             <li>Manual playback with one tap</li>
           </ul>
         </div>
-        <div class="order-1 md:order-2 bg-slate-50 rounded-2xl p-8 border border-slate-200">
+        <div class="order-1 md:order-2 bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-600">
           <div class="text-center">
             <div class="w-16 h-16 rounded-xl bg-primary flex items-center justify-center mx-auto mb-4">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polygon points="11 5 6 9 2 8 14 13 10 16 6 4 9 3 18 0 12 8"/><path d="M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6"/></svg>
             </div>
-            <p class="text-2xl font-bold text-slate-900">Microsoft Edge TTS</p>
+            <p class="text-2xl font-bold text-slate-900 dark:text-slate-100">Microsoft Edge TTS</p>
             <p class="text-sm text-slate-500 mt-1">Neural text-to-speech with native voices</p>
             <div class="flex flex-wrap justify-center gap-2 mt-4">
-              <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-semibold text-slate-600">ja-JP</span>
-              <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-semibold text-slate-600">ko-KR</span>
-              <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-semibold text-slate-600">zh-CN</span>
-              <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-semibold text-slate-600">es-ES</span>
-              <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-semibold text-slate-600">fr-FR</span>
-              <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-semibold text-slate-600">de-DE</span>
+              <span class="px-3 py-1 bg-white dark:bg-slate-800 border border-slate-200 rounded-full text-xs font-semibold text-slate-600 dark:text-slate-300">ja-JP</span>
+              <span class="px-3 py-1 bg-white dark:bg-slate-800 border border-slate-200 rounded-full text-xs font-semibold text-slate-600 dark:text-slate-300">ko-KR</span>
+              <span class="px-3 py-1 bg-white dark:bg-slate-800 border border-slate-200 rounded-full text-xs font-semibold text-slate-600 dark:text-slate-300">zh-CN</span>
+              <span class="px-3 py-1 bg-white dark:bg-slate-800 border border-slate-200 rounded-full text-xs font-semibold text-slate-600 dark:text-slate-300">es-ES</span>
+              <span class="px-3 py-1 bg-white dark:bg-slate-800 border border-slate-200 rounded-full text-xs font-semibold text-slate-600 dark:text-slate-300">fr-FR</span>
+              <span class="px-3 py-1 bg-white dark:bg-slate-800 border border-slate-200 rounded-full text-xs font-semibold text-slate-600 dark:text-slate-300">de-DE</span>
             </div>
           </div>
         </div>
@@ -129,20 +228,20 @@ import Footer from "../components/Footer.astro"
 
       <!-- AI Mnemonics -->
       <section class="grid md:grid-cols-2 gap-8 items-center reveal-up delay-1">
-        <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-600">
           <div class="text-center">
             <div class="w-16 h-16 rounded-xl bg-primary flex items-center justify-center mx-auto mb-4">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-1.04A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-1.04A2.5 2.5 0 0 0 14.5 2Z"/></svg>
             </div>
-            <p class="text-sm text-slate-400 font-semibold">Powered by Google Gemini AI</p>
-            <p class="text-2xl font-bold text-slate-900 mt-2">Visual Memory Aids</p>
+            <p class="text-sm text-slate-400 font-semibold">AI-Generated Visual Memory Aids</p>
+            <p class="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-2">Visual Memory Aids</p>
           </div>
         </div>
         <div>
           <span class="text-xs font-bold tracking-widest text-primary uppercase">AI Features</span>
-          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2 mb-4">AI-Generated Mnemonics</h2>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-slate-100 mt-2 mb-4">AI-Generated Mnemonics</h2>
           <p class="text-slate-500 leading-relaxed mb-4">
-            Struggling with a difficult word? Gemini AI automatically generates visual mnemonics to help you remember. Each mnemonic is a custom illustration tied to the meaning, making abstract concepts stick.
+            Struggling with a difficult word? AI-powered image generation creates visual mnemonics to help you remember. Each mnemonic is a custom illustration tied to the meaning, making abstract concepts stick.
           </p>
           <p class="text-slate-500 leading-relaxed">
             Toggle AI mnemonics per card — perfect for complex kanji, tricky vocabulary, or any concept that needs an extra memory hook.
@@ -154,7 +253,7 @@ import Footer from "../components/Footer.astro"
       <section class="grid md:grid-cols-2 gap-8 items-center reveal-up delay-2">
         <div class="order-2 md:order-1">
           <span class="text-xs font-bold tracking-widest text-primary uppercase">Analytics</span>
-          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2 mb-4">Review History & Stats</h2>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-slate-100 mt-2 mb-4">Review History & Stats</h2>
           <p class="text-slate-500 leading-relaxed mb-4">
             Track your learning journey with detailed FSRS metrics. See how your memory stability improves over time, which cards are最难 (most difficult), and your projected retention rate.
           </p>
@@ -165,7 +264,7 @@ import Footer from "../components/Footer.astro"
             <li>Card-by-card progress</li>
           </ul>
         </div>
-        <div class="order-1 md:order-2 bg-slate-50 rounded-2xl p-8 border border-slate-200">
+        <div class="order-1 md:order-2 bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-600">
           <div class="text-center">
             <div class="w-16 h-16 rounded-xl bg-primary flex items-center justify-center mx-auto mb-4">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -176,18 +275,18 @@ import Footer from "../components/Footer.astro"
 
       <!-- Community Marketplace -->
       <section class="grid md:grid-cols-2 gap-8 items-center reveal-up delay-3">
-        <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-600">
           <div class="text-center">
             <div class="w-16 h-16 rounded-xl bg-primary flex items-center justify-center mx-auto mb-4">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><circle cx="12" cy="12" r="10"/><path d="m8 14 4-4 4 4"/></svg>
             </div>
             <p class="text-sm text-slate-400 font-semibold">Shared Learning</p>
-            <p class="text-2xl font-bold text-slate-900 mt-2">Discover & Clone Decks</p>
+            <p class="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-2">Discover & Clone Decks</p>
           </div>
         </div>
         <div>
           <span class="text-xs font-bold tracking-widest text-primary uppercase">Marketplace</span>
-          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2 mb-4">Community Marketplace</h2>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-slate-100 mt-2 mb-4">Community Marketplace</h2>
           <p class="text-slate-500 leading-relaxed mb-4">
             Browse public decks shared by the FluentCards community. From JLPT vocabulary to Spanish phrases, find ready-made decks and clone them to your library instantly.
           </p>
@@ -200,9 +299,9 @@ import Footer from "../components/Footer.astro"
 
     <!-- CTA -->
     <div class="mt-20 text-center reveal-up">
-      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">Ready to try these features?</h2>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-slate-100 mb-4">Ready to try these features?</h2>
       <p class="text-slate-500 mb-8">All features are free. No subscriptions, no trials, no hidden charges.</p>
-      <a href="/app/" class="group inline-flex items-center gap-2.5 bg-primary text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg shadow-blue-200 hover:shadow-xl hover:shadow-blue-300 hover:bg-primary-hover active:scale-[0.97] transition-all duration-200">
+      <a href="/app/" class="group inline-flex items-center gap-2.5 bg-primary text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg shadow-green-200 hover:shadow-xl hover:shadow-green-300 hover:bg-primary-hover active:scale-[0.97] transition-all duration-200">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
         Start Learning Free
       </a>

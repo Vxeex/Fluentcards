@@ -1,5 +1,8 @@
 ---
 // FluentCards React SPA — served at /app/
+// This is a client-rendered app (requires authentication), so we use noindex
+// to avoid Search Console seeing an empty shell. The marketing pages (/, /features/, /blog/*)
+// contain the SEO content for the site.
 import '../../fluentcards/index.css';
 import FluentCardsApp from '../../fluentcards/App';
 ---
@@ -12,12 +15,22 @@ import FluentCardsApp from '../../fluentcards/App';
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="theme-color" content="#f8fafc" />
-    <title>FluentCards - Flashcard App</title>
+    <meta name="description" content="FluentCards flashcard app — study with spaced repetition. Sign in with Google to create decks, practice vocabulary, and track your progress." />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="canonical" href="https://fluentcards.org/app/" />
+    <title>FluentCards - Free Flashcard App for Language Learning</title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4482389932723468" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="root">
       <FluentCardsApp client:only="react" />
     </div>
+    <noscript>
+      <div style="padding: 2rem; max-width: 600px; margin: 0 auto; text-align: center; font-family: sans-serif;">
+        <h1>FluentCards</h1>
+        <p>FluentCards is a free flashcard app for language learning. Please enable JavaScript to use the app.</p>
+        <p><a href="/">Learn more about FluentCards</a></p>
+      </div>
+    </noscript>
   </body>
 </html>

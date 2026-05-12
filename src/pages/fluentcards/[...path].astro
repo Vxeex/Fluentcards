@@ -1,4 +1,17 @@
 ---
-// Redirect old /fluentcards/ paths to /app/
-return Astro.redirect('/app/', 301);
+// This route has been replaced by /app/.
+// We keep this file minimal so crawlers see a noindex response
+// instead of a redirect that confuses Search Console.
 ---
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="noindex" />
+  <title>FluentCards</title>
+  <link rel="canonical" href="https://fluentcards.org/app/" />
+  <meta http-equiv="refresh" content="0; url=/app/" />
+</head>
+<body>
+  <p>Redirecting to <a href="/app/">/app/</a>...</p>
+</body>
+</html>
