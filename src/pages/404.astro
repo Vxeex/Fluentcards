@@ -1,0 +1,46 @@
+---
+import "../styles/main.css"
+import Nav from "../components/Nav.astro"
+import Footer from "../components/Footer.astro"
+import ThemeInit from "../components/ThemeInit.astro"
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <ThemeInit />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found - FluentCards</title>
+  <meta name="description" content="The page you are looking for does not exist. Browse our free flashcard app or language learning guides." />
+  <link rel="canonical" href="https://fluentcards.org/404/" />
+  <meta name="robots" content="noindex" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4482389932723468" crossorigin="anonymous"></script>
+</head>
+<body class="font-sans text-slate-700 bg-white dark:bg-surface-dark dark:text-slate-400 antialiased overflow-x-hidden transition-colors duration-300">
+<Nav currentPath="/404/" />
+<main class="min-h-[60vh] flex items-center justify-center px-6">
+  <div class="text-center max-w-lg">
+    <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-teal-400/20 flex items-center justify-center mx-auto mb-6 border border-primary/20">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+        <circle cx="12" cy="12" r="10"/><path d="M16 16s-1.5-2-4-2-4 2-4 2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/>
+      </svg>
+    </div>
+    <h1 class="text-5xl font-black tracking-tight text-slate-900 dark:text-slate-100 mb-3">404</h1>
+    <p class="text-lg text-slate-500 font-[500] mb-8">This page doesn't exist. It may have been moved or the link was incorrect.</p>
+    <div class="flex items-center justify-center gap-4 flex-wrap">
+      <a href="/" class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-xl font-bold shadow-lg shadow-primary/20 hover:shadow-xl hover:bg-primary-hover transition-all">
+        Go Home
+      </a>
+      <a href="/app/" class="inline-flex items-center gap-2 bg-white dark:bg-surface-card text-slate-700 dark:text-slate-300 px-6 py-3 rounded-xl font-bold border-2 border-primary/20 dark:border-emerald-900/30 hover:border-primary transition-all">
+        Open App
+      </a>
+    </div>
+    <div class="mt-8">
+      <a href="/blog/" class="text-sm font-semibold text-primary hover:text-primary-hover transition-colors">Browse language learning guides &rarr;</a>
+    </div>
+  </div>
+</main>
+<Footer />
+</body>
+</html>

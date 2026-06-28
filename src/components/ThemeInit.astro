@@ -1,0 +1,9 @@
+<!-- Theme initialization — runs before paint to prevent flash -->
+<script>
+(function() {
+  var theme = localStorage.getItem('fluentcards-ui-theme');
+  if (theme === 'dark' || (theme !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark');
+  }
+})();
+</script>
