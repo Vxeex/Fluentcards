@@ -7,9 +7,10 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && cp dist/server/entry.mjs dist/_worker.js && cp -r dist/server/chunks dist/chunks",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "ping-google": "node -e \"require('https').get('https://www.google.com/ping?sitemap=https://fluentcards.org/sitemap-index.xml', r => { r.on('data', () => {}); r.on('end', () => console.log('Pinged Google about sitemap update.')); }).on('error', e => console.error('Ping failed:', e.message));\""
   },
   "dependencies": {
     "@astrojs/cloudflare": "^13.5.0",
