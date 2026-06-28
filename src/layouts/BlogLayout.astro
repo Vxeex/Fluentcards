@@ -3,6 +3,7 @@ import "../styles/main.css"
 import Nav from "../components/Nav.astro"
 import Footer from "../components/Footer.astro"
 import ThemeInit from "../components/ThemeInit.astro"
+import { blogToDecks } from "../../src/fluentcards/data/contentRelations.ts";
 
 export interface Props {
   title: string;
@@ -16,6 +17,10 @@ export interface Props {
 
 const { title, description, canonical, headline, datePublished, readTime, tag } = Astro.props;
 const fullUrl = `https://fluentcards.org${canonical}`;
+
+// Extract slug from canonical path for content relations lookup
+const slug = canonical.replace(/\/blog\//, '').replace(/\/$/, '');
+const relatedDecks = blogToDecks[slug] || [];
 ---
 
 <!DOCTYPE html>
@@ -33,7 +38,11 @@ const fullUrl = `https://fluentcards.org${canonical}`;
   <meta property="og:description" content={description} />
   <meta property="og:url" content={fullUrl} />
   <meta property="og:site_name" content="FluentCards" />
+  <meta property="og:image" content="https://fluentcards.org/images/app-screenshot.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://fluentcards.org/images/app-screenshot.jpg" />
   <meta name="twitter:title" content={headline} />
   <meta name="twitter:description" content={description} />
   <script type="application/ld+json">
@@ -43,13 +52,15 @@ const fullUrl = `https://fluentcards.org${canonical}`;
     "headline": headline,
     "description": description,
     "datePublished": datePublished,
+    "dateModified": datePublished,
     "author": { "@type": "Organization", "name": "FluentCards" },
-    "publisher": { "@type": "Organization", "name": "FluentCards", "url": "https://fluentcards.org" }
+    "publisher": { "@type": "Organization", "name": "FluentCards", "url": "https://fluentcards.org" },
+    "mainEntityOfPage": fullUrl
   })}
   </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4482389932723468" crossorigin="anonymous"></script>
 </head>
-<body class="font-sans text-slate-700 bg-white dark:bg-slate-950 dark:text-slate-400 antialiased overflow-x-hidden transition-colors duration-300">
+<body class="font-sans text-slate-700 bg-white dark:bg-surface-dark dark:text-slate-400 antialiased overflow-x-hidden transition-colors duration-300">
 
 <Nav currentPath="/blog/" />
 
@@ -84,6 +95,43 @@ const fullUrl = `https://fluentcards.org${canonical}`;
       </a>
     </div>
 
+    <!-- Related Decks -->
+    {relatedDecks.length > 0 && (
+      <div class="mt-10 p-6 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30 rounded-xl border border-primary/10 dark:border-emerald-900/30 reveal-up">
+        <h3 class="text-base font-bold text-slate-800 dark:text-slate-200 mb-4">Practice with Flashcards</h3>
+        <div class="space-y-3">
+          {relatedDecks.map(deck => (
+            <a
+              href="/app/"
+              class="block p-4 bg-white dark:bg-surface-card rounded-lg border border-primary/10 dark:border-emerald-900/30 hover:border-primary/30 hover:shadow-md transition-all group"
+            >
+              <div class="font-bold text-sm text-slate-800 dark:text-slate-200 group-hover:text-primary transition-colors">{deck.name}</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">{deck.description}</div>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- Related Reading -->
+    <div class="mt-10 p-6 bg-gradient-to-br from-slate-50 to-green-50/50 dark:from-slate-800/50 dark:to-emerald-950/20 rounded-xl border border-slate-200 dark:border-slate-600/50 reveal-up">
+      <h3 class="text-base font-bold text-slate-800 dark:text-slate-200 mb-4">Related Reading</h3>
+      <div class="space-y-2">
+        <a href="/features/" class="block p-3 bg-white dark:bg-surface-card rounded-lg border border-slate-100 dark:border-slate-600 hover:border-primary/30 hover:shadow-md transition-all group">
+          <div class="font-semibold text-sm text-slate-800 dark:text-slate-200 group-hover:text-primary transition-colors">All Features</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400">Explore FSRS, furigana, TTS, and AI mnemonics</div>
+        </a>
+        <a href="/features/anki-alternative/" class="block p-3 bg-white dark:bg-surface-card rounded-lg border border-slate-100 dark:border-slate-600 hover:border-primary/30 hover:shadow-md transition-all group">
+          <div class="font-semibold text-sm text-slate-800 dark:text-slate-200 group-hover:text-primary transition-colors">FluentCards vs Anki</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400">See how FluentCards compares to Anki</div>
+        </a>
+        <a href="/guides/spaced-repetition-science/" class="block p-3 bg-white dark:bg-surface-card rounded-lg border border-slate-100 dark:border-slate-600 hover:border-primary/30 hover:shadow-md transition-all group">
+          <div class="font-semibold text-sm text-slate-800 dark:text-slate-200 group-hover:text-primary transition-colors">The Science of Spaced Repetition</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400">Learn why spaced repetition works</div>
+        </a>
+      </div>
+    </div>
+
     <!-- Back to Blog -->
     <div class="mt-8 text-center reveal-up">
       <a href="/blog/" class="inline-flex items-center gap-1.5 text-sm font-semibold text-slate-400 hover:text-primary transition-colors">
@@ -102,7 +150,7 @@ const observer = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) entry.target.classList.add('visible');
   });
 }, { threshold: 0.1 });
-document.querySelectorAll('.reveal-up').forEach(el => observer.observe(el));
+document.querySelectorAll('.reveal-up, .reveal-pop, .reveal-scale').forEach(el => observer.observe(el));
 </script>
 </body>
 </html>

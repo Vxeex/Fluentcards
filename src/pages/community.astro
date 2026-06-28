@@ -35,7 +35,7 @@ import ThemeInit from "../components/ThemeInit.astro"
   </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4482389932723468" crossorigin="anonymous"></script>
 </head>
-<body class="font-sans text-slate-700 bg-white dark:bg-slate-950 dark:text-slate-400 antialiased overflow-x-hidden transition-colors duration-300">
+<body class="font-sans text-slate-700 bg-white dark:bg-surface-dark dark:text-slate-400 antialiased overflow-x-hidden transition-colors duration-300">
 
 <Nav currentPath="/community/" />
 
@@ -159,11 +159,11 @@ import ThemeInit from "../components/ThemeInit.astro"
 
     <!-- CTA -->
     <div class="text-center reveal-up">
-      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-slate-100 mb-4">Be part of something bigger</h2>
-      <p class="text-slate-500 mb-8">Create your first deck and join learners around the world.</p>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-slate-100 mb-4">Start learning today</h2>
+      <p class="text-slate-500 mb-8">Create your first deck and discover what other learners have shared.</p>
       <a href="/app/" class="group inline-flex items-center gap-2.5 bg-primary text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg shadow-green-200 hover:shadow-xl hover:shadow-green-300 hover:bg-primary-hover active:scale-[0.97] transition-all duration-200">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-        Join the Community
+        Open FluentCards
       </a>
     </div>
   </div>
@@ -177,7 +177,7 @@ const observer = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) entry.target.classList.add('visible');
   });
 }, { threshold: 0.1 });
-document.querySelectorAll('.reveal-up').forEach(el => observer.observe(el));
+document.querySelectorAll('.reveal-up, .reveal-pop, .reveal-scale').forEach(el => observer.observe(el));
 </script>
 </body>
 </html>

@@ -40,7 +40,7 @@ import ThemeInit from "../components/ThemeInit.astro"
   </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4482389932723468" crossorigin="anonymous"></script>
 </head>
-<body class="font-sans text-slate-700 bg-white dark:bg-slate-900 dark:text-slate-400 antialiased overflow-x-hidden transition-colors duration-300">
+<body class="font-sans text-slate-700 bg-white dark:bg-surface-dark dark:text-slate-400 antialiased overflow-x-hidden transition-colors duration-300">
 
 <Nav currentPath="/pricing/" />
 
@@ -252,6 +252,7 @@ import ThemeInit from "../components/ThemeInit.astro"
       </a>
     </div>
   </div>
+
 </main>
 
 <Footer />
@@ -262,7 +263,7 @@ const observer = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) entry.target.classList.add('visible');
   });
 }, { threshold: 0.1 });
-document.querySelectorAll('.reveal-up').forEach(el => observer.observe(el));
+document.querySelectorAll('.reveal-up, .reveal-pop, .reveal-scale').forEach(el => observer.observe(el));
 </script>
 </body>
 </html>

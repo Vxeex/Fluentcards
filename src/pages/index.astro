@@ -11,17 +11,21 @@ import ThemeInit from "../components/ThemeInit.astro"
   <meta charset="UTF-8" />
   <ThemeInit />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FluentCards - Smart Flashcard App for Language Learning</title>
-  <meta name="description" content="FluentCards is a free flashcard app for learning Japanese, Korean, Spanish, and more. Features spaced repetition, furigana, TTS pronunciation, and AI-powered mnemonics." />
-  <meta name="keywords" content="flashcard app, language learning, japanese study, korean vocabulary, spanish flashcards, spaced repetition, anki alternative, furigana, tts pronunciation" />
+  <title>FluentCards - Free Anki Alternative for Language Learning (No Account Needed)</title>
+  <meta name="description" content="FluentCards is a free flashcard app for learning Japanese, Korean, Spanish, and more. Features FSRS spaced repetition, furigana, TTS pronunciation, and AI mnemonics. No account required. A great Anki alternative." />
+  <meta name="keywords" content="free flashcard app, language learning, spaced repetition app, anki alternative, japanese study, korean vocabulary, spanish flashcards, fsrs algorithm, furigana, tts pronunciation, best flashcard app, no account needed" />
   <link rel="canonical" href="https://fluentcards.org/" />
   <!-- Open Graph / Social -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="FluentCards - Smart Flashcard App for Language Learning" />
-  <meta property="og:description" content="FluentCards is a free flashcard app for learning Japanese, Korean, Spanish, and more. Features spaced repetition, furigana, TTS pronunciation, and AI-powered mnemonics." />
+  <meta property="og:title" content="FluentCards - Free Flashcard App (No Account Needed)" />
+  <meta property="og:description" content="FluentCards is a free flashcard app with FSRS spaced repetition, TTS pronunciation, furigana, and AI mnemonics. No account required. The best free Anki alternative." />
   <meta property="og:url" content="https://fluentcards.org/" />
   <meta property="og:site_name" content="FluentCards" />
+  <meta property="og:image" content="https://fluentcards.org/images/app-screenshot.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://fluentcards.org/images/app-screenshot.jpg" />
   <meta name="twitter:title" content="FluentCards - Smart Flashcard App for Language Learning" />
   <meta name="twitter:description" content="Free flashcard app with spaced repetition for Japanese, Korean, Spanish, and more." />
   <script type="application/ld+json">
@@ -82,7 +86,7 @@ import ThemeInit from "../components/ThemeInit.astro"
     </div>
 
     <h1 class="text-[3rem] sm:text-5xl lg:text-6xl xl:text-7xl font-black leading-[1.06] tracking-tight text-slate-900 dark:text-slate-100">
-      Master languages with<br class="hidden xs:inline" /> <span class="bg-gradient-to-r from-primary via-primary to-teal-400 bg-clip-text text-transparent">smart</span> flashcards
+      The free Anki alternative<br class="hidden xs:inline" /> for <span class="bg-gradient-to-r from-primary via-primary to-teal-400 bg-clip-text text-transparent">smart</span> flashcards
     </h1>
 
     <p class="mt-6 text-xl sm:text-2xl text-slate-500 max-w-2xl mx-auto leading-relaxed font-[500]">
@@ -99,10 +103,62 @@ import ThemeInit from "../components/ThemeInit.astro"
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m7 15 5-5 5 5"/></svg>
       </a>
     </div>
+
+    <!-- App screenshot -->
+    <div class="mt-16 max-w-4xl mx-auto px-4 reveal-up">
+      <div class="relative">
+        <div class="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent dark:from-primary/5 rounded-[24px] blur-2xl pointer-events-none"></div>
+        <!-- Device frame -->
+        <div class="relative bg-slate-50 dark:bg-slate-900 rounded-[24px] shadow-2xl shadow-primary/15 dark:shadow-primary/10 p-3">
+          <!-- Browser bar -->
+          <div class="flex items-center gap-2 px-3 pb-3">
+            <div class="w-3 h-3 rounded-full bg-rose-400"></div>
+            <div class="w-3 h-3 rounded-full bg-amber-400"></div>
+            <div class="w-3 h-3 rounded-full bg-emerald-400"></div>
+            <div class="ml-3 h-5 flex-1 max-w-[180px] rounded-md bg-slate-200 dark:bg-slate-700"></div>
+          </div>
+          <!-- Screenshot -->
+          <div class="rounded-[16px] overflow-hidden">
+            <img
+              src="/images/app-screenshot.jpg"
+              alt="FluentCards flashcard app showing vocabulary decks and study interface"
+              class="w-full h-auto block"
+              loading="lazy"
+              width="1200"
+              height="675"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Bottom gradient fade -->
   <div class="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-white to-transparent dark:from-surface-dark pointer-events-none"></div>
+</section>
+
+<!-- ========== Trust Signals ========== -->
+<section class="py-16 sm:py-20 px-6 bg-gradient-to-b from-white to-green-50/30 dark:from-surface-dark dark:to-[#051510]">
+  <div class="max-w-5xl mx-auto">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-5">
+      <div class="bg-white/80 dark:bg-surface-card/80 backdrop-blur-sm rounded-2xl p-5 sm:p-6 border border-primary/10 dark:border-emerald-900/30 text-center hover:shadow-lg hover:shadow-primary/10 dark:hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-300 reveal-pop delay-1">
+        <div class="text-2xl sm:text-3xl font-black text-primary mb-1">20+</div>
+        <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium">Languages</p>
+      </div>
+      <div class="bg-white/80 dark:bg-surface-card/80 backdrop-blur-sm rounded-2xl p-5 sm:p-6 border border-primary/10 dark:border-emerald-900/30 text-center hover:shadow-lg hover:shadow-primary/10 dark:hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-300 reveal-pop delay-2">
+        <div class="text-2xl sm:text-3xl font-black text-primary mb-1">0</div>
+        <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium">Ads in app</p>
+      </div>
+      <div class="bg-white/80 dark:bg-surface-card/80 backdrop-blur-sm rounded-2xl p-5 sm:p-6 border border-primary/10 dark:border-emerald-900/30 text-center hover:shadow-lg hover:shadow-primary/10 dark:hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-300 reveal-pop delay-3">
+        <div class="text-2xl sm:text-3xl font-black text-primary mb-1">50+</div>
+        <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium">Countries</p>
+      </div>
+      <div class="bg-white/80 dark:bg-surface-card/80 backdrop-blur-sm rounded-2xl p-5 sm:p-6 border border-primary/10 dark:border-emerald-900/30 text-center hover:shadow-lg hover:shadow-primary/10 dark:hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-300 reveal-pop delay-4">
+        <div class="text-2xl sm:text-3xl font-black text-primary mb-1">$0</div>
+        <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium">Free forever</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- ========== Features ========== -->
@@ -124,31 +180,31 @@ import ThemeInit from "../components/ThemeInit.astro"
       </a>
 
       <!-- Feature 2 -->
-      <div class="group bg-white/80 dark:bg-surface-card/80 backdrop-blur-sm rounded-2xl p-8 border border-primary/10 dark:border-emerald-900/30 hover:border-primary/30 dark:hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 dark:hover:shadow-primary/5 hover:-translate-y-2 transition-all duration-300 reveal-pop delay-2">
+      <a href="/blog/furigana-guide/" class="group bg-white/80 dark:bg-surface-card/80 backdrop-blur-sm rounded-2xl p-8 border border-primary/10 dark:border-emerald-900/30 hover:border-primary/30 dark:hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 dark:hover:shadow-primary/5 hover:-translate-y-2 transition-all duration-300 reveal-pop delay-2">
         <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-emerald-600 flex items-center justify-center text-white shadow-md shadow-primary/20 mb-5">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
         </div>
         <h3 class="text-lg font-extrabold text-slate-800 dark:text-slate-200 mb-1.5">Furigana Support</h3>
         <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Automatically adds reading aids to Japanese text. Just type 漢字[かんじ] and it renders beautifully with ruby annotations.</p>
-      </div>
+      </a>
 
       <!-- Feature 3 -->
-      <div class="group bg-white/80 dark:bg-surface-card/80 backdrop-blur-sm rounded-2xl p-8 border border-primary/10 dark:border-emerald-900/30 hover:border-primary/30 dark:hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 dark:hover:shadow-primary/5 hover:-translate-y-2 transition-all duration-300 reveal-pop delay-3">
+      <a href="/blog/japanese-pronunciation-guide/" class="group bg-white/80 dark:bg-surface-card/80 backdrop-blur-sm rounded-2xl p-8 border border-primary/10 dark:border-emerald-900/30 hover:border-primary/30 dark:hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 dark:hover:shadow-primary/5 hover:-translate-y-2 transition-all duration-300 reveal-pop delay-3">
         <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-emerald-600 flex items-center justify-center text-white shadow-md shadow-primary/20 mb-5">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 8 14 13 10 16 6 4 9 3 18 0 12 8"/><path d="M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6"/></svg>
         </div>
         <h3 class="text-lg font-extrabold text-slate-800 dark:text-slate-200 mb-1.5">Native TTS Pronunciation</h3>
         <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Hear correct pronunciation with Microsoft Edge TTS engine. Adjust speed and auto-play on cards.</p>
-      </div>
+      </a>
 
       <!-- Feature 4 -->
-      <div class="group bg-white/80 dark:bg-surface-card/80 backdrop-blur-sm rounded-2xl p-8 border border-primary/10 dark:border-emerald-900/30 hover:border-primary/30 dark:hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 dark:hover:shadow-primary/5 hover:-translate-y-2 transition-all duration-300 reveal-pop delay-1">
+      <a href="/blog/bizarre-mnemonics/" class="group bg-white/80 dark:bg-surface-card/80 backdrop-blur-sm rounded-2xl p-8 border border-primary/10 dark:border-emerald-900/30 hover:border-primary/30 dark:hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 dark:hover:shadow-primary/5 hover:-translate-y-2 transition-all duration-300 reveal-pop delay-1">
         <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-emerald-600 flex items-center justify-center text-white shadow-md shadow-primary/20 mb-5">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-1.04A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-1.04A2.5 2.5 0 0 0 14.5 2Z"/></svg>
         </div>
         <h3 class="text-lg font-extrabold text-slate-800 dark:text-slate-200 mb-1.5">AI Mnemonics</h3>
         <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">AI generates visual memory aids to help you remember difficult words and characters.</p>
-      </div>
+      </a>
 
       <!-- Feature 5 -->
       <a href="/pricing/" class="group bg-white/80 dark:bg-surface-card/80 backdrop-blur-sm rounded-2xl p-8 border border-primary/10 dark:border-emerald-900/30 hover:border-primary/30 dark:hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 dark:hover:shadow-primary/5 hover:-translate-y-2 transition-all duration-300 reveal-pop delay-2">
@@ -160,13 +216,13 @@ import ThemeInit from "../components/ThemeInit.astro"
       </a>
 
       <!-- Feature 6 -->
-      <div class="group bg-white/80 dark:bg-surface-card/80 backdrop-blur-sm rounded-2xl p-8 border border-primary/10 dark:border-emerald-900/30 hover:border-primary/30 dark:hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 dark:hover:shadow-primary/5 hover:-translate-y-2 transition-all duration-300 reveal-pop delay-3">
+      <a href="/app/#/discover" class="group bg-white/80 dark:bg-surface-card/80 backdrop-blur-sm rounded-2xl p-8 border border-primary/10 dark:border-emerald-900/30 hover:border-primary/30 dark:hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 dark:hover:shadow-primary/5 hover:-translate-y-2 transition-all duration-300 reveal-pop delay-3">
         <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-emerald-600 flex items-center justify-center text-white shadow-md shadow-primary/20 mb-5">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 14 4-4 4 4"/></svg>
         </div>
         <h3 class="text-lg font-extrabold text-slate-800 dark:text-slate-200 mb-1.5">Community Marketplace</h3>
         <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Discover shared decks made by other learners. Clone them to your library instantly.</p>
-      </div>
+      </a>
     </div>
   </div>
 </section>
@@ -213,83 +269,49 @@ import ThemeInit from "../components/ThemeInit.astro"
   </div>
 </section>
 
-<!-- ========== Testimonials ========== -->
-<section class="py-24 sm:py-32 px-6 bg-gradient-to-b from-emerald-50/50 to-green-50/30 dark:from-[#051510] dark:to-surface-dark border-y border-primary/10 dark:border-emerald-900/20">
-  <div class="max-w-6xl mx-auto">
-    <div class="text-center max-w-xl mx-auto mb-16 reveal-up">
-      <h2 class="text-3xl sm:text-4xl font-black tracking-tight bg-gradient-to-r from-slate-900 via-slate-800 to-primary/80 dark:from-slate-100 dark:via-slate-300 dark:to-primary bg-clip-text text-transparent">What learners say</h2>
-      <p class="mt-4 text-lg text-slate-500 font-[500]">Join hundreds of language learners using FluentCards daily.</p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-      <div class="bg-white/80 dark:bg-surface-card/80 backdrop-blur-sm rounded-2xl p-8 border border-primary/10 dark:border-emerald-900/30 text-center hover:shadow-2xl hover:shadow-primary/10 dark:hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-300 reveal-pop delay-1">
-        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-primary/20 to-teal-400/20 flex items-center justify-center mx-auto mb-5 border-2 border-primary/30">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
-        </div>
-        <blockquote class="text-sm text-slate-500 italic leading-relaxed mb-5">&ldquo;The TTS pronunciation is a game-changer for Japanese. I can hear native pronunciation for every card.&rdquo;</blockquote>
-        <div class="w-8 h-[2px] bg-gradient-to-r from-primary/40 to-teal-400/40 mx-auto mb-4"></div>
-        <p class="text-sm font-bold text-slate-800 dark:text-slate-200">Sarah K.</p>
-        <p class="text-xs text-slate-400 dark:text-slate-500 mt-0.5">Learning Japanese</p>
-      </div>
-
-      <div class="bg-white/80 dark:bg-surface-card/80 backdrop-blur-sm rounded-2xl p-8 border border-primary/10 dark:border-emerald-900/30 text-center hover:shadow-2xl hover:shadow-primary/10 dark:hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-300 reveal-pop delay-2">
-        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-primary/20 to-teal-400/20 flex items-center justify-center mx-auto mb-5 border-2 border-primary/30">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>
-        </div>
-        <blockquote class="text-sm text-slate-500 italic leading-relaxed mb-5">&ldquo;I switched from Anki because of the furigana support and AI mnemonics. Much easier to remember kanji now.&rdquo;</blockquote>
-        <div class="w-8 h-[2px] bg-gradient-to-r from-primary/40 to-teal-400/40 mx-auto mb-4"></div>
-        <p class="text-sm font-bold text-slate-800 dark:text-slate-200">Mike T.</p>
-        <p class="text-xs text-slate-400 dark:text-slate-500 mt-0.5">JLPT N4 Learner</p>
-      </div>
-
-      <div class="bg-white/80 dark:bg-surface-card/80 backdrop-blur-sm rounded-2xl p-8 border border-primary/10 dark:border-emerald-900/30 text-center hover:shadow-2xl hover:shadow-primary/10 dark:hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-300 reveal-pop delay-3">
-        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-primary/20 to-teal-400/20 flex items-center justify-center mx-auto mb-5 border-2 border-primary/30">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        </div>
-        <blockquote class="text-sm text-slate-500 italic leading-relaxed mb-5">&ldquo;The marketplace is awesome — I found shared decks for JLPT vocabulary and started studying immediately.&rdquo;</blockquote>
-        <div class="w-8 h-[2px] bg-gradient-to-r from-primary/40 to-teal-400/40 mx-auto mb-4"></div>
-        <p class="text-sm font-bold text-slate-800 dark:text-slate-200">Yuki M.</p>
-        <p class="text-xs text-slate-400 dark:text-slate-500 mt-0.5">Intermediate Japanese</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ========== Blog / Guides ========== -->
 <section class="py-24 sm:py-32 px-6 bg-gradient-to-b from-white to-green-50/20 dark:from-surface-dark dark:to-[#051510]">
   <div class="max-w-6xl mx-auto">
     <div class="text-center max-w-2xl mx-auto mb-16 reveal-up">
       <span class="inline-flex items-center gap-1.5 bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full mb-4 border border-primary/20">Latest</span>
-      <h2 class="text-3xl sm:text-4xl font-black tracking-tight bg-gradient-to-r from-slate-900 via-slate-800 to-primary/80 dark:from-slate-100 dark:via-slate-300 dark:to-primary bg-clip-text text-transparent">Language Learning Guides</h2>
-      <p class="mt-4 text-lg text-slate-500 font-[500]">Practical guides to help you learn languages with flashcards and spaced repetition.</p>
+      <h2 class="text-3xl sm:text-4xl font-black tracking-tight bg-gradient-to-r from-slate-900 via-slate-800 to-primary/80 dark:from-slate-100 dark:via-slate-300 dark:to-primary bg-clip-text text-transparent">Latest Stories &amp; Guides</h2>
+      <p class="mt-4 text-lg text-slate-500 font-[500]">Inspiring stories of famous learners and practical guides to improve your language learning.</p>
     </div>
 
+    <!-- Featured story (full width) -->
+    <a href="/stories/frederick-douglass-reading/" class="group block mb-5 bg-gradient-to-br from-primary/5 to-teal-400/5 dark:from-primary/10 dark:to-teal-400/5 rounded-2xl border-2 border-primary/30 p-8 hover:border-primary hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal-pop relative overflow-hidden">
+      <span class="absolute top-4 right-4 bg-primary text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">New</span>
+      <span class="inline-block bg-gradient-to-r from-primary/20 to-teal-400/20 text-primary px-3 py-0.5 rounded-full text-xs font-bold mb-4 border border-primary/20">Stories</span>
+      <h3 class="text-2xl sm:text-3xl font-bold text-slate-800 dark:text-slate-200 mb-3 group-hover:text-primary transition-colors">Frederick Douglass: How a Slave Taught Himself to Read and Changed History</h3>
+      <p class="text-slate-500 dark:text-slate-400 leading-relaxed">The remarkable story of how an enslaved child taught himself to read and write against every obstacle. His journey proves that the desire to learn can overcome any barrier, and modern tools make learning easier than ever.</p>
+    </a>
+
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-      <a href="/blog/8-hour-upgrade-sleep-vocabulary/" class="group bg-white/80 dark:bg-surface-card/80 backdrop-blur-sm rounded-2xl border-2 border-primary/30 p-6 hover:border-primary hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 reveal-pop delay-1 relative">
+      <a href="/stories/benjamin-franklin-self-education/" class="group bg-white/80 dark:bg-surface-card/80 backdrop-blur-sm rounded-2xl border-2 border-primary/30 p-6 hover:border-primary hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 reveal-pop delay-1 relative">
         <span class="absolute -top-2.5 -right-2.5 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">New</span>
-        <span class="inline-block bg-gradient-to-r from-primary/20 to-teal-400/20 text-primary px-3 py-0.5 rounded-full text-xs font-bold mb-4 border border-primary/20">Guide</span>
-        <h3 class="text-base font-bold text-slate-800 dark:text-slate-200 mb-2 leading-snug group-hover:text-primary transition-colors">The 8-Hour Upgrade: Hacking Your Sleep for Vocabulary Retention</h3>
-        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-2">Turn sleep into a competitive advantage. Learn Sleep-State Priming and Targeted Memory Reactivation to lock in vocabulary while you rest.</p>
+        <span class="inline-block bg-gradient-to-r from-primary/20 to-teal-400/20 text-primary px-3 py-0.5 rounded-full text-xs font-bold mb-4 border border-primary/20">Stories</span>
+        <h3 class="text-base font-bold text-slate-800 dark:text-slate-200 mb-2 leading-snug group-hover:text-primary transition-colors">Benjamin Franklin's Self-Education: Blueprint for Lifelong Learning</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-2">How a school dropout taught himself to write at a world-class level through deliberate practice and repetition.</p>
       </a>
 
-      <a href="/blog/performance-athlete-meeting-freeze/" class="group bg-white/80 dark:bg-surface-card/80 backdrop-blur-sm rounded-2xl border-2 border-primary/30 p-6 hover:border-primary hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 reveal-pop delay-2 relative">
+      <a href="/stories/warren-buffett-reading-habit/" class="group bg-white/80 dark:bg-surface-card/80 backdrop-blur-sm rounded-2xl border-2 border-primary/30 p-6 hover:border-primary hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 reveal-pop delay-2 relative">
         <span class="absolute -top-2.5 -right-2.5 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">New</span>
-        <span class="inline-block bg-gradient-to-r from-primary/20 to-teal-400/20 text-primary px-3 py-0.5 rounded-full text-xs font-bold mb-4 border border-primary/20">Guide</span>
-        <h3 class="text-base font-bold text-slate-800 dark:text-slate-200 mb-2 leading-snug group-hover:text-primary transition-colors">The Performance Athlete: Overcoming the &lsquo;Meeting Freeze&rsquo;</h3>
-        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-2">Master high-stakes professional communication with Stress Inoculation Training and FSI/CIA pattern drills.</p>
+        <span class="inline-block bg-gradient-to-r from-primary/20 to-teal-400/20 text-primary px-3 py-0.5 rounded-full text-xs font-bold mb-4 border border-primary/20">Stories</span>
+        <h3 class="text-base font-bold text-slate-800 dark:text-slate-200 mb-2 leading-snug group-hover:text-primary transition-colors">Warren Buffett's Reading Habit: 500 Pages a Day</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-2">How reading five hours daily built the knowledge that made Buffett the world's greatest investor.</p>
       </a>
 
-      <a href="/blog/bizarre-mnemonics/" class="group bg-white/80 dark:bg-surface-card/80 backdrop-blur-sm rounded-2xl border-2 border-primary/30 p-6 hover:border-primary hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 reveal-pop delay-3 relative">
+      <a href="/stories/kato-lomb-polyglot-secrets/" class="group bg-white/80 dark:bg-surface-card/80 backdrop-blur-sm rounded-2xl border-2 border-primary/30 p-6 hover:border-primary hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 reveal-pop delay-3 relative">
         <span class="absolute -top-2.5 -right-2.5 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">New</span>
-        <span class="inline-block bg-gradient-to-r from-primary/20 to-teal-400/20 text-primary px-3 py-0.5 rounded-full text-xs font-bold mb-4 border border-primary/20">Guide</span>
-        <h3 class="text-base font-bold text-slate-800 dark:text-slate-200 mb-2 leading-snug group-hover:text-primary transition-colors">Bizarre Mnemonics: Why a Chicken Playing Polo is Your Best Study Tool</h3>
-        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-2">Turn random sounds into permanent memories using the Von Restorff Effect and bizarre mental images.</p>
+        <span class="inline-block bg-gradient-to-r from-primary/20 to-teal-400/20 text-primary px-3 py-0.5 rounded-full text-xs font-bold mb-4 border border-primary/20">Stories</span>
+        <h3 class="text-base font-bold text-slate-800 dark:text-slate-200 mb-2 leading-snug group-hover:text-primary transition-colors">Kato Lomb: The Polyglot Who Mastered 16 Languages</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-2">How a chemist with no language talent learned 16 languages through massive reading and context.</p>
       </a>
     </div>
 
     <div class="text-center mt-8 reveal-up">
-      <a href="/blog/" class="inline-flex items-center gap-1.5 text-primary font-bold hover:text-primary-hover transition-colors text-sm">
-        See all 19 guides &rarr;
+      <a href="/stories/" class="inline-flex items-center gap-1.5 text-primary font-bold hover:text-primary-hover transition-colors text-sm">
+        See all stories &rarr;
       </a>
     </div>
   </div>
@@ -297,10 +319,8 @@ import ThemeInit from "../components/ThemeInit.astro"
 
 <!-- ========== CTA ========== -->
 <section class="py-32 px-6 relative overflow-hidden bg-gradient-to-br from-primary via-emerald-700 to-emerald-900 dark:from-primary/90 dark:via-emerald-800 dark:to-[#022c22]">
-  <!-- Decorative blobs -->
   <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl pointer-events-none"></div>
   <div class="absolute bottom-0 left-0 w-48 h-48 bg-teal-400/10 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl pointer-events-none"></div>
-
   <div class="max-w-xl mx-auto text-center relative z-10 reveal-up">
     <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-white mb-4">Ready to start learning?</h2>
     <p class="text-lg text-primary-light/90 mb-10 leading-relaxed font-[500]">Join learners around the world. FluentCards is free to use with no ads.</p>
