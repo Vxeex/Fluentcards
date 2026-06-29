@@ -12,9 +12,10 @@ export interface Props {
   readTime: string;
   difficulty: string;
   sections: number;
+  tag?: string;
 }
 
-const { title, description, canonical, headline, readTime, difficulty, sections } = Astro.props;
+const { title, description, canonical, headline, readTime, difficulty, sections, tag = 'Guide' } = Astro.props;
 const fullUrl = `https://fluentcards.org${canonical}`;
 ---
 
@@ -60,7 +61,7 @@ const fullUrl = `https://fluentcards.org${canonical}`;
   <article class="max-w-3xl mx-auto">
     <!-- Header -->
     <div class="mb-10 reveal-up">
-      <span class="inline-block bg-gradient-to-r from-primary/20 to-teal-400/20 text-primary px-3.5 py-1 rounded-full text-xs font-bold mb-4 border border-primary/20">Guide</span>
+      <span class="inline-block bg-gradient-to-r from-primary/20 to-teal-400/20 text-primary px-3.5 py-1 rounded-full text-xs font-bold mb-4 border border-primary/20">{tag}</span>
       <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 leading-tight">{headline}</h1>
       <div class="mt-4 flex items-center gap-4 text-sm text-slate-400 flex-wrap">
         <span class="flex items-center gap-1"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> {readTime}</span>
