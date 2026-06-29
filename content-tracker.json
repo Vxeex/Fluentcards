@@ -1,0 +1,30 @@
+{
+  "blog": [
+    { "slug": "8-hour-upgrade-sleep-vocabulary", "title": "8-Hour Upgrade: Sleep and Vocabulary", "date": "2026-05-01", "tags": ["sleep", "memory", "vocabulary"] },
+    { "slug": "best-way-to-learn-japanese-vocabulary", "title": "Best Way to Learn Japanese Vocabulary", "date": "2026-05-01", "tags": ["japanese", "vocabulary", "methods"] },
+    { "slug": "beyond-the-textbook-polyglot-secrets", "title": "Beyond the Textbook: Polyglot Secrets", "date": "2026-05-01", "tags": ["polyglot", "advanced", "methods"] },
+    { "slug": "bizarre-mnemonics", "title": "Bizarre Mnemonics That Actually Work", "date": "2026-05-01", "tags": ["mnemonics", "memory", "techniques"] },
+    { "slug": "dli-language-learning-method", "title": "The DLI Language Learning Method", "date": "2026-05-01", "tags": ["DLI", "military", "immersion"] },
+    { "slug": "fsrs-spaced-repetition-algorithm", "title": "FSRS: The Next Generation Spaced Repetition Algorithm", "date": "2026-05-03", "tags": ["FSRS", "algorithm", "spaced-repetition", "tech"] },
+    { "slug": "furigana-guide", "title": "Furigana Guide", "date": "2026-05-01", "tags": ["japanese", "furigana", "reading"] },
+    { "slug": "how-to-create-effective-flashcards", "title": "How to Create Effective Flashcards", "date": "2026-05-01", "tags": ["flashcards", "creation", "methods"] },
+    { "slug": "how-to-stay-consistent-with-language-learning", "title": "How to Stay Consistent with Language Learning", "date": "2026-05-01", "tags": ["consistency", "habits", "motivation"] },
+    { "slug": "how-to-use-spaced-repetition", "title": "How to Use Spaced Repetition", "date": "2026-05-01", "tags": ["spaced-repetition", "methods", "beginners"] },
+    { "slug": "japanese-flashcard-study-guide", "title": "Japanese Flashcard Study Guide", "date": "2026-05-01", "tags": ["japanese", "flashcards", "study"] },
+    { "slug": "japanese-pronunciation-guide", "title": "Japanese Pronunciation Guide", "date": "2026-05-01", "tags": ["japanese", "pronunciation", "speaking"] },
+    { "slug": "jlpt-n5-study-guide", "title": "JLPT N5 Study Guide", "date": "2026-05-01", "tags": ["japanese", "JLPT", "N5", "exam"] },
+    { "slug": "language-islands", "title": "Language Islands: Creating Immersion Environments", "date": "2026-05-01", "tags": ["immersion", "environment", "methods"] },
+    { "slug": "learn-japanese-kanji-with-flashcards", "title": "Learn Japanese Kanji with Flashcards", "date": "2026-05-01", "tags": ["japanese", "kanji", "flashcards"] },
+    { "slug": "learn-korean-vocabulary-with-flashcards", "title": "Learn Korean Vocabulary with Flashcards", "date": "2026-05-01", "tags": ["korean", "vocabulary", "flashcards"] },
+    { "slug": "learn-spanish-vocabulary-with-flashcards", "title": "Learn Spanish Vocabulary with Flashcards", "date": "2026-05-01", "tags": ["spanish", "vocabulary", "flashcards"] },
+    { "slug": "north-star-strategy", "title": "North Star Strategy for Language Learning", "date": "2026-05-01", "tags": ["strategy", "goals", "planning"] },
+    { "slug": "performance-athlete-meeting-freeze", "title": "Performance Athlete Meeting Freeze", "date": "2026-05-01", "tags": ["performance", "anxiety", "sports"] },
+    { "slug": "the-language-reflex", "title": "The Language Reflex", "date": "2026-05-01", "tags": ["reflex", "automaticity", "fluency"] }
+  ],
+  "stories": [
+    { "slug": "benjamin-franklin-self-education", "title": "Benjamin Franklin's Self-Education: Blueprint for Lifelong Learning", "date": "2026-05-01", "tags": ["self-education", "history", "USA"] },
+    { "slug": "frederick-douglass-reading", "title": "Frederick Douglass: How a Slave Taught Himself to Read and Changed History", "date": "2026-05-01", "tags": ["slavery", "literacy", "civil-rights"] },
+    { "slug": "kato-lomb-polyglot-secrets", "title": "Kato Lomb: The Polyglot Who Mastered 16 Languages", "date": "2026-05-01", "tags": ["polyglot", "Hungary", "translation"] },
+    { "slug": "warren-buffett-reading-habit", "title": "Warren Buffett's Reading Habit: 500 Pages a Day", "date": "2026-05-01", "tags": ["reading", "investing", "habits"] }
+  ]
+}
