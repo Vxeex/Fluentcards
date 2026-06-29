@@ -19,12 +19,16 @@
     { "slug": "learn-spanish-vocabulary-with-flashcards", "title": "Learn Spanish Vocabulary with Flashcards", "date": "2026-05-01", "tags": ["spanish", "vocabulary", "flashcards"] },
     { "slug": "north-star-strategy", "title": "North Star Strategy for Language Learning", "date": "2026-05-01", "tags": ["strategy", "goals", "planning"] },
     { "slug": "performance-athlete-meeting-freeze", "title": "Performance Athlete Meeting Freeze", "date": "2026-05-01", "tags": ["performance", "anxiety", "sports"] },
-    { "slug": "the-language-reflex", "title": "The Language Reflex", "date": "2026-05-01", "tags": ["reflex", "automaticity", "fluency"] }
+    { "slug": "the-language-reflex", "title": "The Language Reflex", "date": "2026-05-01", "tags": ["reflex", "automaticity", "fluency"] },
+    { "slug": "shadowing-technique-language-learning", "title": "The Shadowing Technique: How Mimicking Native Speakers Rewires Your Brain for Fluency", "date": "2026-06-30", "tags": ["shadowing", "pronunciation", "neuroscience", "technique"] },
+    { "slug": "comprehensible-input-language-learning", "title": "Comprehensible Input: The Science of Understanding More Than You Think", "date": "2026-07-07", "tags": ["input", "comprehensible-input", "acquisition", "listening", "reading"] }
   ],
   "stories": [
     { "slug": "benjamin-franklin-self-education", "title": "Benjamin Franklin's Self-Education: Blueprint for Lifelong Learning", "date": "2026-05-01", "tags": ["self-education", "history", "USA"] },
     { "slug": "frederick-douglass-reading", "title": "Frederick Douglass: How a Slave Taught Himself to Read and Changed History", "date": "2026-05-01", "tags": ["slavery", "literacy", "civil-rights"] },
     { "slug": "kato-lomb-polyglot-secrets", "title": "Kato Lomb: The Polyglot Who Mastered 16 Languages", "date": "2026-05-01", "tags": ["polyglot", "Hungary", "translation"] },
-    { "slug": "warren-buffett-reading-habit", "title": "Warren Buffett's Reading Habit: 500 Pages a Day", "date": "2026-05-01", "tags": ["reading", "investing", "habits"] }
+    { "slug": "warren-buffett-reading-habit", "title": "Warren Buffett's Reading Habit: 500 Pages a Day", "date": "2026-05-01", "tags": ["reading", "investing", "habits"] },
+    { "slug": "mikhail-lomonosov-self-taught-genius", "title": "Mikhail Lomonosov: The Fisherman's Son Who Walked to Moscow and Became a Genius", "date": "2026-06-30", "tags": ["self-education", "Russia", "polyglot", "science", "history"] },
+    { "slug": "joseph-conrad-self-taught-english", "title": "Joseph Conrad: The Polish Sailor Who Mastered English at 21 and Became a Literary Genius", "date": "2026-07-07", "tags": ["self-education", "Poland", "literature", "polyglot", "English"] }
   ]
 }
