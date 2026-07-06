@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FluentCards — 15 Globe Logos</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2.5rem 1.5rem;
+    }
+    h1 { font-size: 1.4rem; font-weight: 700; margin-bottom: 0.25rem; letter-spacing: -0.02em; }
+    .subtitle { color: #64748b; font-size: 0.875rem; margin-bottom: 2rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 1rem;
+      width: 100%;
+      max-width: 800px;
+    }
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 1.25rem 0.75rem 1rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      cursor: pointer;
+      border: 1.5px solid transparent;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .card.selected { border-color: #0fbd4f; box-shadow: 0 0 0 3px rgba(15,189,79,0.15); }
+    .card img { width: 64px; height: 64px; border-radius: 14px; }
+    .card .num {
+      font-size: 0.6875rem;
+      font-weight: 700;
+      color: #94a3b8;
+      background: #f1f5f9;
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+    }
+    .row-preview {
+      width: 100%; max-width: 800px;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1rem;
+      background: white;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .row-preview .lbl { font-size: 0.7rem; color: #94a3b8; min-width: 80px; }
+    .row-preview img { width: 32px; height: 32px; border-radius: 7px; }
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.75rem;
+      color: #94a3b8;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>15 Globe Logos</h1>
+  <p class="subtitle">Tap one, tell me the number.</p>
+
+  <div class="grid" id="grid"></div>
+
+  <div class="row-preview">
+    <span class="lbl">At 36px:</span>
+    <div id="sizeRow"></div>
+  </div>
+
+  <div class="footer">
+    <a href="http://localhost:4321/logos/preview.html">localhost:4321/logos/preview.html</a>
+  </div>
+
+  <script>
+    const options = [
+      { n: 1, file: 'logo-option1.svg', name: 'Solid Globe' },
+      { n: 2, file: 'logo-option2.svg', name: 'Wireframe' },
+      { n: 3, file: 'logo-option3.svg', name: 'Connected' },
+      { n: 4, file: 'logo-option4.svg', name: 'Abstract Rings' },
+      { n: 5, file: 'logo-option5.svg', name: 'Dark Globe' },
+      { n: 6, file: 'logo-option6.svg', name: 'Compass' },
+      { n: 7, file: 'logo-option7.svg', name: 'Sound Wave' },
+      { n: 8, file: 'logo-option8.svg', name: 'Dot Matrix' },
+      { n: 9, file: 'logo-option9.svg', name: 'Split Globe' },
+      { n: 10, file: 'logo-option10.svg', name: 'Rising Sun' },
+      { n: 11, file: 'logo-option11.svg', name: 'Minimal' },
+      { n: 12, file: 'logo-option12.svg', name: 'Leaf Globe' },
+      { n: 13, file: 'logo-option13.svg', name: 'Paper Plane' },
+      { n: 14, file: 'logo-option14.svg', name: 'Speech Globe' },
+      { n: 15, file: 'logo-option15.svg', name: 'Negative Space' },
+    ];
+
+    const grid = document.getElementById('grid');
+    const sizeRow = document.getElementById('sizeRow');
+
+    options.forEach(o => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.onclick = () => {
+        document.querySelectorAll('.card').forEach(c => c.classList.remove('selected'));
+        card.classList.add('selected');
+      };
+      card.innerHTML = `<img src="./${o.file}" alt="${o.name}"><span class="num">${o.n}</span>`;
+      grid.appendChild(card);
+
+      const img = document.createElement('img');
+      img.src = `./${o.file}`;
+      img.alt = o.n;
+      sizeRow.appendChild(img);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "firestore": {
+    "rules": "fluentcards-migrate/firestore.rules"
+  }
+}

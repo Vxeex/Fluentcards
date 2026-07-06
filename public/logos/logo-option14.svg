@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="g14" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="50%" stop-color="#0fbd4f"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#g14)"/>
+  <!-- Globe -->
+  <circle cx="32" cy="32" r="15" fill="rgba(255,255,255,0.1)" stroke="white" stroke-width="1.2"/>
+  <!-- Speech bubble attached to globe -->
+  <path d="M44 24q0-3-2-5-2-2-5-2h-4q-3 0-5 2-2 2-2 5v3q0 3 2 5 2 2 5 2h1l3 3 3-3h2q3 0 5-2 2-2 2-5v-3z" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.5)" stroke-width="1"/>
+  <!-- Tiny dots in bubble -->
+  <circle cx="37" cy="24" r="1.2" fill="rgba(255,255,255,0.6)"/>
+  <circle cx="42" cy="24" r="1.2" fill="rgba(255,255,255,0.6)"/>
+  <circle cx="39.5" cy="27" r="1.2" fill="rgba(255,255,255,0.6)"/>
+  <!-- Continent hints on globe -->
+  <path d="M23 29q3-2 5-1 1 1-1 3t-4 1-1-2z" fill="rgba(255,255,255,0.5)"/>
+  <path d="M35 28q2-1 3 1 0 1-2 1t-1-2z" fill="rgba(255,255,255,0.5)"/>
+</svg>

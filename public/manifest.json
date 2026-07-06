@@ -1,0 +1,21 @@
+{
+  "name": "FluentCards - Free Flashcard App",
+  "short_name": "FluentCards",
+  "description": "Master vocabulary with spaced repetition. Free flashcard app with TTS pronunciation, furigana, and AI mnemonics.",
+  "start_url": "/app/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0fbd4f",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

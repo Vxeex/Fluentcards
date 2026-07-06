@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Inverted: white bg, green icon -->
+  <rect width="64" height="64" rx="16" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <!-- Minimal circle -->
+  <circle cx="32" cy="32" r="18" fill="#0fbd4f"/>
+  <!-- Single latitude arc - super minimal -->
+  <path d="M16 28q16 8 32 0" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="0.8"/>
+  <path d="M16 36q16-8 32 0" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="0.8"/>
+  <!-- Single longitude -->
+  <path d="M32 14v36" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
+  <!-- Tiny dot accent -->
+  <circle cx="44" cy="18" r="2" fill="#0fbd4f" stroke="white" stroke-width="1"/>
+</svg>

@@ -1,0 +1,9 @@
+{
+  "name": "import-decks",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "firebase": "^11.6.0",
+    "uuid": "^11.1.0"
+  }
+}
