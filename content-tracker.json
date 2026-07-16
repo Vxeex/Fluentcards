@@ -23,7 +23,8 @@
     { "slug": "shadowing-technique-language-learning", "title": "The Shadowing Technique: How Mimicking Native Speakers Rewires Your Brain for Fluency", "date": "2026-06-30", "tags": ["shadowing", "pronunciation", "neuroscience", "technique"] },
     { "slug": "comprehensible-input-language-learning", "title": "Comprehensible Input: The Science of Understanding More Than You Think", "date": "2026-07-07", "tags": ["input", "comprehensible-input", "acquisition", "listening", "reading"] },
     { "slug": "language-learning-anxiety-overcome", "title": "Quiet the Inner Critic: The Science of Language Learning Anxiety and How to Overcome It", "date": "2026-07-31", "tags": ["anxiety", "psychology", "speaking", "confidence", "emotional-barriers"] },
-    { "slug": "music-language-learning-science", "title": "Music and Language Learning: How Rhythm, Melody, and Song Rewire Your Brain for Fluency", "date": "2026-08-10", "tags": ["music", "neuroscience", "memory", "pronunciation", "technique"] }
+    { "slug": "music-language-learning-science", "title": "Music and Language Learning: How Rhythm, Melody, and Song Rewire Your Brain for Fluency", "date": "2026-08-10", "tags": ["music", "neuroscience", "memory", "pronunciation", "technique"] },
+    { "slug": "bilingual-brain-cognitive-superpowers", "title": "The Bilingual Brain: How Learning a Second Language Rewires Your Neural Architecture", "date": "2026-08-17", "tags": ["bilingualism", "cognitive-science", "neuroscience", "dementia", "executive-function"] }
   ],
   "stories": [
     { "slug": "benjamin-franklin-self-education", "title": "Benjamin Franklin's Self-Education: Blueprint for Lifelong Learning", "date": "2026-05-01", "tags": ["self-education", "history", "USA"] },
@@ -33,6 +34,7 @@
     { "slug": "mikhail-lomonosov-self-taught-genius", "title": "Mikhail Lomonosov: The Fisherman's Son Who Walked to Moscow and Became a Genius", "date": "2026-06-30", "tags": ["self-education", "Russia", "polyglot", "science", "history"] },
     { "slug": "joseph-conrad-self-taught-english", "title": "Joseph Conrad: The Polish Sailor Who Mastered English at 21 and Became a Literary Genius", "date": "2026-07-07", "tags": ["self-education", "Poland", "literature", "polyglot", "English"] },
     { "slug": "emil-krebs-master-of-68-languages", "title": "Emil Krebs: The German Hyperpolyglot Who Mastered 68 Languages", "date": "2026-07-31", "tags": ["polyglot", "Germany", "hyperpolyglot", "history", "China"] },
-    { "slug": "richard-francis-burton-polyglot-explorer", "title": "Sir Richard Francis Burton: The Explorer-Polyglot Who Mastered 29 Languages Through Total Immersion", "date": "2026-08-10", "tags": ["polyglot", "explorer", "UK", "history", "self-education"] }
+    { "slug": "richard-francis-burton-polyglot-explorer", "title": "Sir Richard Francis Burton: The Explorer-Polyglot Who Mastered 29 Languages Through Total Immersion", "date": "2026-08-10", "tags": ["polyglot", "explorer", "UK", "history", "self-education"] },
+    { "slug": "giuseppe-mezzofanti-cardinal-hyperpolyglot", "title": "Giuseppe Mezzofanti: The Cardinal Who Mastered 72 Languages and Became History's Greatest Hyperpolyglot", "date": "2026-08-17", "tags": ["polyglot", "Italy", "hyperpolyglot", "history", "cardinal"] }
   ]
 }
