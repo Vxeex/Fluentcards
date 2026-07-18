@@ -24,9 +24,11 @@
     { "slug": "comprehensible-input-language-learning", "title": "Comprehensible Input: The Science of Understanding More Than You Think", "date": "2026-07-07", "tags": ["input", "comprehensible-input", "acquisition", "listening", "reading"] },
     { "slug": "language-learning-anxiety-overcome", "title": "Quiet the Inner Critic: The Science of Language Learning Anxiety and How to Overcome It", "date": "2026-07-31", "tags": ["anxiety", "psychology", "speaking", "confidence", "emotional-barriers"] },
     { "slug": "music-language-learning-science", "title": "Music and Language Learning: How Rhythm, Melody, and Song Rewire Your Brain for Fluency", "date": "2026-08-10", "tags": ["music", "neuroscience", "memory", "pronunciation", "technique"] },
-    { "slug": "bilingual-brain-cognitive-superpowers", "title": "The Bilingual Brain: How Learning a Second Language Rewires Your Neural Architecture", "date": "2026-08-17", "tags": ["bilingualism", "cognitive-science", "neuroscience", "dementia", "executive-function"] }
+    { "slug": "bilingual-brain-cognitive-superpowers", "title": "The Bilingual Brain: How Learning a Second Language Rewires Your Neural Architecture", "date": "2026-08-17", "tags": ["bilingualism", "cognitive-science", "neuroscience", "dementia", "executive-function"] },
+    { "slug": "lexical-approach-language-chunks", "title": "The Lexical Approach: Why Learning Language Chunks Beats Memorizing Individual Words", "date": "2026-08-24", "tags": ["lexical", "vocabulary", "collocations", "technique", "chunks"] }
   ],
   "stories": [
+    { "slug": "michael-faraday-self-taught-scientist", "title": "Michael Faraday: The Bookbinder's Apprentice Who Taught Himself Science and Changed the World", "date": "2026-08-24", "tags": ["self-education", "UK", "history", "science", "perseverance"] },
     { "slug": "benjamin-franklin-self-education", "title": "Benjamin Franklin's Self-Education: Blueprint for Lifelong Learning", "date": "2026-05-01", "tags": ["self-education", "history", "USA"] },
     { "slug": "frederick-douglass-reading", "title": "Frederick Douglass: How a Slave Taught Himself to Read and Changed History", "date": "2026-05-01", "tags": ["slavery", "literacy", "civil-rights"] },
     { "slug": "kato-lomb-polyglot-secrets", "title": "Kato Lomb: The Polyglot Who Mastered 16 Languages", "date": "2026-05-01", "tags": ["polyglot", "Hungary", "translation"] },
