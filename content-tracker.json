@@ -27,7 +27,8 @@
     { "slug": "bilingual-brain-cognitive-superpowers", "title": "The Bilingual Brain: How Learning a Second Language Rewires Your Neural Architecture", "date": "2026-08-17", "tags": ["bilingualism", "cognitive-science", "neuroscience", "dementia", "executive-function"] },
     { "slug": "lexical-approach-language-chunks", "title": "The Lexical Approach: Why Learning Language Chunks Beats Memorizing Individual Words", "date": "2026-08-24", "tags": ["lexical", "vocabulary", "collocations", "technique", "chunks"] },
     { "slug": "critical-period-hypothesis-language-learning", "title": "The Critical Period Hypothesis: Can Adults Really Learn Languages Like Native Speakers?", "date": "2026-08-31", "tags": ["critical-period", "age", "neuroscience", "adult-learning", "acquisition"] },
-    { "slug": "why-making-mistakes-secret-weapon-error-correction", "title": "Why Making Mistakes Is Your Secret Weapon: The Science of Error Correction in Language Learning", "date": "2026-09-03", "tags": ["error-correction", "feedback", "mistakes", "technique", "neuroscience"] }
+    { "slug": "why-making-mistakes-secret-weapon-error-correction", "title": "Why Making Mistakes Is Your Secret Weapon: The Science of Error Correction in Language Learning", "date": "2026-09-03", "tags": ["error-correction", "feedback", "mistakes", "technique", "neuroscience"] },
+    { "slug": "testing-effect-retrieval-practice", "title": "The Testing Effect: Why Retrieval Practice Is the Most Powerful Learning Strategy", "date": "2026-09-15", "tags": ["testing-effect", "retrieval-practice", "cognitive-science", "memory", "technique"] }
   ],
   "stories": [
     { "slug": "michael-faraday-self-taught-scientist", "title": "Michael Faraday: The Bookbinder's Apprentice Who Taught Himself Science and Changed the World", "date": "2026-08-24", "tags": ["self-education", "UK", "history", "science", "perseverance"] },
@@ -41,6 +42,7 @@
     { "slug": "richard-francis-burton-polyglot-explorer", "title": "Sir Richard Francis Burton: The Explorer-Polyglot Who Mastered 29 Languages Through Total Immersion", "date": "2026-08-10", "tags": ["polyglot", "explorer", "UK", "history", "self-education"] },
     { "slug": "giuseppe-mezzofanti-cardinal-hyperpolyglot", "title": "Giuseppe Mezzofanti: The Cardinal Who Mastered 72 Languages and Became History's Greatest Hyperpolyglot", "date": "2026-08-17", "tags": ["polyglot", "Italy", "hyperpolyglot", "history", "cardinal"] },
     { "slug": "sojourner-truth-self-taught-orator", "title": "Sojourner Truth: The Enslaved Woman Who Taught Herself to Speak Truth to Power", "date": "2026-08-31", "tags": ["self-education", "USA", "slavery", "activism", "women", "oratory"] },
-    { "slug": "helen-keller-deaf-blind-self-taught", "title": "Helen Keller: The Deaf-Blind Girl Who Taught Herself Language and Changed the World", "date": "2026-09-03", "tags": ["self-education", "USA", "disability", "language", "activism", "women"] }
+    { "slug": "helen-keller-deaf-blind-self-taught", "title": "Helen Keller: The Deaf-Blind Girl Who Taught Herself Language and Changed the World", "date": "2026-09-03", "tags": ["self-education", "USA", "disability", "language", "activism", "women"] },
+    { "slug": "sor-juana-ines-de-la-cruz-self-taught-nun", "title": "Sor Juana Inés de la Cruz: The Self-Taught Nun Who Defied the 17th Century to Master Knowledge", "date": "2026-09-15", "tags": ["self-education", "Mexico", "history", "literature", "women", "colonial"] }
   ]
 }
