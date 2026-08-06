@@ -31,7 +31,8 @@
     { "slug": "testing-effect-retrieval-practice", "title": "The Testing Effect: Why Retrieval Practice Is the Most Powerful Learning Strategy", "date": "2026-09-15", "tags": ["testing-effect", "retrieval-practice", "cognitive-science", "memory", "technique"] },
     { "slug": "dual-coding-theory-language-learning", "title": "Dual Coding Theory: Why Pictures Plus Words Supercharge Your Vocabulary Retention", "date": "2026-09-29", "tags": ["dual-coding", "visual-learning", "memory", "cognitive-science", "technique"] },
     { "slug": "how-many-words-do-you-need-vocabulary-size", "title": "How Many Words Do You Need to Know to Speak a Language? The Science of Vocabulary Size", "date": "2026-07-31", "tags": ["vocabulary", "research", "corpus", "frequency", "coverage", "word-families"] },
-    { "slug": "deliberate-practice-language-learning", "title": "Deliberate Practice for Language Learning: The Real Science Behind the 10,000-Hour Rule", "date": "2026-08-02", "tags": ["deliberate-practice", "technique", "skill-acquisition", "science"] }
+    { "slug": "deliberate-practice-language-learning", "title": "Deliberate Practice for Language Learning: The Real Science Behind the 10,000-Hour Rule", "date": "2026-08-02", "tags": ["deliberate-practice", "technique", "skill-acquisition", "science"] },
+    { "slug": "desirable-difficulties-language-learning", "title": "Desirable Difficulties: Why Making Language Learning Harder Makes You Remember More", "date": "2026-08-06", "tags": ["desirable-difficulties", "cognitive-science", "interleaving", "spacing", "generation-effect", "technique"] }
   ],
   "stories": [
     { "slug": "michael-faraday-self-taught-scientist", "title": "Michael Faraday: The Bookbinder's Apprentice Who Taught Himself Science and Changed the World", "date": "2026-08-24", "tags": ["self-education", "UK", "history", "science", "perseverance"] },
@@ -49,6 +50,7 @@
     { "slug": "sor-juana-ines-de-la-cruz-self-taught-nun", "title": "Sor Juana Inés de la Cruz: The Self-Taught Nun Who Defied the 17th Century to Master Knowledge", "date": "2026-09-15", "tags": ["self-education", "Mexico", "history", "literature", "women", "colonial"] },
     { "slug": "sir-william-jones-polyglot-linguist", "title": "Sir William Jones: The Polyglot Judge Who Discovered the Indo-European Language Family", "date": "2026-09-29", "tags": ["polyglot", "UK", "linguistics", "history", "self-education"] },
     { "slug": "heinrich-schliemann-self-taught-polyglot-troy", "title": "Heinrich Schliemann: The Self-Taught Merchant Who Learned 13 Languages and Discovered Troy", "date": "2026-07-31", "tags": ["self-education", "Germany", "archaeology", "polyglot", "history"] },
-    { "slug": "jose-rizal-self-taught-polyglot", "title": "José Rizal: The Self-Taught Polyglot Who Learned 22 Languages and Changed a Nation", "date": "2026-08-02", "tags": ["polyglot", "Philippines", "history", "self-education", "activism"] }
+    { "slug": "jose-rizal-self-taught-polyglot", "title": "José Rizal: The Self-Taught Polyglot Who Learned 22 Languages and Changed a Nation", "date": "2026-08-02", "tags": ["polyglot", "Philippines", "history", "self-education", "activism"] },
+    { "slug": "fukuzawa-yukichi-self-taught-polyglot-japan", "title": "Fukuzawa Yukichi: The Self-Taught Polyglot Who Modernized Japan and Landed on the 10,000-Yen Note", "date": "2026-08-06", "tags": ["self-education", "Japan", "polyglot", "history", "education", "Meiji"] }
   ]
 }
