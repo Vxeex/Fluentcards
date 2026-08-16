@@ -1,62 +1,667 @@
 {
   "blog": [
-    { "slug": "8-hour-upgrade-sleep-vocabulary", "title": "8-Hour Upgrade: Sleep and Vocabulary", "date": "2026-05-01", "tags": ["sleep", "memory", "vocabulary"] },
-    { "slug": "best-way-to-learn-japanese-vocabulary", "title": "Best Way to Learn Japanese Vocabulary", "date": "2026-05-01", "tags": ["japanese", "vocabulary", "methods"] },
-    { "slug": "beyond-the-textbook-polyglot-secrets", "title": "Beyond the Textbook: Polyglot Secrets", "date": "2026-05-01", "tags": ["polyglot", "advanced", "methods"] },
-    { "slug": "bizarre-mnemonics", "title": "Bizarre Mnemonics That Actually Work", "date": "2026-05-01", "tags": ["mnemonics", "memory", "techniques"] },
-    { "slug": "dli-language-learning-method", "title": "The DLI Language Learning Method", "date": "2026-05-01", "tags": ["DLI", "military", "immersion"] },
-    { "slug": "fsrs-spaced-repetition-algorithm", "title": "FSRS: The Next Generation Spaced Repetition Algorithm", "date": "2026-05-03", "tags": ["FSRS", "algorithm", "spaced-repetition", "tech"] },
-    { "slug": "furigana-guide", "title": "Furigana Guide", "date": "2026-05-01", "tags": ["japanese", "furigana", "reading"] },
-    { "slug": "how-to-create-effective-flashcards", "title": "How to Create Effective Flashcards", "date": "2026-05-01", "tags": ["flashcards", "creation", "methods"] },
-    { "slug": "how-to-stay-consistent-with-language-learning", "title": "How to Stay Consistent with Language Learning", "date": "2026-05-01", "tags": ["consistency", "habits", "motivation"] },
-    { "slug": "how-to-use-spaced-repetition", "title": "How to Use Spaced Repetition", "date": "2026-05-01", "tags": ["spaced-repetition", "methods", "beginners"] },
-    { "slug": "japanese-flashcard-study-guide", "title": "Japanese Flashcard Study Guide", "date": "2026-05-01", "tags": ["japanese", "flashcards", "study"] },
-    { "slug": "japanese-pronunciation-guide", "title": "Japanese Pronunciation Guide", "date": "2026-05-01", "tags": ["japanese", "pronunciation", "speaking"] },
-    { "slug": "jlpt-n5-study-guide", "title": "JLPT N5 Study Guide", "date": "2026-05-01", "tags": ["japanese", "JLPT", "N5", "exam"] },
-    { "slug": "language-islands", "title": "Language Islands: Creating Immersion Environments", "date": "2026-05-01", "tags": ["immersion", "environment", "methods"] },
-    { "slug": "learn-japanese-kanji-with-flashcards", "title": "Learn Japanese Kanji with Flashcards", "date": "2026-05-01", "tags": ["japanese", "kanji", "flashcards"] },
-    { "slug": "learn-korean-vocabulary-with-flashcards", "title": "Learn Korean Vocabulary with Flashcards", "date": "2026-05-01", "tags": ["korean", "vocabulary", "flashcards"] },
-    { "slug": "learn-spanish-vocabulary-with-flashcards", "title": "Learn Spanish Vocabulary with Flashcards", "date": "2026-05-01", "tags": ["spanish", "vocabulary", "flashcards"] },
-    { "slug": "north-star-strategy", "title": "North Star Strategy for Language Learning", "date": "2026-05-01", "tags": ["strategy", "goals", "planning"] },
-    { "slug": "performance-athlete-meeting-freeze", "title": "Performance Athlete Meeting Freeze", "date": "2026-05-01", "tags": ["performance", "anxiety", "sports"] },
-    { "slug": "the-language-reflex", "title": "The Language Reflex", "date": "2026-05-01", "tags": ["reflex", "automaticity", "fluency"] },
-    { "slug": "shadowing-technique-language-learning", "title": "The Shadowing Technique: How Mimicking Native Speakers Rewires Your Brain for Fluency", "date": "2026-06-30", "tags": ["shadowing", "pronunciation", "neuroscience", "technique"] },
-    { "slug": "comprehensible-input-language-learning", "title": "Comprehensible Input: The Science of Understanding More Than You Think", "date": "2026-07-07", "tags": ["input", "comprehensible-input", "acquisition", "listening", "reading"] },
-    { "slug": "language-learning-anxiety-overcome", "title": "Quiet the Inner Critic: The Science of Language Learning Anxiety and How to Overcome It", "date": "2026-07-31", "tags": ["anxiety", "psychology", "speaking", "confidence", "emotional-barriers"] },
-    { "slug": "music-language-learning-science", "title": "Music and Language Learning: How Rhythm, Melody, and Song Rewire Your Brain for Fluency", "date": "2026-08-10", "tags": ["music", "neuroscience", "memory", "pronunciation", "technique"] },
-    { "slug": "bilingual-brain-cognitive-superpowers", "title": "The Bilingual Brain: How Learning a Second Language Rewires Your Neural Architecture", "date": "2026-08-17", "tags": ["bilingualism", "cognitive-science", "neuroscience", "dementia", "executive-function"] },
-    { "slug": "lexical-approach-language-chunks", "title": "The Lexical Approach: Why Learning Language Chunks Beats Memorizing Individual Words", "date": "2026-08-24", "tags": ["lexical", "vocabulary", "collocations", "technique", "chunks"] },
-    { "slug": "critical-period-hypothesis-language-learning", "title": "The Critical Period Hypothesis: Can Adults Really Learn Languages Like Native Speakers?", "date": "2026-08-31", "tags": ["critical-period", "age", "neuroscience", "adult-learning", "acquisition"] },
-    { "slug": "why-making-mistakes-secret-weapon-error-correction", "title": "Why Making Mistakes Is Your Secret Weapon: The Science of Error Correction in Language Learning", "date": "2026-09-03", "tags": ["error-correction", "feedback", "mistakes", "technique", "neuroscience"] },
-    { "slug": "testing-effect-retrieval-practice", "title": "The Testing Effect: Why Retrieval Practice Is the Most Powerful Learning Strategy", "date": "2026-09-15", "tags": ["testing-effect", "retrieval-practice", "cognitive-science", "memory", "technique"] },
-    { "slug": "dual-coding-theory-language-learning", "title": "Dual Coding Theory: Why Pictures Plus Words Supercharge Your Vocabulary Retention", "date": "2026-09-29", "tags": ["dual-coding", "visual-learning", "memory", "cognitive-science", "technique"] },
-    { "slug": "how-many-words-do-you-need-vocabulary-size", "title": "How Many Words Do You Need to Know to Speak a Language? The Science of Vocabulary Size", "date": "2026-07-31", "tags": ["vocabulary", "research", "corpus", "frequency", "coverage", "word-families"] },
-    { "slug": "deliberate-practice-language-learning", "title": "Deliberate Practice for Language Learning: The Real Science Behind the 10,000-Hour Rule", "date": "2026-08-02", "tags": ["deliberate-practice", "technique", "skill-acquisition", "science"] },
-    { "slug": "desirable-difficulties-language-learning", "title": "Desirable Difficulties: Why Making Language Learning Harder Makes You Remember More", "date": "2026-08-06", "tags": ["desirable-difficulties", "cognitive-science", "interleaving", "spacing", "generation-effect", "technique"] },
-    { "slug": "gamification-language-learning-science", "title": "Do Streaks and Badges Actually Work? The Science of Gamification in Language Learning", "date": "2026-08-08", "tags": ["gamification", "motivation", "psychology", "duolingo", "rewards", "streaks"] },
-    { "slug": "learning-styles-myth", "title": "The Learning Styles Myth: Why 'Visual, Auditory, and Kinesthetic Learners' Don't Actually Exist", "date": "2026-08-10", "tags": ["learning-styles", "myth", "cognitive-science", "science", "neuromyth", "meshing-hypothesis"] },
-    { "slug": "exercise-language-learning-memory", "title": "Exercise and Language Learning: How Movement Supercharges Your Vocabulary Memory", "date": "2026-08-14", "tags": ["exercise", "health", "memory", "neuroscience", "science"] }
+    {
+      "slug": "cognate-advantage-language-learning",
+      "title": "The Cognate Advantage: Why Words You Already Know Are the Fastest Path to a New Language",
+      "date": "2026-08-16",
+      "tags": [
+        "cognates",
+        "vocabulary",
+        "technique",
+        "science",
+        "false-friends"
+      ]
+    },
+    {
+      "slug": "8-hour-upgrade-sleep-vocabulary",
+      "title": "8-Hour Upgrade: Sleep and Vocabulary",
+      "date": "2026-05-01",
+      "tags": [
+        "sleep",
+        "memory",
+        "vocabulary"
+      ]
+    },
+    {
+      "slug": "best-way-to-learn-japanese-vocabulary",
+      "title": "Best Way to Learn Japanese Vocabulary",
+      "date": "2026-05-01",
+      "tags": [
+        "japanese",
+        "vocabulary",
+        "methods"
+      ]
+    },
+    {
+      "slug": "beyond-the-textbook-polyglot-secrets",
+      "title": "Beyond the Textbook: Polyglot Secrets",
+      "date": "2026-05-01",
+      "tags": [
+        "polyglot",
+        "advanced",
+        "methods"
+      ]
+    },
+    {
+      "slug": "bizarre-mnemonics",
+      "title": "Bizarre Mnemonics That Actually Work",
+      "date": "2026-05-01",
+      "tags": [
+        "mnemonics",
+        "memory",
+        "techniques"
+      ]
+    },
+    {
+      "slug": "dli-language-learning-method",
+      "title": "The DLI Language Learning Method",
+      "date": "2026-05-01",
+      "tags": [
+        "DLI",
+        "military",
+        "immersion"
+      ]
+    },
+    {
+      "slug": "fsrs-spaced-repetition-algorithm",
+      "title": "FSRS: The Next Generation Spaced Repetition Algorithm",
+      "date": "2026-05-03",
+      "tags": [
+        "FSRS",
+        "algorithm",
+        "spaced-repetition",
+        "tech"
+      ]
+    },
+    {
+      "slug": "furigana-guide",
+      "title": "Furigana Guide",
+      "date": "2026-05-01",
+      "tags": [
+        "japanese",
+        "furigana",
+        "reading"
+      ]
+    },
+    {
+      "slug": "how-to-create-effective-flashcards",
+      "title": "How to Create Effective Flashcards",
+      "date": "2026-05-01",
+      "tags": [
+        "flashcards",
+        "creation",
+        "methods"
+      ]
+    },
+    {
+      "slug": "how-to-stay-consistent-with-language-learning",
+      "title": "How to Stay Consistent with Language Learning",
+      "date": "2026-05-01",
+      "tags": [
+        "consistency",
+        "habits",
+        "motivation"
+      ]
+    },
+    {
+      "slug": "how-to-use-spaced-repetition",
+      "title": "How to Use Spaced Repetition",
+      "date": "2026-05-01",
+      "tags": [
+        "spaced-repetition",
+        "methods",
+        "beginners"
+      ]
+    },
+    {
+      "slug": "japanese-flashcard-study-guide",
+      "title": "Japanese Flashcard Study Guide",
+      "date": "2026-05-01",
+      "tags": [
+        "japanese",
+        "flashcards",
+        "study"
+      ]
+    },
+    {
+      "slug": "japanese-pronunciation-guide",
+      "title": "Japanese Pronunciation Guide",
+      "date": "2026-05-01",
+      "tags": [
+        "japanese",
+        "pronunciation",
+        "speaking"
+      ]
+    },
+    {
+      "slug": "jlpt-n5-study-guide",
+      "title": "JLPT N5 Study Guide",
+      "date": "2026-05-01",
+      "tags": [
+        "japanese",
+        "JLPT",
+        "N5",
+        "exam"
+      ]
+    },
+    {
+      "slug": "language-islands",
+      "title": "Language Islands: Creating Immersion Environments",
+      "date": "2026-05-01",
+      "tags": [
+        "immersion",
+        "environment",
+        "methods"
+      ]
+    },
+    {
+      "slug": "learn-japanese-kanji-with-flashcards",
+      "title": "Learn Japanese Kanji with Flashcards",
+      "date": "2026-05-01",
+      "tags": [
+        "japanese",
+        "kanji",
+        "flashcards"
+      ]
+    },
+    {
+      "slug": "learn-korean-vocabulary-with-flashcards",
+      "title": "Learn Korean Vocabulary with Flashcards",
+      "date": "2026-05-01",
+      "tags": [
+        "korean",
+        "vocabulary",
+        "flashcards"
+      ]
+    },
+    {
+      "slug": "learn-spanish-vocabulary-with-flashcards",
+      "title": "Learn Spanish Vocabulary with Flashcards",
+      "date": "2026-05-01",
+      "tags": [
+        "spanish",
+        "vocabulary",
+        "flashcards"
+      ]
+    },
+    {
+      "slug": "north-star-strategy",
+      "title": "North Star Strategy for Language Learning",
+      "date": "2026-05-01",
+      "tags": [
+        "strategy",
+        "goals",
+        "planning"
+      ]
+    },
+    {
+      "slug": "performance-athlete-meeting-freeze",
+      "title": "Performance Athlete Meeting Freeze",
+      "date": "2026-05-01",
+      "tags": [
+        "performance",
+        "anxiety",
+        "sports"
+      ]
+    },
+    {
+      "slug": "the-language-reflex",
+      "title": "The Language Reflex",
+      "date": "2026-05-01",
+      "tags": [
+        "reflex",
+        "automaticity",
+        "fluency"
+      ]
+    },
+    {
+      "slug": "shadowing-technique-language-learning",
+      "title": "The Shadowing Technique: How Mimicking Native Speakers Rewires Your Brain for Fluency",
+      "date": "2026-06-30",
+      "tags": [
+        "shadowing",
+        "pronunciation",
+        "neuroscience",
+        "technique"
+      ]
+    },
+    {
+      "slug": "comprehensible-input-language-learning",
+      "title": "Comprehensible Input: The Science of Understanding More Than You Think",
+      "date": "2026-07-07",
+      "tags": [
+        "input",
+        "comprehensible-input",
+        "acquisition",
+        "listening",
+        "reading"
+      ]
+    },
+    {
+      "slug": "language-learning-anxiety-overcome",
+      "title": "Quiet the Inner Critic: The Science of Language Learning Anxiety and How to Overcome It",
+      "date": "2026-07-31",
+      "tags": [
+        "anxiety",
+        "psychology",
+        "speaking",
+        "confidence",
+        "emotional-barriers"
+      ]
+    },
+    {
+      "slug": "music-language-learning-science",
+      "title": "Music and Language Learning: How Rhythm, Melody, and Song Rewire Your Brain for Fluency",
+      "date": "2026-08-10",
+      "tags": [
+        "music",
+        "neuroscience",
+        "memory",
+        "pronunciation",
+        "technique"
+      ]
+    },
+    {
+      "slug": "bilingual-brain-cognitive-superpowers",
+      "title": "The Bilingual Brain: How Learning a Second Language Rewires Your Neural Architecture",
+      "date": "2026-08-17",
+      "tags": [
+        "bilingualism",
+        "cognitive-science",
+        "neuroscience",
+        "dementia",
+        "executive-function"
+      ]
+    },
+    {
+      "slug": "lexical-approach-language-chunks",
+      "title": "The Lexical Approach: Why Learning Language Chunks Beats Memorizing Individual Words",
+      "date": "2026-08-24",
+      "tags": [
+        "lexical",
+        "vocabulary",
+        "collocations",
+        "technique",
+        "chunks"
+      ]
+    },
+    {
+      "slug": "critical-period-hypothesis-language-learning",
+      "title": "The Critical Period Hypothesis: Can Adults Really Learn Languages Like Native Speakers?",
+      "date": "2026-08-31",
+      "tags": [
+        "critical-period",
+        "age",
+        "neuroscience",
+        "adult-learning",
+        "acquisition"
+      ]
+    },
+    {
+      "slug": "why-making-mistakes-secret-weapon-error-correction",
+      "title": "Why Making Mistakes Is Your Secret Weapon: The Science of Error Correction in Language Learning",
+      "date": "2026-09-03",
+      "tags": [
+        "error-correction",
+        "feedback",
+        "mistakes",
+        "technique",
+        "neuroscience"
+      ]
+    },
+    {
+      "slug": "testing-effect-retrieval-practice",
+      "title": "The Testing Effect: Why Retrieval Practice Is the Most Powerful Learning Strategy",
+      "date": "2026-09-15",
+      "tags": [
+        "testing-effect",
+        "retrieval-practice",
+        "cognitive-science",
+        "memory",
+        "technique"
+      ]
+    },
+    {
+      "slug": "dual-coding-theory-language-learning",
+      "title": "Dual Coding Theory: Why Pictures Plus Words Supercharge Your Vocabulary Retention",
+      "date": "2026-09-29",
+      "tags": [
+        "dual-coding",
+        "visual-learning",
+        "memory",
+        "cognitive-science",
+        "technique"
+      ]
+    },
+    {
+      "slug": "how-many-words-do-you-need-vocabulary-size",
+      "title": "How Many Words Do You Need to Know to Speak a Language? The Science of Vocabulary Size",
+      "date": "2026-07-31",
+      "tags": [
+        "vocabulary",
+        "research",
+        "corpus",
+        "frequency",
+        "coverage",
+        "word-families"
+      ]
+    },
+    {
+      "slug": "deliberate-practice-language-learning",
+      "title": "Deliberate Practice for Language Learning: The Real Science Behind the 10,000-Hour Rule",
+      "date": "2026-08-02",
+      "tags": [
+        "deliberate-practice",
+        "technique",
+        "skill-acquisition",
+        "science"
+      ]
+    },
+    {
+      "slug": "desirable-difficulties-language-learning",
+      "title": "Desirable Difficulties: Why Making Language Learning Harder Makes You Remember More",
+      "date": "2026-08-06",
+      "tags": [
+        "desirable-difficulties",
+        "cognitive-science",
+        "interleaving",
+        "spacing",
+        "generation-effect",
+        "technique"
+      ]
+    },
+    {
+      "slug": "gamification-language-learning-science",
+      "title": "Do Streaks and Badges Actually Work? The Science of Gamification in Language Learning",
+      "date": "2026-08-08",
+      "tags": [
+        "gamification",
+        "motivation",
+        "psychology",
+        "duolingo",
+        "rewards",
+        "streaks"
+      ]
+    },
+    {
+      "slug": "learning-styles-myth",
+      "title": "The Learning Styles Myth: Why 'Visual, Auditory, and Kinesthetic Learners' Don't Actually Exist",
+      "date": "2026-08-10",
+      "tags": [
+        "learning-styles",
+        "myth",
+        "cognitive-science",
+        "science",
+        "neuromyth",
+        "meshing-hypothesis"
+      ]
+    },
+    {
+      "slug": "exercise-language-learning-memory",
+      "title": "Exercise and Language Learning: How Movement Supercharges Your Vocabulary Memory",
+      "date": "2026-08-14",
+      "tags": [
+        "exercise",
+        "health",
+        "memory",
+        "neuroscience",
+        "science"
+      ]
+    }
   ],
   "stories": [
-    { "slug": "michael-faraday-self-taught-scientist", "title": "Michael Faraday: The Bookbinder's Apprentice Who Taught Himself Science and Changed the World", "date": "2026-08-24", "tags": ["self-education", "UK", "history", "science", "perseverance"] },
-    { "slug": "benjamin-franklin-self-education", "title": "Benjamin Franklin's Self-Education: Blueprint for Lifelong Learning", "date": "2026-05-01", "tags": ["self-education", "history", "USA"] },
-    { "slug": "frederick-douglass-reading", "title": "Frederick Douglass: How a Slave Taught Himself to Read and Changed History", "date": "2026-05-01", "tags": ["slavery", "literacy", "civil-rights"] },
-    { "slug": "kato-lomb-polyglot-secrets", "title": "Kato Lomb: The Polyglot Who Mastered 16 Languages", "date": "2026-05-01", "tags": ["polyglot", "Hungary", "translation"] },
-    { "slug": "warren-buffett-reading-habit", "title": "Warren Buffett's Reading Habit: 500 Pages a Day", "date": "2026-05-01", "tags": ["reading", "investing", "habits"] },
-    { "slug": "mikhail-lomonosov-self-taught-genius", "title": "Mikhail Lomonosov: The Fisherman's Son Who Walked to Moscow and Became a Genius", "date": "2026-06-30", "tags": ["self-education", "Russia", "polyglot", "science", "history"] },
-    { "slug": "joseph-conrad-self-taught-english", "title": "Joseph Conrad: The Polish Sailor Who Mastered English at 21 and Became a Literary Genius", "date": "2026-07-07", "tags": ["self-education", "Poland", "literature", "polyglot", "English"] },
-    { "slug": "emil-krebs-master-of-68-languages", "title": "Emil Krebs: The German Hyperpolyglot Who Mastered 68 Languages", "date": "2026-07-31", "tags": ["polyglot", "Germany", "hyperpolyglot", "history", "China"] },
-    { "slug": "richard-francis-burton-polyglot-explorer", "title": "Sir Richard Francis Burton: The Explorer-Polyglot Who Mastered 29 Languages Through Total Immersion", "date": "2026-08-10", "tags": ["polyglot", "explorer", "UK", "history", "self-education"] },
-    { "slug": "giuseppe-mezzofanti-cardinal-hyperpolyglot", "title": "Giuseppe Mezzofanti: The Cardinal Who Mastered 72 Languages and Became History's Greatest Hyperpolyglot", "date": "2026-08-17", "tags": ["polyglot", "Italy", "hyperpolyglot", "history", "cardinal"] },
-    { "slug": "sojourner-truth-self-taught-orator", "title": "Sojourner Truth: The Enslaved Woman Who Taught Herself to Speak Truth to Power", "date": "2026-08-31", "tags": ["self-education", "USA", "slavery", "activism", "women", "oratory"] },
-    { "slug": "helen-keller-deaf-blind-self-taught", "title": "Helen Keller: The Deaf-Blind Girl Who Taught Herself Language and Changed the World", "date": "2026-09-03", "tags": ["self-education", "USA", "disability", "language", "activism", "women"] },
-    { "slug": "sor-juana-ines-de-la-cruz-self-taught-nun", "title": "Sor Juana Inés de la Cruz: The Self-Taught Nun Who Defied the 17th Century to Master Knowledge", "date": "2026-09-15", "tags": ["self-education", "Mexico", "history", "literature", "women", "colonial"] },
-    { "slug": "sir-william-jones-polyglot-linguist", "title": "Sir William Jones: The Polyglot Judge Who Discovered the Indo-European Language Family", "date": "2026-09-29", "tags": ["polyglot", "UK", "linguistics", "history", "self-education"] },
-    { "slug": "heinrich-schliemann-self-taught-polyglot-troy", "title": "Heinrich Schliemann: The Self-Taught Merchant Who Learned 13 Languages and Discovered Troy", "date": "2026-07-31", "tags": ["self-education", "Germany", "archaeology", "polyglot", "history"] },
-    { "slug": "jose-rizal-self-taught-polyglot", "title": "José Rizal: The Self-Taught Polyglot Who Learned 22 Languages and Changed a Nation", "date": "2026-08-02", "tags": ["polyglot", "Philippines", "history", "self-education", "activism"] },
-    { "slug": "fukuzawa-yukichi-self-taught-polyglot-japan", "title": "Fukuzawa Yukichi: The Self-Taught Polyglot Who Modernized Japan and Landed on the 10,000-Yen Note", "date": "2026-08-06", "tags": ["self-education", "Japan", "polyglot", "history", "education", "Meiji"] },
-    { "slug": "jrr-tolkien-self-taught-philologist", "title": "J.R.R. Tolkien: The Self-Taught Philologist Who Invented Languages", "date": "2026-08-08", "tags": ["self-education", "UK", "philology", "invented-languages", "history", "literature"] },
-    { "slug": "erasmus-self-taught-scholar", "title": "Erasmus of Rotterdam: The Self-Taught Scholar Who Mastered Latin and Greek and Changed Europe", "date": "2026-08-10", "tags": ["self-education", "Netherlands", "history", "Latin", "Greek", "Renaissance", "polyglot"] },
-    { "slug": "sequoyah-cherokee-syllabary", "title": "Sequoyah: The Illiterate Silversmith Who Invented a Writing System and Made a Nation Literate", "date": "2026-08-14", "tags": ["self-education", "USA", "literacy", "language", "history", "indigenous"] }
+    {
+      "slug": "leonardo-da-vinci-self-taught-latin",
+      "title": "Leonardo da Vinci: The 'Unlettered' Genius Who Taught Himself Latin at 40 and Made Learning a Lifelong Art",
+      "date": "2026-08-16",
+      "tags": [
+        "self-education",
+        "Italy",
+        "history",
+        "language",
+        "Renaissance",
+        "polyglot"
+      ]
+    },
+    {
+      "slug": "michael-faraday-self-taught-scientist",
+      "title": "Michael Faraday: The Bookbinder's Apprentice Who Taught Himself Science and Changed the World",
+      "date": "2026-08-24",
+      "tags": [
+        "self-education",
+        "UK",
+        "history",
+        "science",
+        "perseverance"
+      ]
+    },
+    {
+      "slug": "benjamin-franklin-self-education",
+      "title": "Benjamin Franklin's Self-Education: Blueprint for Lifelong Learning",
+      "date": "2026-05-01",
+      "tags": [
+        "self-education",
+        "history",
+        "USA"
+      ]
+    },
+    {
+      "slug": "frederick-douglass-reading",
+      "title": "Frederick Douglass: How a Slave Taught Himself to Read and Changed History",
+      "date": "2026-05-01",
+      "tags": [
+        "slavery",
+        "literacy",
+        "civil-rights"
+      ]
+    },
+    {
+      "slug": "kato-lomb-polyglot-secrets",
+      "title": "Kato Lomb: The Polyglot Who Mastered 16 Languages",
+      "date": "2026-05-01",
+      "tags": [
+        "polyglot",
+        "Hungary",
+        "translation"
+      ]
+    },
+    {
+      "slug": "warren-buffett-reading-habit",
+      "title": "Warren Buffett's Reading Habit: 500 Pages a Day",
+      "date": "2026-05-01",
+      "tags": [
+        "reading",
+        "investing",
+        "habits"
+      ]
+    },
+    {
+      "slug": "mikhail-lomonosov-self-taught-genius",
+      "title": "Mikhail Lomonosov: The Fisherman's Son Who Walked to Moscow and Became a Genius",
+      "date": "2026-06-30",
+      "tags": [
+        "self-education",
+        "Russia",
+        "polyglot",
+        "science",
+        "history"
+      ]
+    },
+    {
+      "slug": "joseph-conrad-self-taught-english",
+      "title": "Joseph Conrad: The Polish Sailor Who Mastered English at 21 and Became a Literary Genius",
+      "date": "2026-07-07",
+      "tags": [
+        "self-education",
+        "Poland",
+        "literature",
+        "polyglot",
+        "English"
+      ]
+    },
+    {
+      "slug": "emil-krebs-master-of-68-languages",
+      "title": "Emil Krebs: The German Hyperpolyglot Who Mastered 68 Languages",
+      "date": "2026-07-31",
+      "tags": [
+        "polyglot",
+        "Germany",
+        "hyperpolyglot",
+        "history",
+        "China"
+      ]
+    },
+    {
+      "slug": "richard-francis-burton-polyglot-explorer",
+      "title": "Sir Richard Francis Burton: The Explorer-Polyglot Who Mastered 29 Languages Through Total Immersion",
+      "date": "2026-08-10",
+      "tags": [
+        "polyglot",
+        "explorer",
+        "UK",
+        "history",
+        "self-education"
+      ]
+    },
+    {
+      "slug": "giuseppe-mezzofanti-cardinal-hyperpolyglot",
+      "title": "Giuseppe Mezzofanti: The Cardinal Who Mastered 72 Languages and Became History's Greatest Hyperpolyglot",
+      "date": "2026-08-17",
+      "tags": [
+        "polyglot",
+        "Italy",
+        "hyperpolyglot",
+        "history",
+        "cardinal"
+      ]
+    },
+    {
+      "slug": "sojourner-truth-self-taught-orator",
+      "title": "Sojourner Truth: The Enslaved Woman Who Taught Herself to Speak Truth to Power",
+      "date": "2026-08-31",
+      "tags": [
+        "self-education",
+        "USA",
+        "slavery",
+        "activism",
+        "women",
+        "oratory"
+      ]
+    },
+    {
+      "slug": "helen-keller-deaf-blind-self-taught",
+      "title": "Helen Keller: The Deaf-Blind Girl Who Taught Herself Language and Changed the World",
+      "date": "2026-09-03",
+      "tags": [
+        "self-education",
+        "USA",
+        "disability",
+        "language",
+        "activism",
+        "women"
+      ]
+    },
+    {
+      "slug": "sor-juana-ines-de-la-cruz-self-taught-nun",
+      "title": "Sor Juana Inés de la Cruz: The Self-Taught Nun Who Defied the 17th Century to Master Knowledge",
+      "date": "2026-09-15",
+      "tags": [
+        "self-education",
+        "Mexico",
+        "history",
+        "literature",
+        "women",
+        "colonial"
+      ]
+    },
+    {
+      "slug": "sir-william-jones-polyglot-linguist",
+      "title": "Sir William Jones: The Polyglot Judge Who Discovered the Indo-European Language Family",
+      "date": "2026-09-29",
+      "tags": [
+        "polyglot",
+        "UK",
+        "linguistics",
+        "history",
+        "self-education"
+      ]
+    },
+    {
+      "slug": "heinrich-schliemann-self-taught-polyglot-troy",
+      "title": "Heinrich Schliemann: The Self-Taught Merchant Who Learned 13 Languages and Discovered Troy",
+      "date": "2026-07-31",
+      "tags": [
+        "self-education",
+        "Germany",
+        "archaeology",
+        "polyglot",
+        "history"
+      ]
+    },
+    {
+      "slug": "jose-rizal-self-taught-polyglot",
+      "title": "José Rizal: The Self-Taught Polyglot Who Learned 22 Languages and Changed a Nation",
+      "date": "2026-08-02",
+      "tags": [
+        "polyglot",
+        "Philippines",
+        "history",
+        "self-education",
+        "activism"
+      ]
+    },
+    {
+      "slug": "fukuzawa-yukichi-self-taught-polyglot-japan",
+      "title": "Fukuzawa Yukichi: The Self-Taught Polyglot Who Modernized Japan and Landed on the 10,000-Yen Note",
+      "date": "2026-08-06",
+      "tags": [
+        "self-education",
+        "Japan",
+        "polyglot",
+        "history",
+        "education",
+        "Meiji"
+      ]
+    },
+    {
+      "slug": "jrr-tolkien-self-taught-philologist",
+      "title": "J.R.R. Tolkien: The Self-Taught Philologist Who Invented Languages",
+      "date": "2026-08-08",
+      "tags": [
+        "self-education",
+        "UK",
+        "philology",
+        "invented-languages",
+        "history",
+        "literature"
+      ]
+    },
+    {
+      "slug": "erasmus-self-taught-scholar",
+      "title": "Erasmus of Rotterdam: The Self-Taught Scholar Who Mastered Latin and Greek and Changed Europe",
+      "date": "2026-08-10",
+      "tags": [
+        "self-education",
+        "Netherlands",
+        "history",
+        "Latin",
+        "Greek",
+        "Renaissance",
+        "polyglot"
+      ]
+    },
+    {
+      "slug": "sequoyah-cherokee-syllabary",
+      "title": "Sequoyah: The Illiterate Silversmith Who Invented a Writing System and Made a Nation Literate",
+      "date": "2026-08-14",
+      "tags": [
+        "self-education",
+        "USA",
+        "literacy",
+        "language",
+        "history",
+        "indigenous"
+      ]
+    }
   ]
 }
