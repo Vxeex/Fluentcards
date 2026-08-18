@@ -1,6 +1,18 @@
 {
   "blog": [
     {
+      "slug": "language-attrition-use-it-or-lose-it",
+      "title": "Use It or Lose It: The Science of Language Attrition and How to Stop Forgetting What You've Learned",
+      "date": "2026-08-18",
+      "tags": [
+        "attrition",
+        "forgetting",
+        "memory",
+        "science",
+        "retention"
+      ]
+    },
+    {
       "slug": "cognate-advantage-language-learning",
       "title": "The Cognate Advantage: Why Words You Already Know Are the Fastest Path to a New Language",
       "date": "2026-08-16",
@@ -410,6 +422,19 @@
     }
   ],
   "stories": [
+    {
+      "slug": "maria-sibylla-merian-self-taught-naturalist",
+      "title": "Maria Sibylla Merian: The Self-Taught Naturalist Who Learned Latin as an Adult and Changed Science Forever",
+      "date": "2026-08-18",
+      "tags": [
+        "self-education",
+        "Germany",
+        "science",
+        "women",
+        "history",
+        "Latin"
+      ]
+    },
     {
       "slug": "leonardo-da-vinci-self-taught-latin",
       "title": "Leonardo da Vinci: The 'Unlettered' Genius Who Taught Himself Latin at 40 and Made Learning a Lifelong Art",
