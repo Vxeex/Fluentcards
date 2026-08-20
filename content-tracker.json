@@ -1,6 +1,20 @@
 {
   "blog": [
     {
+      "slug": "tonal-languages-mandarin-tone-training",
+      "title": "Can't Hear the Tones? The Science of Learning a Tonal Language (and How to Train Your Ears)",
+      "date": "2026-08-20",
+      "tags": [
+        "tonal-languages",
+        "mandarin",
+        "chinese",
+        "pronunciation",
+        "perception",
+        "neuroscience",
+        "technique"
+      ]
+    },
+    {
       "slug": "language-attrition-use-it-or-lose-it",
       "title": "Use It or Lose It: The Science of Language Attrition and How to Stop Forgetting What You've Learned",
       "date": "2026-08-18",
@@ -422,6 +436,19 @@
     }
   ],
   "stories": [
+    {
+      "slug": "benito-juarez-zapotec-self-taught-president",
+      "title": "Benito Juárez: The Zapotec Orphan Who Learned Spanish at 12 and Became President of Mexico",
+      "date": "2026-08-20",
+      "tags": [
+        "self-education",
+        "Mexico",
+        "history",
+        "language",
+        "indigenous",
+        "education"
+      ]
+    },
     {
       "slug": "maria-sibylla-merian-self-taught-naturalist",
       "title": "Maria Sibylla Merian: The Self-Taught Naturalist Who Learned Latin as an Adult and Changed Science Forever",
