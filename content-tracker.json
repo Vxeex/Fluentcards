@@ -1,6 +1,19 @@
 {
   "blog": [
     {
+      "slug": "fsi-language-difficulty-how-long-to-learn",
+      "title": "How Long Does It Really Take to Learn a Language? The FSI's 2,200 Hours of Hard Data",
+      "date": "2026-08-23",
+      "tags": [
+        "FSI",
+        "difficulty",
+        "research",
+        "time",
+        "linguistic-distance",
+        "planning"
+      ]
+    },
+    {
       "slug": "tonal-languages-mandarin-tone-training",
       "title": "Can't Hear the Tones? The Science of Learning a Tonal Language (and How to Train Your Ears)",
       "date": "2026-08-20",
@@ -436,6 +449,19 @@
     }
   ],
   "stories": [
+    {
+      "slug": "eliezer-ben-yehuda-hebrew-revival",
+      "title": "Eliezer Ben-Yehuda: The Man Who Brought a Dead Language Back to Life",
+      "date": "2026-08-23",
+      "tags": [
+        "self-education",
+        "Israel",
+        "language-revival",
+        "Hebrew",
+        "lexicography",
+        "polyglot"
+      ]
+    },
     {
       "slug": "benito-juarez-zapotec-self-taught-president",
       "title": "Benito Juárez: The Zapotec Orphan Who Learned Spanish at 12 and Became President of Mexico",
