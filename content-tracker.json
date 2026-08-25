@@ -1,6 +1,19 @@
 {
   "blog": [
     {
+      "slug": "extensive-reading-science-reading-fluency",
+      "title": "Read Your Way to Fluency: The Science of Extensive Reading (and How to Do It with Flashcards)",
+      "date": "2026-08-25",
+      "tags": [
+        "reading",
+        "extensive-reading",
+        "vocabulary",
+        "technique",
+        "input",
+        "graded-readers"
+      ]
+    },
+    {
       "slug": "fsi-language-difficulty-how-long-to-learn",
       "title": "How Long Does It Really Take to Learn a Language? The FSI's 2,200 Hours of Hard Data",
       "date": "2026-08-23",
@@ -449,6 +462,19 @@
     }
   ],
   "stories": [
+    {
+      "slug": "murasaki-shikibu-forbidden-chinese-genji",
+      "title": "Murasaki Shikibu: The Woman Who Taught Herself a Forbidden Language and Wrote the World's First Novel",
+      "date": "2026-08-25",
+      "tags": [
+        "self-education",
+        "Japan",
+        "Heian",
+        "women",
+        "language",
+        "literature"
+      ]
+    },
     {
       "slug": "eliezer-ben-yehuda-hebrew-revival",
       "title": "Eliezer Ben-Yehuda: The Man Who Brought a Dead Language Back to Life",
