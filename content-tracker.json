@@ -1,6 +1,19 @@
 {
   "blog": [
     {
+      "slug": "grammar-acquisition-explicit-implicit-science",
+      "title": "How Grammar Actually Gets Learned: The Science of Explicit vs Implicit Instruction (and How to Do It with Flashcards)",
+      "date": "2026-08-27",
+      "tags": [
+        "grammar",
+        "explicit-implicit",
+        "acquisition",
+        "cognitive-science",
+        "technique",
+        "instruction"
+      ]
+    },
+    {
       "slug": "extensive-reading-science-reading-fluency",
       "title": "Read Your Way to Fluency: The Science of Extensive Reading (and How to Do It with Flashcards)",
       "date": "2026-08-25",
@@ -462,6 +475,19 @@
     }
   ],
   "stories": [
+    {
+      "slug": "nelson-mandela-prison-self-education",
+      "title": "Nelson Mandela: How 27 Years in Prison Became the Greatest Self-Education Project in History",
+      "date": "2026-08-27",
+      "tags": [
+        "self-education",
+        "South Africa",
+        "history",
+        "language",
+        "perseverance",
+        "activism"
+      ]
+    },
     {
       "slug": "murasaki-shikibu-forbidden-chinese-genji",
       "title": "Murasaki Shikibu: The Woman Who Taught Herself a Forbidden Language and Wrote the World's First Novel",
