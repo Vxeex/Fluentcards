@@ -1,6 +1,21 @@
 {
   "blog": [
     {
+      "slug": "learn-language-watching-tv-movies-science",
+      "title": "Can You Really Learn a Language from Watching TV? The Science of Captions, Subtitles, and Screen Time",
+      "date": "2026-08-29",
+      "tags": [
+        "listening",
+        "television",
+        "subtitles",
+        "captions",
+        "incidental-learning",
+        "input",
+        "technique",
+        "sentence-mining"
+      ]
+    },
+    {
       "slug": "grammar-acquisition-explicit-implicit-science",
       "title": "How Grammar Actually Gets Learned: The Science of Explicit vs Implicit Instruction (and How to Do It with Flashcards)",
       "date": "2026-08-27",
@@ -475,6 +490,20 @@
     }
   ],
   "stories": [
+    {
+      "slug": "thomas-jefferson-self-taught-polyglot",
+      "title": "Thomas Jefferson: The Self-Taught Polyglot Who Learned Six Languages (and Taught Himself Spanish on a Boat)",
+      "date": "2026-08-29",
+      "tags": [
+        "self-education",
+        "USA",
+        "polyglot",
+        "history",
+        "language",
+        "founding-father",
+        "lifelong-learning"
+      ]
+    },
     {
       "slug": "nelson-mandela-prison-self-education",
       "title": "Nelson Mandela: How 27 Years in Prison Became the Greatest Self-Education Project in History",
