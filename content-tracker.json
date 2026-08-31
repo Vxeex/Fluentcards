@@ -1,6 +1,19 @@
 {
   "blog": [
     {
+      "slug": "why-speaking-writing-essential-output-hypothesis",
+      "title": "Why You Can't Learn a Language by Listening Alone: The Science of Output (Speaking and Writing)",
+      "date": "2026-08-31",
+      "tags": [
+        "output",
+        "speaking",
+        "writing",
+        "interaction",
+        "acquisition",
+        "technique"
+      ]
+    },
+    {
       "slug": "learn-language-watching-tv-movies-science",
       "title": "Can You Really Learn a Language from Watching TV? The Science of Captions, Subtitles, and Screen Time",
       "date": "2026-08-29",
@@ -490,6 +503,19 @@
     }
   ],
   "stories": [
+    {
+      "slug": "michael-ventris-linear-b-decipherment",
+      "title": "Michael Ventris: The Self-Taught Architect Who Deciphered a 3,000-Year-Old Dead Language",
+      "date": "2026-08-31",
+      "tags": [
+        "self-education",
+        "UK",
+        "linguistics",
+        "decipherment",
+        "history",
+        "language"
+      ]
+    },
     {
       "slug": "thomas-jefferson-self-taught-polyglot",
       "title": "Thomas Jefferson: The Self-Taught Polyglot Who Learned Six Languages (and Taught Himself Spanish on a Boat)",
