@@ -1,6 +1,20 @@
 {
   "blog": [
     {
+      "slug": "language-learning-plateau-breakthrough-science",
+      "title": "Stuck at Intermediate? The Science of the Language Learning Plateau (and How to Break Through)",
+      "date": "2026-09-02",
+      "tags": [
+        "plateau",
+        "intermediate",
+        "fossilization",
+        "skill-acquisition",
+        "technique",
+        "motivation",
+        "science"
+      ]
+    },
+    {
       "slug": "why-speaking-writing-essential-output-hypothesis",
       "title": "Why You Can't Learn a Language by Listening Alone: The Science of Output (Speaking and Writing)",
       "date": "2026-08-31",
@@ -503,6 +517,20 @@
     }
   ],
   "stories": [
+    {
+      "slug": "demosthenes-stammer-self-taught-orator",
+      "title": "Demosthenes: The Stammering Orphan Who Trained Himself to Become History's Greatest Orator",
+      "date": "2026-09-02",
+      "tags": [
+        "self-education",
+        "Greece",
+        "oratory",
+        "speech",
+        "history",
+        "perseverance",
+        "language"
+      ]
+    },
     {
       "slug": "michael-ventris-linear-b-decipherment",
       "title": "Michael Ventris: The Self-Taught Architect Who Deciphered a 3,000-Year-Old Dead Language",
