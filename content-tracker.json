@@ -1,6 +1,19 @@
 {
   "blog": [
     {
+      "slug": "flow-state-language-learning-science",
+      "title": "Find Your Flow: The Science of Getting 'In the Zone' While Learning a Language (and How to Do It on Purpose)",
+      "date": "2026-09-04",
+      "tags": [
+        "flow",
+        "psychology",
+        "motivation",
+        "attention",
+        "technique",
+        "engagement"
+      ]
+    },
+    {
       "slug": "language-learning-plateau-breakthrough-science",
       "title": "Stuck at Intermediate? The Science of the Language Learning Plateau (and How to Break Through)",
       "date": "2026-09-02",
@@ -517,6 +530,19 @@
     }
   ],
   "stories": [
+    {
+      "slug": "cato-elder-learned-greek-at-80",
+      "title": "Cato the Elder: The Roman Statesman Who Started Learning Greek at Eighty and Proved It's Never Too Late",
+      "date": "2026-09-04",
+      "tags": [
+        "self-education",
+        "Rome",
+        "history",
+        "language",
+        "Greek",
+        "lifelong-learning"
+      ]
+    },
     {
       "slug": "demosthenes-stammer-self-taught-orator",
       "title": "Demosthenes: The Stammering Orphan Who Trained Himself to Become History's Greatest Orator",
