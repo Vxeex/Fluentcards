@@ -1,6 +1,20 @@
 {
   "blog": [
     {
+      "slug": "third-language-acquisition-science",
+      "title": "The Third-Language Bonus: The Science of Why Your Second Language Makes the Next One Easier",
+      "date": "2026-09-06",
+      "tags": [
+        "multilingualism",
+        "third-language",
+        "L3",
+        "acquisition",
+        "research",
+        "cognitive-science",
+        "science"
+      ]
+    },
+    {
       "slug": "flow-state-language-learning-science",
       "title": "Find Your Flow: The Science of Getting 'In the Zone' While Learning a Language (and How to Do It on Purpose)",
       "date": "2026-09-04",
@@ -530,6 +544,20 @@
     }
   ],
   "stories": [
+    {
+      "slug": "james-murray-oxford-english-dictionary",
+      "title": "James Murray: The Self-Taught Linguist Who Left School at Fourteen and Built the Oxford English Dictionary",
+      "date": "2026-09-06",
+      "tags": [
+        "self-education",
+        "UK",
+        "lexicography",
+        "vocabulary",
+        "history",
+        "language",
+        "perseverance"
+      ]
+    },
     {
       "slug": "cato-elder-learned-greek-at-80",
       "title": "Cato the Elder: The Roman Statesman Who Started Learning Greek at Eighty and Proved It's Never Too Late",
