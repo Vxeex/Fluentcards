@@ -1,6 +1,20 @@
 {
   "blog": [
     {
+      "slug": "working-memory-language-learning-science",
+      "title": "Your Brain's RAM Limit: The Science of Working Memory in Language Learning (and How to Stop Forgetting Mid-Sentence)",
+      "date": "2026-09-08",
+      "tags": [
+        "working-memory",
+        "cognitive-load",
+        "memory",
+        "neuroscience",
+        "technique",
+        "attention",
+        "science"
+      ]
+    },
+    {
       "slug": "third-language-acquisition-science",
       "title": "The Third-Language Bonus: The Science of Why Your Second Language Makes the Next One Easier",
       "date": "2026-09-06",
@@ -544,6 +558,20 @@
     }
   ],
   "stories": [
+    {
+      "slug": "ludwik-zamenhof-esperanto",
+      "title": "Ludwik Zamenhof: The Doctor from Białystok Who Invented Esperanto and Spent His Life Trying to Unite the World",
+      "date": "2026-09-08",
+      "tags": [
+        "self-education",
+        "Poland",
+        "constructed-language",
+        "conlang",
+        "polyglot",
+        "history",
+        "language"
+      ]
+    },
     {
       "slug": "james-murray-oxford-english-dictionary",
       "title": "James Murray: The Self-Taught Linguist Who Left School at Fourteen and Built the Oxford English Dictionary",
