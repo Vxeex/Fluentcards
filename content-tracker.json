@@ -1,6 +1,23 @@
 {
   "blog": [
     {
+      "slug": "handwriting-vs-typing-vocabulary-memory",
+      "title": "Handwriting vs Typing: What Writing Words by Hand Really Does for Vocabulary Memory",
+      "date": "2026-09-10",
+      "tags": [
+        "handwriting",
+        "typing",
+        "motor-memory",
+        "orthography",
+        "vocabulary",
+        "technique",
+        "science",
+        "kanji",
+        "chinese-characters",
+        "retrieval-practice"
+      ]
+    },
+    {
       "slug": "working-memory-language-learning-science",
       "title": "Your Brain's RAM Limit: The Science of Working Memory in Language Learning (and How to Stop Forgetting Mid-Sentence)",
       "date": "2026-09-08",
@@ -558,6 +575,22 @@
     }
   ],
   "stories": [
+    {
+      "slug": "ramon-llull-self-taught-arabic",
+      "title": "Ramon Llull: The Knight Who Bought Himself a Teacher and Learned Arabic in Nine Years",
+      "date": "2026-09-10",
+      "tags": [
+        "self-education",
+        "Spain",
+        "Mallorca",
+        "Arabic",
+        "adult-learning",
+        "history",
+        "language",
+        "missionary",
+        "language-schools"
+      ]
+    },
     {
       "slug": "ludwik-zamenhof-esperanto",
       "title": "Ludwik Zamenhof: The Doctor from Białystok Who Invented Esperanto and Spent His Life Trying to Unite the World",
