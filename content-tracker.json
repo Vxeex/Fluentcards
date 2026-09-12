@@ -1,6 +1,21 @@
 {
   "blog": [
     {
+      "slug": "high-variability-phonetic-training",
+      "title": "High Variability Phonetic Training: The Ear-Training Method That Beats Listening to One Speaker",
+      "date": "2026-09-12",
+      "tags": [
+        "pronunciation",
+        "hvpt",
+        "phonetics",
+        "perception",
+        "listening",
+        "science",
+        "technique",
+        "accent"
+      ]
+    },
+    {
       "slug": "handwriting-vs-typing-vocabulary-memory",
       "title": "Handwriting vs Typing: What Writing Words by Hand Really Does for Vocabulary Memory",
       "date": "2026-09-10",
@@ -575,6 +590,21 @@
     }
   ],
   "stories": [
+    {
+      "slug": "william-cobbett-self-taught-grammar",
+      "title": "William Cobbett: The Private Soldier Who Taught Himself Grammar in the Barracks and Wrote a Grammar for Plough-Boys",
+      "date": "2026-09-12",
+      "tags": [
+        "self-education",
+        "UK",
+        "grammar",
+        "literacy",
+        "history",
+        "language",
+        "perseverance",
+        "polyglot"
+      ]
+    },
     {
       "slug": "ramon-llull-self-taught-arabic",
       "title": "Ramon Llull: The Knight Who Bought Himself a Teacher and Learned Arabic in Nine Years",
