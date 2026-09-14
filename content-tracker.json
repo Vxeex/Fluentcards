@@ -1,6 +1,20 @@
 {
   "blog": [
     {
+      "slug": "connected-speech-listening-decoding",
+      "title": "Why Native Speakers Sound Like One Long Word: The Science of Connected Speech (and How to Train Your Ears)",
+      "date": "2026-09-14",
+      "tags": [
+        "connected-speech",
+        "listening",
+        "reduced-forms",
+        "decoding",
+        "pronunciation",
+        "technique",
+        "science"
+      ]
+    },
+    {
       "slug": "high-variability-phonetic-training",
       "title": "High Variability Phonetic Training: The Ear-Training Method That Beats Listening to One Speaker",
       "date": "2026-09-12",
@@ -590,6 +604,21 @@
     }
   ],
   "stories": [
+    {
+      "slug": "sandor-korosi-csoma-tibetan-dictionary",
+      "title": "Sándor Kőrösi Csoma: The Hungarian Who Walked Across Asia, Learned Tibetan Alone, and Wrote Its First Dictionary",
+      "date": "2026-09-14",
+      "tags": [
+        "self-education",
+        "Hungary",
+        "philology",
+        "Tibetan",
+        "history",
+        "language",
+        "perseverance",
+        "lexicography"
+      ]
+    },
     {
       "slug": "william-cobbett-self-taught-grammar",
       "title": "William Cobbett: The Private Soldier Who Taught Himself Grammar in the Barracks and Wrote a Grammar for Plough-Boys",
