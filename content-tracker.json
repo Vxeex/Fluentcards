@@ -1,6 +1,20 @@
 {
   "blog": [
     {
+      "slug": "stop-translating-in-your-head-mental-translation",
+      "title": "Stop Translating in Your Head: The Science of Mental Translation (and How to Think Directly in a New Language)",
+      "date": "2026-09-16",
+      "tags": [
+        "mental-translation",
+        "translation",
+        "fluency",
+        "thought",
+        "psycholinguistics",
+        "cognitive-science",
+        "technique"
+      ]
+    },
+    {
       "slug": "connected-speech-listening-decoding",
       "title": "Why Native Speakers Sound Like One Long Word: The Science of Connected Speech (and How to Train Your Ears)",
       "date": "2026-09-14",
@@ -604,6 +618,21 @@
     }
   ],
   "stories": [
+    {
+      "slug": "sake-dean-mahomed-first-indian-author-in-english",
+      "title": "Sake Dean Mahomed: The Indian Traveler Who Taught Himself English and Became the First Indian Author in English",
+      "date": "2026-09-16",
+      "tags": [
+        "self-education",
+        "India",
+        "Ireland",
+        "English",
+        "literature",
+        "history",
+        "language",
+        "adult-learning"
+      ]
+    },
     {
       "slug": "sandor-korosi-csoma-tibetan-dictionary",
       "title": "Sándor Kőrösi Csoma: The Hungarian Who Walked Across Asia, Learned Tibetan Alone, and Wrote Its First Dictionary",
