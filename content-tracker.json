@@ -1,6 +1,20 @@
 {
   "blog": [
     {
+      "slug": "foreign-language-effect-thinking-differently",
+      "title": "The Foreign Language Effect: Why You Think Differently in a Second Language (and What It Means for Learners)",
+      "date": "2026-09-18",
+      "tags": [
+        "foreign-language-effect",
+        "decision-making",
+        "psychology",
+        "emotion",
+        "loss-aversion",
+        "moral-judgment",
+        "emotional-distance"
+      ]
+    },
+    {
       "slug": "stop-translating-in-your-head-mental-translation",
       "title": "Stop Translating in Your Head: The Science of Mental Translation (and How to Think Directly in a New Language)",
       "date": "2026-09-16",
@@ -618,6 +632,22 @@
     }
   ],
   "stories": [
+    {
+      "slug": "samuel-ajayi-crowther-yoruba-linguist",
+      "title": "Samuel Ajayi Crowther: The Enslaved Boy Who Learned English from Nothing and Gave Yoruba Its Written Form",
+      "date": "2026-09-18",
+      "tags": [
+        "self-education",
+        "Nigeria",
+        "Sierra Leone",
+        "Yoruba",
+        "orthography",
+        "translation",
+        "lexicography",
+        "linguistics",
+        "African-history"
+      ]
+    },
     {
       "slug": "sake-dean-mahomed-first-indian-author-in-english",
       "title": "Sake Dean Mahomed: The Indian Traveler Who Taught Himself English and Became the First Indian Author in English",
