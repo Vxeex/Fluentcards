@@ -1,6 +1,22 @@
 {
   "blog": [
     {
+      "slug": "heritage-speaker-gap-speaking-vs-literacy",
+      "title": "The Heritage Speaker's Gap: Why You Can Speak a Family Language You Can't Read (and How to Reclaim It)",
+      "date": "2026-09-21",
+      "tags": [
+        "heritage-speakers",
+        "heritage-language",
+        "literacy",
+        "bilingualism",
+        "reading",
+        "register",
+        "sociolinguistics",
+        "technique",
+        "science"
+      ]
+    },
+    {
       "slug": "foreign-language-effect-thinking-differently",
       "title": "The Foreign Language Effect: Why You Think Differently in a Second Language (and What It Means for Learners)",
       "date": "2026-09-18",
@@ -632,6 +648,20 @@
     }
   ],
   "stories": [
+    {
+      "slug": "elihu-burritt-learned-blacksmith-polyglot",
+      "title": "Elihu Burritt: The Blacksmith Who Taught Himself Fifty Languages at the Forge",
+      "date": "2026-09-21",
+      "tags": [
+        "self-education",
+        "USA",
+        "polyglot",
+        "history",
+        "language",
+        "perseverance",
+        "reading-knowledge"
+      ]
+    },
     {
       "slug": "samuel-ajayi-crowther-yoruba-linguist",
       "title": "Samuel Ajayi Crowther: The Enslaved Boy Who Learned English from Nothing and Gave Yoruba Its Written Form",
