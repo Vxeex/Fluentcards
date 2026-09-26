@@ -1,6 +1,25 @@
 {
   "blog": [
     {
+      "slug": "orthographic-depth-why-some-languages-easier-to-read",
+      "title": "Why Some Languages Are Easier to Read Than Others: The Science of Orthographic Depth (and How to Study Differently for Each)",
+      "date": "2026-09-27",
+      "tags": [
+        "orthographic-depth",
+        "reading",
+        "literacy",
+        "orthographic-transparency",
+        "grain-size",
+        "phoneme-grapheme",
+        "cross-linguistic",
+        "l1-transfer",
+        "dyslexia",
+        "writing-systems",
+        "science",
+        "technique"
+      ]
+    },
+    {
       "slug": "code-switching-bilingual-science",
       "title": "Why Bilinguals Mix Languages: The Science of Code-Switching (and What It Actually Costs You)",
       "date": "2026-09-25",
@@ -683,6 +702,22 @@
     }
   ],
   "stories": [
+    {
+      "slug": "vuk-karadzic-serbian-alphabet-self-taught",
+      "title": "Vuk Karadzic: The School-less Scribe Who Built an Alphabet You Can Read Aloud",
+      "date": "2026-09-27",
+      "tags": [
+        "self-education",
+        "Serbia",
+        "orthography",
+        "alphabet-reform",
+        "lexicography",
+        "folk-literature",
+        "history",
+        "language",
+        "perseverance"
+      ]
+    },
     {
       "slug": "champollion-hieroglyphs-self-taught",
       "title": "Jean-Francois Champollion: The Boy Who Dreamed in Coptic and Read the Words of the Pharaohs",
