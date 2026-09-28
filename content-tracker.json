@@ -1,6 +1,25 @@
 {
   "blog": [
     {
+      "slug": "word-parts-morphological-awareness-vocabulary",
+      "title": "The Vocabulary Multiplier: The Science of Morphological Awareness (and How to Build Word-Part Cards)",
+      "date": "2026-09-29",
+      "tags": [
+        "morphology",
+        "morphological-awareness",
+        "morphemes",
+        "affixes",
+        "word-families",
+        "derivational-morphology",
+        "vocabulary",
+        "reading",
+        "sino-korean",
+        "kanji-compounds",
+        "science",
+        "technique"
+      ]
+    },
+    {
       "slug": "orthographic-depth-why-some-languages-easier-to-read",
       "title": "Why Some Languages Are Easier to Read Than Others: The Science of Orthographic Depth (and How to Study Differently for Each)",
       "date": "2026-09-27",
@@ -702,6 +721,25 @@
     }
   ],
   "stories": [
+    {
+      "slug": "anna-maria-van-schurman-self-taught-polyglot",
+      "title": "Anna Maria van Schurman: The Woman Who Learned Fourteen Languages From Behind a Curtain",
+      "date": "2026-09-29",
+      "tags": [
+        "self-education",
+        "Netherlands",
+        "polyglot",
+        "women",
+        "Latin",
+        "Hebrew",
+        "Arabic",
+        "Ethiopic",
+        "history",
+        "language",
+        "university",
+        "perseverance"
+      ]
+    },
     {
       "slug": "vuk-karadzic-serbian-alphabet-self-taught",
       "title": "Vuk Karadzic: The School-less Scribe Who Built an Alphabet You Can Read Aloud",
