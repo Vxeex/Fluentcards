@@ -1,6 +1,21 @@
 {
   "blog": [
     {
+      "slug": "language-aptitude-talent-myth",
+      "title": "Are You Bad at Languages? The Science of Language Aptitude (and How to Study Around Your Profile)",
+      "date": "2026-10-01",
+      "tags": [
+        "language-aptitude",
+        "aptitude",
+        "individual-differences",
+        "talent",
+        "MLAT",
+        "rate-of-learning",
+        "science",
+        "technique"
+      ]
+    },
+    {
       "slug": "word-parts-morphological-awareness-vocabulary",
       "title": "The Vocabulary Multiplier: The Science of Morphological Awareness (and How to Build Word-Part Cards)",
       "date": "2026-09-29",
@@ -721,6 +736,23 @@
     }
   ],
   "stories": [
+    {
+      "slug": "bessie-coleman-learned-french-to-fly",
+      "title": "Bessie Coleman: The Manicurist Who Learned French to Win the Pilot's License America Refused Her",
+      "date": "2026-10-01",
+      "tags": [
+        "self-education",
+        "USA",
+        "France",
+        "French",
+        "aviation",
+        "adult-learning",
+        "women",
+        "barriers-to-education",
+        "history",
+        "language"
+      ]
+    },
     {
       "slug": "anna-maria-van-schurman-self-taught-polyglot",
       "title": "Anna Maria van Schurman: The Woman Who Learned Fourteen Languages From Behind a Curtain",
