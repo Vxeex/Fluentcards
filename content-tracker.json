@@ -1,6 +1,22 @@
 {
   "blog": [
     {
+      "slug": "gesture-embodied-learning-language-memory",
+      "title": "Why Your Hands Remember Words: The Science of Gesture and Embodied Learning (and How to Study Vocabulary with Your Body)",
+      "date": "2026-10-03",
+      "tags": [
+        "gesture",
+        "enactment-effect",
+        "embodied-cognition",
+        "motor-memory",
+        "vocabulary",
+        "multisensory",
+        "technique",
+        "science",
+        "memory"
+      ]
+    },
+    {
       "slug": "language-aptitude-talent-myth",
       "title": "Are You Bad at Languages? The Science of Language Aptitude (and How to Study Around Your Profile)",
       "date": "2026-10-01",
@@ -736,6 +752,24 @@
     }
   ],
   "stories": [
+    {
+      "slug": "louis-braille-six-dots-language-of-touch",
+      "title": "Louis Braille: The Blind Schoolboy Who Built a Language You Can Read with Your Fingers",
+      "date": "2026-10-03",
+      "tags": [
+        "self-education",
+        "France",
+        "Braille",
+        "writing-systems",
+        "literacy",
+        "disability",
+        "barriers-to-education",
+        "history",
+        "language",
+        "invention",
+        "alphabet"
+      ]
+    },
     {
       "slug": "bessie-coleman-learned-french-to-fly",
       "title": "Bessie Coleman: The Manicurist Who Learned French to Win the Pilot's License America Refused Her",
