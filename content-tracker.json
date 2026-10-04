@@ -1,6 +1,23 @@
 {
   "blog": [
     {
+      "slug": "study-abroad-immersion-fluency-science",
+      "title": "Why Studying Abroad Doesn't Automatically Make You Fluent: The Science of Immersion and Contact (and How to Engineer It Anywhere)",
+      "date": "2026-10-05",
+      "tags": [
+        "study-abroad",
+        "immersion",
+        "contact-hours",
+        "language-contact",
+        "fluency",
+        "grammar",
+        "interaction",
+        "second-language-acquisition",
+        "research",
+        "science"
+      ]
+    },
+    {
       "slug": "gesture-embodied-learning-language-memory",
       "title": "Why Your Hands Remember Words: The Science of Gesture and Embodied Learning (and How to Study Vocabulary with Your Body)",
       "date": "2026-10-03",
@@ -752,6 +769,25 @@
     }
   ],
   "stories": [
+    {
+      "slug": "sarah-winnemucca-first-native-american-woman-author",
+      "title": "Sarah Winnemucca: The Paiute Girl Who Taught Herself English and Became the First Native American Woman to Publish a Book",
+      "date": "2026-10-05",
+      "tags": [
+        "self-education",
+        "USA",
+        "Nevada",
+        "Paiute",
+        "English",
+        "indigenous",
+        "literacy",
+        "women",
+        "barriers-to-education",
+        "history",
+        "language",
+        "autobiography"
+      ]
+    },
     {
       "slug": "louis-braille-six-dots-language-of-touch",
       "title": "Louis Braille: The Blind Schoolboy Who Built a Language You Can Read with Your Fingers",
