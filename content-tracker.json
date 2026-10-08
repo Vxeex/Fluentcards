@@ -1,6 +1,24 @@
 {
   "blog": [
     {
+      "slug": "illusion-of-competence-fluency-language-learning",
+      "title": "Why Studying Feels Like Learning (When It Isn't): The Illusion of Competence in Language Learning",
+      "date": "2026-10-09",
+      "tags": [
+        "illusion-of-competence",
+        "metacognition",
+        "judgments-of-learning",
+        "fluency-illusion",
+        "desirable-difficulties",
+        "retrieval-practice",
+        "foresight-bias",
+        "self-testing",
+        "performance-vs-learning",
+        "delayed-jol",
+        "science"
+      ]
+    },
+    {
       "slug": "protege-effect-explaining-beats-studying",
       "title": "The Protege Effect: Why Explaining What You Know Beats Studying It Again (and How to Do It on Your Own)",
       "date": "2026-10-07",
@@ -785,6 +803,28 @@
     }
   ],
   "stories": [
+    {
+      "slug": "elizabeth-carter-self-taught-classicist-nine-languages",
+      "title": "Elizabeth Carter: The Curate's Daughter Who Rose Before Dawn to Learn Nine Languages",
+      "date": "2026-10-09",
+      "tags": [
+        "self-education",
+        "UK",
+        "England",
+        "women",
+        "classicist",
+        "Greek",
+        "Latin",
+        "Hebrew",
+        "polyglot",
+        "Epictetus",
+        "translation",
+        "Bluestockings",
+        "history",
+        "language",
+        "perseverance"
+      ]
+    },
     {
       "slug": "emilie-du-chatelet-self-taught-mathematician-translator",
       "title": "Emilie du Chatelet: The Woman Barred from the Academy Who Taught Herself the Languages of Science",
