@@ -1,6 +1,21 @@
 {
   "blog": [
     {
+      "slug": "production-effect-reading-aloud-vocabulary",
+      "title": "Say It Out Loud: The Science of the Production Effect in Vocabulary Learning",
+      "date": "2026-10-11",
+      "tags": [
+        "production-effect",
+        "reading-aloud",
+        "vocabulary",
+        "memory",
+        "distinctiveness",
+        "technique",
+        "science",
+        "second-language"
+      ]
+    },
+    {
       "slug": "illusion-of-competence-fluency-language-learning",
       "title": "Why Studying Feels Like Learning (When It Isn't): The Illusion of Competence in Language Learning",
       "date": "2026-10-09",
@@ -803,6 +818,22 @@
     }
   ],
   "stories": [
+    {
+      "slug": "joseph-neesima-stowaway-learned-english-doshisha",
+      "title": "Joseph Hardy Neesima: The Stowaway Who Learned English and Built a University",
+      "date": "2026-10-11",
+      "tags": [
+        "self-education",
+        "Japan",
+        "English",
+        "Meiji",
+        "Doshisha",
+        "missionary",
+        "history",
+        "language",
+        "perseverance"
+      ]
+    },
     {
       "slug": "elizabeth-carter-self-taught-classicist-nine-languages",
       "title": "Elizabeth Carter: The Curate's Daughter Who Rose Before Dawn to Learn Nine Languages",
