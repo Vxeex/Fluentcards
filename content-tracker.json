@@ -1,6 +1,23 @@
 {
   "blog": [
     {
+      "slug": "flashcard-direction-l1-l2-which-way-round",
+      "title": "Which Way Round? Why Flashcards Work Differently in Each Direction",
+      "date": "2026-10-13",
+      "tags": [
+        "flashcard-direction",
+        "receptive-productive",
+        "translation-direction",
+        "revised-hierarchical-model",
+        "retrieval-effort",
+        "vocabulary",
+        "desirable-difficulty",
+        "technique",
+        "science",
+        "study-design"
+      ]
+    },
+    {
       "slug": "production-effect-reading-aloud-vocabulary",
       "title": "Say It Out Loud: The Science of the Production Effect in Vocabulary Learning",
       "date": "2026-10-11",
@@ -818,6 +835,27 @@
     }
   ],
   "stories": [
+    {
+      "slug": "olaudah-equiano-self-taught-reader-abolitionist",
+      "title": "Olaudah Equiano: The Enslaved Boy Who Taught Himself to Read and Wrote a Bestseller",
+      "date": "2026-10-13",
+      "tags": [
+        "self-education",
+        "UK",
+        "Igbo",
+        "Nigeria",
+        "English",
+        "literacy",
+        "slavery",
+        "abolition",
+        "autobiography",
+        "barriers-to-education",
+        "adult-learning",
+        "history",
+        "language",
+        "perseverance"
+      ]
+    },
     {
       "slug": "joseph-neesima-stowaway-learned-english-doshisha",
       "title": "Joseph Hardy Neesima: The Stowaway Who Learned English and Built a University",
