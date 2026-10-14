@@ -1,6 +1,26 @@
 {
   "blog": [
     {
+      "slug": "retrieval-induced-forgetting-flashcards",
+      "title": "Your Flashcards Are Making You Forget Other Words: The Science of Retrieval-Induced Forgetting",
+      "date": "2026-10-15",
+      "tags": [
+        "retrieval-induced-forgetting",
+        "interference",
+        "inhibition",
+        "retrieval-practice",
+        "retrieval-induced-facilitation",
+        "integration",
+        "cues",
+        "vocabulary",
+        "second-language",
+        "flashcards",
+        "memory",
+        "science",
+        "technique"
+      ]
+    },
+    {
       "slug": "flashcard-direction-l1-l2-which-way-round",
       "title": "Which Way Round? Why Flashcards Work Differently in Each Direction",
       "date": "2026-10-13",
@@ -835,6 +855,28 @@
     }
   ],
   "stories": [
+    {
+      "slug": "pandita-ramabai-sanskrit-scholar-seven-languages",
+      "title": "Pandita Ramabai: Refused a School, Taught Sanskrit at Home, Came Back with Seven Languages",
+      "date": "2026-10-15",
+      "tags": [
+        "self-education",
+        "India",
+        "Sanskrit",
+        "Marathi",
+        "English",
+        "translation",
+        "Bible-translation",
+        "women",
+        "barriers-to-education",
+        "child-widows",
+        "Hunter-Commission",
+        "polyglot",
+        "history",
+        "language",
+        "perseverance"
+      ]
+    },
     {
       "slug": "olaudah-equiano-self-taught-reader-abolitionist",
       "title": "Olaudah Equiano: The Enslaved Boy Who Taught Himself to Read and Wrote a Bestseller",

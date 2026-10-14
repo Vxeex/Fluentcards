@@ -1,0 +1,126 @@
+---
+import BlogLayout from "../../layouts/BlogLayout.astro"
+---
+<BlogLayout
+  title="Your Flashcards Are Making You Forget Other Words | FluentCards"
+  description="Retrieving one word from memory can impair the recall of related words you never touched. That is retrieval-induced forgetting, first demonstrated by Anderson, Bjork and Bjork (1994, Journal of Experimental Psychology: Learning, Memory and Cognition 20, 1063-1087) and measured across 143 papers by Murayama, Miyatsu, Buchli and Storm (2014, Psychological Bulletin 140, 1383-1409, DOI 10.1037/a0037505): an average effect of g = 0.35, or about 8.5 percentage points of recall, on a phenomenon one paper calls 'the cost of remembering'. Anderson, Bjork and Bjork (2000, Psychonomic Bulletin and Review 7, 522-530) showed the damage comes from the competitive cue, not from strengthening the practised item, and Storm, Bjork, Bjork and Nestojko (2006, Psychonomic Bulletin and Review 13, 1023-1027) showed failed retrievals do it too. Storm, Bjork and Bjork (2008, JEP:LMC 34, 230-236) found the effect compounds across blocks of practice while relearning after it is accelerated. In second languages, Mickan, Slesareva, McQueen and Lembofer (2024, Quarterly Journal of Experimental Psychology) found one hour of Spanish learning slowed and degraded naming of long-known English words. The counterweight is retrieval-induced facilitation (Chan, McDermott and Roediger 2006, JEP:General 135, 553-571; Chan 2009; Oliva and Storm 2023, Psychological Research 87, 1166-1179), which turns a 9% loss into a 5% gain when cues are integrated and tests are delayed. Includes the two boundary conditions, the decks that get hurt most, and a seven-step protocol for making your retrieval practice help the words next door."
+  canonical="/blog/retrieval-induced-forgetting-flashcards/"
+  headline="Your Flashcards Are Making You Forget Other Words: The Science of Retrieval-Induced Forgetting"
+  datePublished="2026-10-15"
+  readTime="15 min"
+  tag="Science"
+>
+
+<p>You drilled <code>apple</code> for twenty minutes. You got it. Next week, <code>pear</code> is gone &mdash; and you never touched <code>pear</code> once.</p>
+
+<p>Most learners file that under bad luck, or blame the deck size, or conclude that they are simply bad at vocabulary. There is a better explanation, and it has been in the memory literature since 1994. Retrieving one item from memory can actively impair your ability to retrieve <em>related items you did not practise</em>. The effect is called <strong>retrieval-induced forgetting</strong>, and flashcards are an unusually good machine for producing it.</p>
+
+<p>This is the flip side of the most famous finding in learning science. The testing effect says retrieval practice builds durable memory; that research is solid and the previous posts on this blog lean on it heavily. Retrieval-induced forgetting says that the same act that strengthens one word can weaken its neighbours. Both are true, and the difference between a deck that compounds and a deck that cannibalises itself comes down to two things you control: <strong>how your cues are built</strong> and <strong>how much time passes before you test</strong>.</p>
+
+<h2>The Experiment That Started It</h2>
+
+<p><strong>Anderson, Bjork and Bjork (1994), Journal of Experimental Psychology: Learning, Memory, and Cognition 20, 1063&ndash;1087</strong>, ran what is now called the retrieval-practice paradigm. Participants studied a list of category and exemplar pairs &mdash; <code>FRUIT&ndash;orange</code>, <code>FRUIT&ndash;banana</code>, <code>TREE&ndash;birch</code> &mdash; and then practised retrieving some of the items from some of the categories using a partial cue: <code>FRUIT&ndash;or___</code>. A final cued-recall test then looked at three kinds of items:</p>
+
+<ul>
+  <li><strong>Rp+</strong> &mdash; the practised items. These get easier. No surprise.</li>
+  <li><strong>Rp&minus;</strong> &mdash; the unpractised members of practised categories. Same list position, same study time, same everything, except that you drilled their sibling.</li>
+  <li><strong>Nrp</strong> &mdash; items from categories you never practised. The baseline.</li>
+</ul>
+
+<p>The result was not a null finding and not a small one. Practising some items from a category made the <em>other</em> items from that category harder to recall than items from categories left entirely alone. Retrieval does not merely fail to help your neighbours. It pushes them down.</p>
+
+<blockquote>Retrieving a subset of items can cause the forgetting of other items. &mdash; <strong>Murayama, Miyatsu, Buchli and Storm (2014), Psychological Bulletin 140, 1383&ndash;1409</strong></blockquote>
+
+<h2>How Big Is the Effect? The Meta-Analysis</h2>
+
+<p>Single experiments invite cherry-picking, so the number that matters is the pooled one. <strong>Murayama, Miyatsu, Buchli and Storm (2014), Psychological Bulletin 140, 1383&ndash;1409, DOI 10.1037/a0037505</strong>, is the first major meta-analysis of the phenomenon: 143 research papers, 512 separate samples, 759 effect size estimates.</p>
+
+<ul>
+  <li><strong>Overall effect:</strong> g = 0.35, 95% CI [0.32, 0.38]. Small to moderate, and extremely robust &mdash; the fail-safe N was 56,111, meaning tens of thousands of unpublished null results would be needed to erase it.</li>
+  <li><strong>In percentage points:</strong> the average raw difference in recall between practised-category leftovers and untouched categories was <strong>8.5%</strong>, 95% CI [7.4%, 9.6%].</li>
+  <li><strong>With order uncontrolled:</strong> g = 0.50, or <strong>10.9 percentage points</strong>.</li>
+  <li><strong>With order controlled:</strong> g = 0.22, or <strong>4.5 percentage points</strong>.</li>
+</ul>
+
+<p>That last contrast matters for honesty. Some of the classic effect comes from <em>output interference</em>: if the final test asks you to list everything you can, practised items come out first and block the rest. Control for that and the effect shrinks &mdash; but survives, robustly. So the real-world figure for a flashcard learner is closer to five points of recall than eleven, and the direction never flips.</p>
+
+<h3>It Is Not Just Extra Competition From the Stronger Word</h3>
+
+<p>The obvious deflationary explanation is that the drilled word gets stronger and simply outcompetes its neighbours, as though they had been shoved down a queue. <strong>Anderson, Bjork and Bjork (2000), Psychonomic Bulletin and Review 7, 522&ndash;530, DOI 10.3758/BF03214366</strong>, tested that directly.</p>
+
+<p>All participants studied the same six members of eight categories. Then the practised items were retrieved one of two ways, for the same number of repetitions:</p>
+
+<ul>
+  <li><strong>Competitive practice:</strong> the cue was the category &mdash; <code>FRUIT&ndash;or___</code> &mdash; so every fruit you knew was activated and fighting to be the answer.</li>
+  <li><strong>Non-competitive practice:</strong> the cue was the exemplar &mdash; <code>fr___&ndash;orange</code> &mdash; so the answer came with almost no competition.</li>
+</ul>
+
+<p>Both conditions strengthened the practised items to the same degree. Only the competitive condition damaged the unpractised members. The conclusion is the usable part: <strong>the harm is caused by the competition during retrieval, not by the strength of the answer afterwards.</strong> A cue that makes many candidates compete is a cue that leaves casualties behind.</p>
+
+<h3>Failing a Card Counts Too</h3>
+
+<p>You might expect to be safe if you only ever damage things when you succeed. You are not. <strong>Storm, Bjork, Bjork and Nestojko (2006), Psychonomic Bulletin and Review 13, 1023&ndash;1027</strong>, found that retrieval-induced forgetting occurs even when the retrieval attempt fails. A card you blank on today can still cost you the word filed next to it.</p>
+
+<h3>And Repetition Compounds It</h3>
+
+<p><strong>Storm, Bjork and Bjork (2008), Journal of Experimental Psychology: Learning, Memory, and Cognition 34, 230&ndash;236</strong>, ran repeated cycles of practice and measured how the damage accumulated. After three blocks of retrieval practice, the gap between unpractised members of practised categories and the baseline items reached 0.22 against 0.31 &mdash; nine points of recall, from practice alone. Their own conclusion: if you want a bigger effect, run more retrieval-practice trials. For a flashcard learner that is a warning about drill intensity, not a boast about efficiency.</p>
+
+<h2>Why This Is Worse in a Second Language</h2>
+
+<p>Everything above used single-language category lists, where competition means <code>orange</code> fighting <code>banana</code>. In language learning, the competition is between the languages themselves, and it is brutal.</p>
+
+<p><strong>Mickan, Slesareva, McQueen and Lemh&ouml;fer (2024), Quarterly Journal of Experimental Psychology</strong>, DOI 10.1177/17470218231181380, tested Dutch speakers with good English who did not know Spanish. Participants named pictures in English, then learned a set of Spanish words for some of those pictures, then named the pictures in English again. The English words whose Spanish translations had just been learned were named <strong>more slowly and less accurately</strong> than the English words that had no Spanish counterpart. On average this took about an hour of Spanish learning. The interference set in immediately &mdash; consolidation time made no difference &mdash; and it reached vocabulary the participants had known for years and used fluently.</p>
+
+<p>Earlier work from the same group, and from <strong>Bailey and Newman (2018)</strong>, shows the mirror image: retrieving the translations you already know can hamper access to the new words you are trying to learn. A preliminary Welsh training study at Dalhousie (2017) found the same signature in response times for Welsh words that had been retrieved in English.</p>
+
+<p>This is the mechanism behind a complaint that every intermediate learner eventually makes: <em>I know this word. I have known it for years. Where did it go?</em> You did not lose it. A week of drilling its neighbour suppressed it. The practical consequences are clearest in the decks that are all one thing:</p>
+
+<ul>
+  <li><strong>Semantic clusters.</strong> Colours, days, months, numbers, kinship terms, body parts, directions. Every card in the set is a competitor for every other card's cue.</li>
+  <li><strong>Same-gloss pairs.</strong> Two target-language words that both map to one English word &mdash; the classic <code>ser</code> / <code>estar</code> split, or the several Japanese verbs that all gloss as "to fix". Drilling one can knock the other out of reach.</li>
+  <li><strong>Themed days.</strong> Forty food cards in one session, all answering to the cue "something to eat".</li>
+</ul>
+
+<h2>The Counterweight: Retrieval-Induced Facilitation</h2>
+
+<p>Here is the part that turns a cautionary tale into a technique. Retrieving some material can also <em>help</em> the related material you did not practise. The phenomenon is called <strong>retrieval-induced facilitation</strong>, and the conditions that produce it are known.</p>
+
+<p><strong>Chan, McDermott and Roediger (2006), Journal of Experimental Psychology: General 135, 553&ndash;571</strong>, had 210 participants study prose passages and then take a test on part of the material. Twenty-four hours later, participants recalled the <em>untested</em> material better than participants who had simply restudied it &mdash; a 9% gain in the first experiment and 7% in the second. <strong>Chan (2009), Journal of Memory and Language 61, 153&ndash;170</strong> reported 9&ndash;11% under the same conditions. The decisive moderator had been identified a decade earlier: <strong>Anderson and McCulloch (1999), Journal of Experimental Psychology: Learning, Memory, and Cognition 25, 608&ndash;629</strong>, titled their paper after the finding &mdash; integration as a general boundary condition on retrieval-induced forgetting.</p>
+
+<p>The most recent work keeps this honest. <strong>Oliva and Storm (2023), Psychological Research 87, 1166&ndash;1179, DOI 10.1007/s00426-022-01729-0</strong> replicated both ends of the pattern side by side: a low-integration condition tested after 20 minutes showed clear forgetting (a mean effect of &minus;9%, and &minus;7% in a second experiment), while a high-integration condition tested after 24 hours showed facilitation. But when they pooled every experiment in a meta-analysis, the facilitation was real and smaller than originally reported: a weighted effect of 0.05, 95% CI [0.03, 0.07].</p>
+
+<p>Read the two numbers together and the practical rule writes itself. Untouched words lose roughly 5&ndash;9% of recall when their siblings are drilled with a broad, competitive cue and tested soon. They gain roughly 5% when the material is integrated and the test is delayed. Same practice, same effort, opposite sign.</p>
+
+<h3>What "Integration" Means on a Card</h3>
+
+<p>Integration is not a feeling of familiarity. In these experiments it means the studied items were connected to each other in a way that let retrieving one support the others: coherent text instead of an unrelated list, a link between an item and its neighbours instead of two isolated words. Anderson and McCulloch found that instructions which got participants to encode items together eliminated the forgetting.</p>
+
+<p>The card-level translation is simple: a bare translation pair is a low-integration cue that maximises competition, and a constrained cue is a high-integration one that shrinks it.</p>
+
+<ul>
+  <li><strong>Low integration, maximum competition:</strong> <code>apple &rarr; 苹果</code>. Nothing but the meaning, forcing every fruit to compete.</li>
+  <li><strong>Higher integration, narrower cue:</strong> <code>The apple fell from the tree &rarr; 苹果</code>. The cue already carries part of the answer, so fewer rivals are activated.</li>
+  <li><strong>Highest integration:</strong> a sentence card with the target blanked out, ideally one you wrote about your own life, with a picture or a sound, so the target has its own distinctive retrieval route rather than a generic one it shares with thirty other cards.</li>
+</ul>
+
+<p>This is why the advice to "personalise your cards" keeps turning up in the research literature and in every good polyglot's notebook. It is not sentiment. It is a boundary condition on a well-documented failure mode.</p>
+
+<h2>A Seven-Step Protocol for Decks That Do Not Eat Themselves</h2>
+
+<ol>
+  <li><strong>Find your competitor sets.</strong> Scan the deck for cards that share a cue: everything answering to a category, everything glossing to the same English word. Those are the clusters at risk.</li>
+  <li><strong>Narrow the cue.</strong> Replace bare <code>word &rarr; translation</code> cards with sentence cards, cloze deletions or images. The cue should make the answer likely, not merely possible.</li>
+  <li><strong>Never drill one half of a pair and abandon the other.</strong> Because the practised sibling is what suppresses the rest, the highest-risk cards are the ones you did not see today.</li>
+  <li><strong>Interleave instead of blocking.</strong> Twenty colour cards in one sitting is the worst arrangement. Spread the cluster across days and mix categories inside a session.</li>
+  <li><strong>Do not judge a session immediately.</strong> Retention is measured at a delay; the 20-minute test is exactly the window in which forgetting is easiest to see and hardest to distinguish from ordinary decay. Wait a day.</li>
+  <li><strong>Treat a failed card as a debt to its neighbours.</strong> Failed retrievals cause the same damage as successful ones, so a word you blanked on is a reason to revisit all the words that compete with it tomorrow.</li>
+  <li><strong>Relearn calmly.</strong> Storm, Bjork and Bjork (2008) measured what happens after suppression: items that had been pushed down were recalled at 0.31 before relearning and <strong>0.45</strong> after, while the untouched items went from 0.36 to 0.42. The forgetting effect was not just eliminated by relearning &mdash; it was reversed. Nothing has been erased. It has been made temporarily harder to reach, and it comes back faster for that.</li>
+</ol>
+
+<h2>Conclusion</h2>
+
+<p>Retrieval practice is still the best tool you have, and a spaced-repetition app is still the best way to run it. But a deck is a network, not a list, and every card you answer changes the accessibility of the cards around it. The five-to-nine percent that the meta-analysis puts on the cost side is not huge; it is, however, aimed precisely at the clusters where learners keep their mistakes &mdash; the near-synonyms, the colour words, the two verbs that both mean "to become".</p>
+
+<p>FluentCards schedules the retest; FSRS decides when a word comes back, and one useful way to read a suspiciously difficult card is that its neighbours have been crowding it out. What the algorithm cannot do is decide how your card is written. Build cues that are specific rather than generic, keep competing words in view at the same time, let a day pass before you judge yourself, and the same hour of study stops quietly costing you the words either side of it.</p>
+
+</BlogLayout>
