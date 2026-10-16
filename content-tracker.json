@@ -1,6 +1,24 @@
 {
   "blog": [
     {
+      "slug": "statistical-learning-word-segmentation",
+      "title": "How You Ever Learned Where One Word Ends: The Science of Statistical Learning",
+      "date": "2026-10-17",
+      "tags": [
+        "statistical-learning",
+        "word-segmentation",
+        "transitional-probabilities",
+        "implicit-learning",
+        "cross-situational-learning",
+        "attention",
+        "phonotactics",
+        "listening",
+        "input",
+        "science",
+        "technique"
+      ]
+    },
+    {
       "slug": "retrieval-induced-forgetting-flashcards",
       "title": "Your Flashcards Are Making You Forget Other Words: The Science of Retrieval-Induced Forgetting",
       "date": "2026-10-15",
@@ -855,6 +873,29 @@
     }
   ],
   "stories": [
+    {
+      "slug": "william-carey-shoemaker-self-taught-linguist",
+      "title": "William Carey: The Village Shoemaker Who Taught Himself Latin at the Bench and Gave India Its First Printed Languages",
+      "date": "2026-10-17",
+      "tags": [
+        "self-education",
+        "UK",
+        "England",
+        "Bengali",
+        "Sanskrit",
+        "Marathi",
+        "lexicography",
+        "grammar",
+        "translation",
+        "printing",
+        "Serampore",
+        "polyglot",
+        "barriers-to-education",
+        "history",
+        "language",
+        "perseverance"
+      ]
+    },
     {
       "slug": "pandita-ramabai-sanskrit-scholar-seven-languages",
       "title": "Pandita Ramabai: Refused a School, Taught Sanskrit at Home, Came Back with Seven Languages",

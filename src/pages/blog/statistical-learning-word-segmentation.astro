@@ -1,0 +1,143 @@
+---
+import BlogLayout from "../../layouts/BlogLayout.astro"
+---
+<BlogLayout
+  title="Statistical Learning: How You Ever Learned Where One Word Ends | FluentCards"
+  description="Spoken language has no spaces. The mechanism that finds the boundaries is statistical learning: tracking the transitional probability between neighbouring syllables. Saffran, Aslin and Newport (1996, Science 274, 1926-1928) showed 8-month-old infants could pull words out of a monotone stream after only two minutes of exposure, using conditional probabilities of 1.0 inside words against 0.33 across boundaries. Aslin, Saffran and Newport (1998, Psychological Science 9, 321-324) proved the computation is conditional probability rather than raw co-occurrence, by matching word and part-word frequencies. Saffran, Newport and Aslin (1996, Journal of Memory and Language 35, 606-621) found adults segmented a novel language after 21 minutes, at 65% accuracy, rising to 80% with final-syllable lengthening. Toro, Sinnett and Soto-Faraco (2005, Cognition 97, B25-B34) showed the learning collapses when attention is diverted. Finn and Hudson Kam (2008, Cognition 108, 477-499) showed first-language phonotactics can override the novel statistics, and that short pauses rescue learning. Bortfeld and colleagues (2005, Psychological Science 16, 298-304) showed familiar anchor words bootstrap segmentation. Yu and Smith (2007, Psychological Science 18, 414-420) showed adults learn 18 word-object pairs from ambiguous trials in under six minutes, and learn more from 18 pairs than from 9. An honest reading includes the weak replication of the adult paradigm and the meta-analytic reality that statistical learning correlates only r = .16 with language ability (Zhou, Boeve and Bogaerts 2024, 97 studies). Includes the mechanism, its limits, and a nine-step flashcard and listening protocol."
+  canonical="/blog/statistical-learning-word-segmentation/"
+  headline="How You Ever Learned Where One Word Ends: The Science of Statistical Learning"
+  datePublished="2026-10-17"
+  readTime="16 min"
+  tag="Science"
+>
+
+<p>Say this out loud, slowly: <code>have you ever wondered</code>. Now play it back at natural speed and listen only to the sound. There is no gap between <code>have</code> and <code>you</code>. There is no gap between <code>you</code> and <code>ever</code>. The spaces you just read are a convention of writing that the mouth does not obey. Speech arrives as one continuous ribbon of sound, and every listener's first job is to cut it into words.</p>
+
+<p>Adults learning a second language know exactly how hard that is. You can learn a thousand words, hold them cold in flashcards, and still hear a sentence as one long blur, because knowing words and <em>finding</em> them in a stream are different skills. What is remarkable is that you solved this problem once before, before your second birthday, with no teacher and no translation. The mechanism that did it has a name and a fifty-year research literature: <strong>statistical learning</strong>.</p>
+
+<h2>The Problem: Finding Words in a Stream With No Spaces</h2>
+
+<p>Written language hands you the answer for free. Nearly every word is bracketed by whitespace, so the segmentation problem is invisible on a page. Speech gives you nothing of the kind. In ordinary conversational speech, word boundaries are marked by weak and inconsistent cues &mdash; a slight lengthening, a small change of pitch, an occasional hesitation, all of which speakers vary wildly and which languages deploy differently.</p>
+
+<p>That raised a specific question for developmental psychologists in the 1990s. Infants learn thousands of words a year, and they cannot be told where the words are. So either the boundaries have to be given by some innate knowledge of what a word looks like, or the child has to compute them from the signal itself. A research group at the University of Rochester tested the second option, and the answer changed the field.</p>
+
+<h2>Two Minutes, Four Nonsense Words, One Speech Stream</h2>
+
+<p><strong>Saffran, Aslin and Newport (1996), Science 274, 1926&ndash;1928, DOI 10.1126/science.274.5294.1926</strong>, built the cleanest possible version of the problem. They generated a continuous stream of nonsense syllables with a speech synthesizer in a flat monotone and played it to 8-month-old infants. The stream was made of four invented three-syllable "words" &mdash; strings like <code>bida</code>, <code>gola</code>, <code>tupiro</code> &mdash; concatenated in random order, with no pauses, no intonation contour, no stress and no other clue to where any word began or ended.</p>
+
+<p>The only thing that distinguished a real word from a random cross-boundary sequence was a statistic. Inside a word, one syllable always followed another, so the probability of that transition was 1.0. At the seams between words, the next syllable was whichever word came next, chosen from four options, so the transition probability fell to 0.33.</p>
+
+<ul>
+  <li><strong>The stream:</strong> 2 minutes of continuous speech at 270 syllables per minute, about 180 words in total.</li>
+  <li><strong>The learners:</strong> 24 eight-month-olds from English-speaking homes.</li>
+  <li><strong>The test:</strong> previously heard words versus never-heard sequences, with listening time as the measure.</li>
+</ul>
+
+<p>The infants listened longer to the novel sequences, which is the standard infant signature that something has been recognised as familiar. In two minutes, with no rewards, no instruction and no meaning attached to any string, they had pulled four words out of a stream that contained no acoustic boundary markers at all. The authors' conclusion was carefully worded and has held up: word segmentation "can be accomplished by 8-month-old infants based solely on the statistical relationships between neighboring speech sounds."</p>
+
+<h2>What a Transitional Probability Actually Is</h2>
+
+<p>The statistic doing the work is worth stating precisely, because it is not the one most people assume. The relevant quantity is the <strong>transitional probability</strong> (TP) of one syllable given the syllable before it:</p>
+
+<p><code>TP(bi | da) = P(da &rarr; bi) = count(da followed by bi) &divide; count(da)</code></p>
+
+<p>The denominator is the key. It is not "how often does this pair occur" &mdash; that is raw co-occurrence, and it is confounded by simple frequency. It is "how often does this pair occur, out of all the times the first element appeared". A syllable that is very common will have a large denominator, which drags its TP down even for pairs that occur many times. A syllable that only ever appears in one context has a TP of 1.0 for that context, whatever its raw count.</p>
+
+<p>Computing those ratios is what makes the seams visible. Inside <code>tupiro</code>, the pair <code>tu&rarr;pi</code> occurs every single time <code>tu</code> appears. Across the boundary, after <code>ro</code> the stream can continue with any of four words, so whatever comes next is a third as likely as the internal transitions. There is a ridge at every real word boundary and a dip at every false one.</p>
+
+<h3>The Experiment That Ruled Out Simple Co-occurrence</h3>
+
+<p>A fair objection: maybe the infants were tracking how often syllable pairs occurred together, not the conditional probability, and the two just happened to align in that first experiment. <strong>Aslin, Saffran and Newport (1998), Psychological Science 9, 321&ndash;324</strong>, designed that objection out of the study.</p>
+
+<p>They built a corpus in which test "words" and test "part-words" &mdash; three-syllable sequences that straddle a genuine word boundary &mdash; occurred an <em>equal number of times</em>. Matched raw frequency, matched length, matched everything. What differed was only the transitional probability. Infants discriminated words from part-words reliably. The computation is conditional, not a pair-counting habit.</p>
+
+<h2>Adults Do It Too &mdash; and the Numbers Are Modest</h2>
+
+<p>The Rochester group then ran the adult version. <strong>Saffran, Newport and Aslin (1996), Journal of Memory and Language 35, 606&ndash;621</strong>, exposed 24 monolingual undergraduates to an artificial language with no meanings and no grammar, spoken by a synthetic female voice at 216 syllables per minute. The stream ran to 4,536 syllables. Exposure was 21 minutes &mdash; deliberately set below half the exposure used in the older speech-segmentation studies of the 1970s.</p>
+
+<ul>
+  <li><strong>Word recognition:</strong> correct on 65% of forced-choice trials with distributional cues alone, against 33% chance.</li>
+  <li><strong>With a prosodic cue:</strong> lengthening the final syllable of each word raised accuracy to 80%, which was significantly better than either first-syllable lengthening (61%) or no lengthening at all. Several natural languages do lengthen final syllables, and the learners in this study had to work out that the lengthening marked ends rather than beginnings.</li>
+  <li><strong>The gradient:</strong> the three words with the highest average transitional probabilities were recognised at 79%, the three lowest at 72%. Stronger statistics produced stronger word units.</li>
+</ul>
+
+<p>Two conclusions follow for anyone studying a language. First, this mechanism runs in adults; you did not lose it at puberty. Second, it is not fast. Twenty-one minutes of concentrated listening to a four-word language produced 65% accuracy on a two-way-ish judgement. Scale that to the tens of thousands of words in a real language and the reason "just immerse yourself" is bad advice becomes arithmetical rather than motivational.</p>
+
+<h2>Attention Is Part of the Recipe</h2>
+
+<p>Statistical learning is often described as implicit and effortless, which invites the fantasy that a language will soak in through background audio. <strong>Toro, Sinnett and Soto-Faraco (2005), Cognition 97, B25&ndash;B34</strong>, tested that directly. Participants listened to a syllabic stream while a secondary task took their attention &mdash; sometimes visual, sometimes auditory, and varied in difficulty. When attention was diverted, participants could not segment the statistically defined words at all. When it was available, they could. The authors' summary is blunt: "when attentional resources are diverted to a secondary task the detection of statistical regularities is severely taxed."</p>
+
+<p>Infants, tamarin monkeys and even rats can do this without instruction, so the process does not require deliberate effort or awareness of learning. But it does require that the signal is being processed as signal rather than as wallpaper. There is a real difference between listening and having audio playing near your head.</p>
+
+<h2>Your First Language Is Working Against You</h2>
+
+<p>Here is the finding that explains a very specific adult frustration. <strong>Finn and Hudson Kam (2008), Cognition 108, 477&ndash;499, DOI 10.1016/j.cognition.2008.04.002</strong>, built a speech stream in which the statistical evidence for word boundaries <em>conflicted</em> with the phonotactics of English &mdash; that is, the sequences that the statistics marked as words were sequences that English does not permit, while the false boundaries lined up with comfortable English sound patterns. Control participants with no conflict segmented the stream by its statistics. Participants in the conflict condition did not, and adding exposure did not fix it. Their first language simply outvoted the data.</p>
+
+<p>One manipulation rescued them. When the stimuli contained very short pauses, learners recovered the novel words even though those words violated English phonotactics. And the real-world implication runs the other way, too: in a new language, every unfamiliar sound cluster and stress pattern is a signal your first language is already arguing about. Chunked input with brief pauses gives the statistics a chance to win.</p>
+
+<p>Honesty requires one caveat. A replication of this specific paradigm (Iozzo and colleagues, 2017) failed to confirm the effect. Treat the first-language-prior point as a robust general principle about transfer and interference &mdash; this blog has covered the same phenomenon from other angles &mdash; and treat the exact effect size of that one 2008 experiment as unsettled.</p>
+
+<h2>Why a Few Hundred Words Unlock the Whole Stream</h2>
+
+<p>Infants have one enormous advantage that has nothing to do with youth. They already know some words. <strong>Bortfeld, Morgan, Golinkoff and Rathbun (2005), Psychological Science 16, 298&ndash;304</strong>, showed that familiar names act as anchors: when a word the infant already recognises (most famously, "Mommy") is embedded in a longer utterance, the infant uses it to locate the words next to it. Earlier work by Mandel, Jusczyk and Pisoni (1995, Psychological Science 6, 314&ndash;317) found infants responding to their own names at around four and a half months.</p>
+
+<p>An anchor word does something an unknown word cannot: it gives you two known boundaries. Suddenly the ambiguity in that stretch of speech collapses. This is why vocabulary size and listening ability rise together, and why the sub-vocal complaint <em>I know this word but I cannot hear it</em> is usually a statement about the words around it. Every word you truly own converts some of the stream from noise into structure. The first few hundred are the expensive ones.</p>
+
+<h2>You Learn Meanings by Statistics Too</h2>
+
+<p>Segmentation solves where the words are. The other half of the problem is which object each word means, and in real life nobody points ambiguously &mdash; a parent says a word while a whole cluttered room is in view. <strong>Yu and Smith (2007), Psychological Science 18, 414&ndash;420</strong>, tested whether learners can solve that without ever being told the answer at any single moment.</p>
+
+<p>Adults saw trials with several spoken pseudowords and several pictures of uncommon objects at once, with no indication of which word went with which picture. The correct pairings were only consistent <em>across</em> trials. There were 18 word-object pairs, and each appeared six times during training.</p>
+
+<ul>
+  <li><strong>Two words, two objects per trial:</strong> participants identified more than 16 of 18 pairs &mdash; about 89%.</li>
+  <li><strong>Three and three:</strong> more than 13 of 18 &mdash; about 72%.</li>
+  <li><strong>Four and four:</strong> with 16 possible associations on every trial, almost 10 of 18 &mdash; about 54%.</li>
+</ul>
+
+<p>All of this happened in less than six minutes of training per condition. The most interesting result came from comparing set sizes: adults learned <em>more</em> pairs from a set of 18 words than from a set of 9. More items meant more opportunities for spurious correlations to be contradicted, so the evidence got cleaner rather than messier. Ambiguity, up to a point, is not the enemy of learning; it is the raw material.</p>
+
+<p><strong>Smith and Yu (2008), Cognition 106, 1558&ndash;1568</strong>, ran the infant version with 12- and 14-month-olds: six word-referent pairs, 30 training slides, under four minutes, and a reliable preference for the correct referent at test. Forty-six of the 55 infants looked longer at the target than the distractor. Cross-situational statistics are available to learners who cannot yet be given a definition of anything.</p>
+
+<h2>Sleep Files the Statistics</h2>
+
+<p>One more piece, and it is the one that makes the mechanism usable in a daily routine. <strong>Durrant, Taylor, Cairney and Lewis (2011), Neuropsychologia 49, 1322&ndash;1331</strong>, tested what happens to statistically extracted structure across a night. Statistical learning showed sleep-dependent consolidation: the regularities extracted during exposure were strengthened and stabilised over sleep rather than decaying, with performance on the learned structure improving after a night compared with an equivalent waking interval.</p>
+
+<p>The practical translation is unglamorous. Listening practice is not finished when the audio stops. The consolidation happens after.</p>
+
+<h2>The Honest Limits</h2>
+
+<p>Statistical learning has been over-sold in some corners of the language-learning internet, and the corrections matter.</p>
+
+<ul>
+  <li><strong>Weak replication of the adult paradigm.</strong> A multi-year effort to replicate published adult statistical word-segmentation studies reported that a much larger sample on the Saffran, Newport and Aslin (1996) design produced weak and mixed evidence of segmentation, with item and condition effects failing to replicate. The mechanism is real; individual laboratory effects on small samples are shakier than the textbook story admits.</li>
+  <li><strong>It does not predict language ability nearly as strongly as people assume.</strong> <strong>Zhou, Boeve and Bogaerts (2024), L'Annee psychologique 124, 283&ndash;316</strong>, meta-analysed 97 studies and found an overall correlation of r = .16 between statistical learning performance and language ability &mdash; small but significant. A parallel Bayesian meta-analysis of implicit statistical learning and second-language outcomes put it at r = .13, 95% CI [.05, .22]. Statistical learning is not your language talent, and a good score on a statistical learning task would tell you almost nothing about your future fluency.</li>
+  <li><strong>It is not one ability.</strong> Individual performance on adjacent-pattern learning and on non-adjacent-pattern learning does not reliably correlate (Siegelman and Frost, 2015), which is why so many studies disagree about who is "good at" statistical learning.</li>
+  <li><strong>It does not teach meaning, grammar or production.</strong> It hands you candidate units and candidate mappings. What you do with them is explicit instruction, output practice and feedback &mdash; the rest of this blog.</li>
+</ul>
+
+<p>The right reading is that statistical learning is a powerful <em>front end</em>, not a complete theory of learning a language. It gets you from a blur to units. Everything downstream still has to be done, and that is where deliberate study earns its place.</p>
+
+<h2>A Nine-Step Protocol for Putting Statistics to Work</h2>
+
+<p>None of the following requires a laboratory. All of it follows from the findings above.</p>
+
+<ol>
+  <li><strong>Build an anchor deck first.</strong> Take the highest-frequency few hundred words in your language and make them automatic. These are the words that will give you seams in everything else you hear.</li>
+  <li><strong>Card the chunks, not just the words.</strong> Since the unit your ears need to find is a boundary, store collocations and whole sentences alongside single words. A card whose answer is a phrase teaches the shape of a phrase.</li>
+  <li><strong>Listen to the same audio several times.</strong> The cross-situational result shows learning accumulates across exposures and that ambiguity resolves over trials, not within one. A second pass is not repetition, it is the actual lesson.</li>
+  <li><strong>Do not count background audio as study.</strong> Toro and colleagues showed segmentation needs attention. Fifteen minutes of active listening beats three hours of passive playback.</li>
+  <li><strong>Use short pauses when a passage defeats you.</strong> Finn and Hudson Kam's pause manipulation is the closest thing to a cheat code for the first-language prior. Pause between phrases rather than inside words, and re-listen to the un-paused version afterwards.</li>
+  <li><strong>Keep the set large when you practise with audio.</strong> Yu and Smith found 18 pairs were learned better than 9. Working with a richer, slightly ambiguous set can beat narrowing down to a tiny one.</li>
+  <li><strong>Space the input, then sleep.</strong> FSRS will schedule the cards; you schedule the night. Study listening material earlier in the day, and let the consolidation happen.</li>
+  <li><strong>Track recognition, not exposure.</strong> Count how many of the words in a clip you can actually locate in the stream, then subtract. That number, not minutes in the app, is your listening progress.</li>
+  <li><strong>Feed the mechanism, then examine its output.</strong> Let the statistics produce candidate words and pairs, then verify them with cards, dictionary checks and a teacher or native speaker. Never trust an inferred boundary without testing it.</li>
+</ol>
+
+<h2>Conclusion</h2>
+
+<p>You once solved the segmentation problem with nothing but a stream of sound and a brain that involuntarily counted what followed what. Nothing about that machinery is switched off. It is running right now, every time you listen to your target language, keeping a quiet ledger of which syllable reliably follows which.</p>
+
+<p>What it needs from you is volume, attention, and a foothold. In FluentCards the foothold is the deck: a few hundred high-frequency words made automatic, phrase cards that carry real chunk boundaries, native-pronunciation audio on every card, and FSRS spacing that brings the material back often enough that the ledger has something to work with. The statistics do the rest while you listen. Your job is to keep the input coming and to notice what falls into place.</p>
+
+</BlogLayout>
