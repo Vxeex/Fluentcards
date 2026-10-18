@@ -1,6 +1,25 @@
 {
   "blog": [
     {
+      "slug": "grammatical-gender-not-random-rules",
+      "title": "Grammatical Gender Isn't Random: The Rules Hiding in der, die, das (and la mesa)",
+      "date": "2026-10-19",
+      "tags": [
+        "grammatical-gender",
+        "noun-classes",
+        "gender-agreement",
+        "gender-assignment",
+        "sublexical-cues",
+        "word-endings",
+        "morphology",
+        "phonology",
+        "minimal-pairs",
+        "vocabulary",
+        "science",
+        "technique"
+      ]
+    },
+    {
       "slug": "statistical-learning-word-segmentation",
       "title": "How You Ever Learned Where One Word Ends: The Science of Statistical Learning",
       "date": "2026-10-17",
@@ -873,6 +892,28 @@
     }
   ],
   "stories": [
+    {
+      "slug": "toussaint-louverture-self-taught-reader",
+      "title": "Toussaint Louverture: The Enslaved Coachman Who Taught Himself to Read and Wrote a Revolution",
+      "date": "2026-10-19",
+      "tags": [
+        "self-education",
+        "Haiti",
+        "Saint-Domingue",
+        "French",
+        "Kreyol",
+        "Fon",
+        "literacy",
+        "slavery",
+        "abolition",
+        "Haitian-Revolution",
+        "barriers-to-education",
+        "polyglot",
+        "history",
+        "language",
+        "perseverance"
+      ]
+    },
     {
       "slug": "william-carey-shoemaker-self-taught-linguist",
       "title": "William Carey: The Village Shoemaker Who Taught Himself Latin at the Bench and Gave India Its First Printed Languages",
