@@ -1,6 +1,27 @@
 {
   "blog": [
     {
+      "slug": "sound-symbolism-iconicity-vocabulary-learning",
+      "title": "Words That Sound Like What They Mean: The Science of Sound Symbolism (and How to Use It in a Deck)",
+      "date": "2026-10-21",
+      "tags": [
+        "sound-symbolism",
+        "iconicity",
+        "ideophones",
+        "onomatopoeia",
+        "phonaesthemes",
+        "cross-modal-correspondence",
+        "bouba-kiki",
+        "mimetics",
+        "systematicity",
+        "japanese",
+        "korean",
+        "vocabulary",
+        "science",
+        "technique"
+      ]
+    },
+    {
       "slug": "grammatical-gender-not-random-rules",
       "title": "Grammatical Gender Isn't Random: The Rules Hiding in der, die, das (and la mesa)",
       "date": "2026-10-19",
@@ -892,6 +913,31 @@
     }
   ],
   "stories": [
+    {
+      "slug": "tiyo-soga-xhosa-translator-latin-greek",
+      "title": "Tiyo Soga: The Xhosa Son Who Learned Latin and Greek, Then Translated the World Into His Own Language",
+      "date": "2026-10-21",
+      "tags": [
+        "Xhosa",
+        "South Africa",
+        "Eastern Cape",
+        "translation",
+        "Bible-translation",
+        "Pilgrim's Progress",
+        "Latin",
+        "Greek",
+        "English",
+        "literacy",
+        "missionary",
+        "hymns",
+        "Glasgow",
+        "barriers-to-education",
+        "polyglot",
+        "history",
+        "language",
+        "perseverance"
+      ]
+    },
     {
       "slug": "toussaint-louverture-self-taught-reader",
       "title": "Toussaint Louverture: The Enslaved Coachman Who Taught Himself to Read and Wrote a Revolution",
