@@ -1,6 +1,48 @@
 {
   "blog": [
     {
+      "slug": "good-language-learner-strategies-science",
+      "title": "The Good Language Learner: What Strategy Research Says the Best Learners Do Differently",
+      "date": "2026-10-25",
+      "tags": [
+        "learning-strategies",
+        "strategy-instruction",
+        "good-language-learner",
+        "metacognition",
+        "self-regulation",
+        "listening-strategies",
+        "compensatory-strategies",
+        "affective-strategies",
+        "rubin",
+        "oxford-sill",
+        "plonsky-meta-analysis",
+        "technique",
+        "science"
+      ]
+    },
+    {
+      "slug": "tip-of-the-tongue-word-finding-failures",
+      "title": "On the Tip of Your Tongue: The Science of Word-Finding Failures (and Why They Beat a Correct Answer)",
+      "date": "2026-10-23",
+      "tags": [
+        "tip-of-the-tongue",
+        "word-retrieval",
+        "lexical-access",
+        "lemma-lexeme",
+        "transmission-deficit",
+        "frequency-lag",
+        "bilingual-retrieval",
+        "proper-names",
+        "aging",
+        "attrition",
+        "feedback",
+        "metacognition",
+        "vocabulary",
+        "science",
+        "technique"
+      ]
+    },
+    {
       "slug": "sound-symbolism-iconicity-vocabulary-learning",
       "title": "Words That Sound Like What They Mean: The Science of Sound Symbolism (and How to Use It in a Deck)",
       "date": "2026-10-21",
@@ -913,6 +955,54 @@
     }
   ],
   "stories": [
+    {
+      "slug": "christine-de-pizan-self-taught-writer",
+      "title": "Christine de Pizan: The Widow Who Taught Herself the Classics and Became Europe's First Professional Woman of Letters",
+      "date": "2026-10-25",
+      "tags": [
+        "self-education",
+        "France",
+        "Venice",
+        "women",
+        "Latin",
+        "French",
+        "medieval",
+        "widowhood",
+        "barriers-to-education",
+        "translation",
+        "vernacular",
+        "manuscripts",
+        "history",
+        "language",
+        "perseverance"
+      ]
+    },
+    {
+      "slug": "omar-ibn-said-arabic-autobiography",
+      "title": "Omar ibn Said: The Scholar Who Wrote His Life in Arabic While Enslaved in North Carolina",
+      "date": "2026-10-23",
+      "tags": [
+        "self-education",
+        "USA",
+        "North Carolina",
+        "Senegal",
+        "Futa-Toro",
+        "Arabic",
+        "Fula",
+        "Quran",
+        "autobiography",
+        "manuscripts",
+        "slavery",
+        "literacy",
+        "language-attrition",
+        "bilingual-reading",
+        "Library-of-Congress",
+        "barriers-to-education",
+        "history",
+        "language",
+        "perseverance"
+      ]
+    },
     {
       "slug": "tiyo-soga-xhosa-translator-latin-greek",
       "title": "Tiyo Soga: The Xhosa Son Who Learned Latin and Greek, Then Translated the World Into His Own Language",
