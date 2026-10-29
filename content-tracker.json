@@ -1,6 +1,34 @@
 {
   "blog": [
     {
+      "slug": "pragmatic-failure-grammar-perfect-still-rude",
+      "title": "You Said It Perfectly and It Was Still Rude: The Science of Pragmatic Failure",
+      "date": "2026-10-29",
+      "tags": [
+        "pragmatics",
+        "pragmatic-failure",
+        "pragmalinguistic-failure",
+        "sociopragmatic-failure",
+        "speech-acts",
+        "politeness",
+        "thomas-1983",
+        "ccsarp",
+        "blum-kulka",
+        "bardovi-harlig",
+        "dornyei",
+        "wolfson-bulge",
+        "directness",
+        "formulaic-language",
+        "sumimasen",
+        "honorifics",
+        "register",
+        "pragmatics-instruction",
+        "meta-analysis",
+        "technique",
+        "science"
+      ]
+    },
+    {
       "slug": "willingness-to-communicate-why-you-stay-silent",
       "title": "The Willingness Gap: Why You Stay Silent in a Language You Already Know",
       "date": "2026-10-27",
@@ -976,6 +1004,32 @@
     }
   ],
   "stories": [
+    {
+      "slug": "nathaniel-bowditch-self-taught-languages",
+      "title": "Nathaniel Bowditch: The Boy Who Left School at Ten and Taught Himself Latin, French and German to Read Books Nobody in Salem Could Teach",
+      "date": "2026-10-29",
+      "tags": [
+        "self-education",
+        "USA",
+        "Salem",
+        "Massachusetts",
+        "Latin",
+        "French",
+        "German",
+        "Newton",
+        "Laplace",
+        "navigation",
+        "translation",
+        "mathematics",
+        "self-taught",
+        "lifelong-learning",
+        "adult-learning",
+        "barriers-to-education",
+        "history",
+        "language",
+        "perseverance"
+      ]
+    },
     {
       "slug": "rabindranath-tagore-self-translated-english",
       "title": "Rabindranath Tagore: The Boy Who Hated English Class and Won the Nobel Prize in It",
