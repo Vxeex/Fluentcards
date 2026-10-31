@@ -1,6 +1,35 @@
 {
   "blog": [
     {
+      "slug": "language-brokering-children-translating-fluency",
+      "title": "The Translator in the Room: What Child Language Brokering Does to a Bilingual Brain",
+      "date": "2026-10-31",
+      "tags": [
+        "language-brokering",
+        "child-language-brokering",
+        "brokering",
+        "para-phrasing",
+        "immigrant-families",
+        "tse",
+        "mcquillan",
+        "orellana",
+        "dorner",
+        "li-grining",
+        "martinez",
+        "kam",
+        "lazarevic",
+        "chao",
+        "bilingualism",
+        "heritage-language",
+        "output",
+        "negotiation-of-meaning",
+        "metalinguistic-awareness",
+        "domain-lexicon",
+        "ethics",
+        "science"
+      ]
+    },
+    {
       "slug": "pragmatic-failure-grammar-perfect-still-rude",
       "title": "You Said It Perfectly and It Was Still Rude: The Science of Pragmatic Failure",
       "date": "2026-10-29",
@@ -1004,6 +1033,47 @@
     }
   ],
   "stories": [
+    {
+      "slug": "armin-vambery-self-taught-turkologist",
+      "title": "Ármin Vámbéry: The Orphan Who Learned Turkish in the Sand and Walked Into Samarkand as a Dervish",
+      "date": "2026-10-31",
+      "tags": [
+        "self-education",
+        "Hungary",
+        "Slovakia",
+        "Szentgyorgy",
+        "Dunaszerdahely",
+        "Pressburg",
+        "Budapest",
+        "Ottoman-Turkish",
+        "Turkic-languages",
+        "Chagatai",
+        "Persian",
+        "Latin",
+        "Greek",
+        "Hebrew",
+        "German",
+        "French",
+        "polyglot",
+        "hyperpolyglot",
+        "Central-Asia",
+        "Khiva",
+        "Bukhara",
+        "Samarkand",
+        "Herat",
+        "Istanbul",
+        "dervish",
+        "disguise",
+        "memory-training",
+        "lexicography",
+        "Ugric-Turkic-war",
+        "Bram-Stoker",
+        "Dracula",
+        "history",
+        "language",
+        "perseverance"
+      ]
+    },
     {
       "slug": "nathaniel-bowditch-self-taught-languages",
       "title": "Nathaniel Bowditch: The Boy Who Left School at Ten and Taught Himself Latin, French and German to Read Books Nobody in Salem Could Teach",
