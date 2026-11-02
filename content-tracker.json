@@ -1,6 +1,36 @@
 {
   "blog": [
     {
+      "slug": "bilingual-aphasia-one-language-lost",
+      "title": "One Language Gone, One Spared: What Bilingual Aphasia Reveals About How Your Languages Are Stored",
+      "date": "2026-11-02",
+      "tags": [
+        "bilingual-aphasia",
+        "aphasia",
+        "stroke",
+        "language-recovery",
+        "parallel-recovery",
+        "differential-recovery",
+        "selective-recovery",
+        "pathological-switching",
+        "pathological-mixing",
+        "ribot-law",
+        "pitres-law",
+        "paradis",
+        "fabbro",
+        "kuzmina",
+        "weekes",
+        "leemann",
+        "kiran",
+        "faroqi-shah",
+        "cross-language-generalization",
+        "language-control",
+        "metalinguistic-knowledge",
+        "l1-l2-storage",
+        "science"
+      ]
+    },
+    {
       "slug": "language-brokering-children-translating-fluency",
       "title": "The Translator in the Room: What Child Language Brokering Does to a Bilingual Brain",
       "date": "2026-10-31",
@@ -1033,6 +1063,36 @@
     }
   ],
   "stories": [
+    {
+      "slug": "leo-africanus-learned-italian-in-captivity",
+      "title": "Leo Africanus: The Captive Who Learned Italian in the Vatican Library and Wrote Europe's Map of Africa",
+      "date": "2026-11-02",
+      "tags": [
+        "self-education",
+        "Morocco",
+        "Granada",
+        "Fez",
+        "al-Qarawiyyin",
+        "Timbuktu",
+        "Songhai",
+        "Arabic",
+        "Italian",
+        "Latin",
+        "Hebrew",
+        "polyglot",
+        "translation",
+        "lexicography",
+        "Description-of-Africa",
+        "Ramusio",
+        "Pory",
+        "Pope-Leo-X",
+        "Castel-Sant-Angelo",
+        "captivity",
+        "history",
+        "language",
+        "perseverance"
+      ]
+    },
     {
       "slug": "armin-vambery-self-taught-turkologist",
       "title": "Ármin Vámbéry: The Orphan Who Learned Turkish in the Sand and Walked Into Samarkand as a Dervish",
