@@ -1,6 +1,34 @@
 {
   "blog": [
     {
+      "slug": "private-speech-talking-to-yourself-language-learning",
+      "title": "Talking to Yourself Is a Language Skill: The Science of Private Speech (and How to Practise It on Purpose)",
+      "date": "2026-11-04",
+      "tags": [
+        "private-speech",
+        "inner-speech",
+        "self-talk",
+        "vygotsky",
+        "sociocultural-theory",
+        "saville-troike",
+        "ohta",
+        "vicarious-response",
+        "centeno-cortes",
+        "jimenez-jimenez",
+        "de-guerrero",
+        "deweale",
+        "silent-period",
+        "labelling",
+        "lupyan-swingley",
+        "kross",
+        "self-distancing",
+        "language-of-thought",
+        "self-regulation",
+        "technique",
+        "science"
+      ]
+    },
+    {
       "slug": "bilingual-aphasia-one-language-lost",
       "title": "One Language Gone, One Spared: What Bilingual Aphasia Reveals About How Your Languages Are Stored",
       "date": "2026-11-02",
@@ -1063,6 +1091,38 @@
     }
   ],
   "stories": [
+    {
+      "slug": "kahlil-gibran-learned-english-relearned-arabic",
+      "title": "Kahlil Gibran: The Boy Who Reached Boston Without English and Went Home Again to Relearn Arabic",
+      "date": "2026-11-04",
+      "tags": [
+        "self-education",
+        "Lebanon",
+        "Bsharri",
+        "Boston",
+        "South-End",
+        "Josiah-Quincy-School",
+        "English",
+        "Arabic",
+        "French",
+        "literary-Arabic",
+        "heritage-language",
+        "College-de-la-Sagesse",
+        "Beirut",
+        "F-Holland-Day",
+        "Mary-Haskell",
+        "editor",
+        "second-language-writing",
+        "The-Prophet",
+        "The-Madman",
+        "Pen-League",
+        "Mahjar",
+        "immigrant-education",
+        "history",
+        "language",
+        "perseverance"
+      ]
+    },
     {
       "slug": "leo-africanus-learned-italian-in-captivity",
       "title": "Leo Africanus: The Captive Who Learned Italian in the Vatican Library and Wrote Europe's Map of Africa",
