@@ -1,6 +1,24 @@
 {
   "blog": [
     {
+      "slug": "lookup-trap-dictionary-vocabulary-retention",
+      "title": "The Lookup Trap: Why Words You Look Up Don't Stick (and the Three-Second Rule That Fixes It)",
+      "date": "2026-11-06",
+      "tags": [
+        "dictionary-use",
+        "lookup",
+        "task-relevance",
+        "tip-of-the-tongue",
+        "glossing",
+        "monolingual-dictionary",
+        "bilingual-dictionary",
+        "bilingualised-dictionary",
+        "comprehension",
+        "vocabulary-retention",
+        "technique"
+      ]
+    },
+    {
       "slug": "private-speech-talking-to-yourself-language-learning",
       "title": "Talking to Yourself Is a Language Skill: The Science of Private Speech (and How to Practise It on Purpose)",
       "date": "2026-11-04",
@@ -1091,6 +1109,37 @@
     }
   ],
   "stories": [
+    {
+      "slug": "george-borrow-self-taught-polyglot-lavengro",
+      "title": "George Borrow: The Schoolboy They Called Stupid Who Knew Twelve Languages Before He Was Eighteen",
+      "date": "2026-11-06",
+      "tags": [
+        "self-education",
+        "UK",
+        "Norfolk",
+        "Norwich",
+        "Ireland",
+        "Clonmel",
+        "Irish",
+        "Welsh",
+        "Basque",
+        "Calo",
+        "Romani",
+        "Manchu",
+        "Russian",
+        "Spanish",
+        "Greek",
+        "Latin",
+        "polyglot",
+        "translation",
+        "Bible-Society",
+        "self-taught",
+        "barriers-to-education",
+        "history",
+        "language",
+        "perseverance"
+      ]
+    },
     {
       "slug": "kahlil-gibran-learned-english-relearned-arabic",
       "title": "Kahlil Gibran: The Boy Who Reached Boston Without English and Went Home Again to Relearn Arabic",
