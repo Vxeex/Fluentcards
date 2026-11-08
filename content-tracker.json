@@ -1,6 +1,21 @@
 {
   "blog": [
     {
+      "slug": "video-games-language-learning-extramural-english",
+      "title": "The Gaming Advantage: What Video Games Actually Teach You (and What They Don't)",
+      "date": "2026-11-08",
+      "tags": [
+        "video-games",
+        "extramural-english",
+        "gaming",
+        "mmorpg",
+        "incidental-learning",
+        "interaction",
+        "vocabulary",
+        "science"
+      ]
+    },
+    {
       "slug": "lookup-trap-dictionary-vocabulary-retention",
       "title": "The Lookup Trap: Why Words You Look Up Don't Stick (and the Three-Second Rule That Fixes It)",
       "date": "2026-11-06",
@@ -1109,6 +1124,27 @@
     }
   ],
   "stories": [
+    {
+      "slug": "ignatius-sancho-taught-himself-to-read-and-write",
+      "title": "Ignatius Sancho: The Boy Kept Illiterate on Purpose Who Taught Himself to Read, Write and Compose",
+      "date": "2026-11-08",
+      "tags": [
+        "self-education",
+        "UK",
+        "London",
+        "Greenwich",
+        "Westminster",
+        "literacy",
+        "slavery",
+        "abolition",
+        "letters",
+        "composer",
+        "barriers-to-education",
+        "history",
+        "language",
+        "perseverance"
+      ]
+    },
     {
       "slug": "george-borrow-self-taught-polyglot-lavengro",
       "title": "George Borrow: The Schoolboy They Called Stupid Who Knew Twelve Languages Before He Was Eighteen",
