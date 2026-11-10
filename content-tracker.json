@@ -1,6 +1,25 @@
 {
   "blog": [
     {
+      "slug": "input-processing-structured-input-grammar",
+      "title": "You Heard Every Word and Still Missed the Grammar: The Science of Input Processing",
+      "date": "2026-11-10",
+      "tags": [
+        "input-processing",
+        "structured-input",
+        "processing-instruction",
+        "vanpatten",
+        "first-noun-principle",
+        "primacy-of-meaning",
+        "lexical-preference",
+        "sentence-location",
+        "grammar",
+        "listening",
+        "technique",
+        "science"
+      ]
+    },
+    {
       "slug": "video-games-language-learning-extramural-english",
       "title": "The Gaming Advantage: What Video Games Actually Teach You (and What They Don't)",
       "date": "2026-11-08",
@@ -1124,6 +1143,31 @@
     }
   ],
   "stories": [
+    {
+      "slug": "robert-morrison-learned-chinese-in-secret",
+      "title": "Robert Morrison: The Man Who Learned Chinese in Secret, From Tutors Who Could Be Executed for Teaching Him",
+      "date": "2026-11-10",
+      "tags": [
+        "self-education",
+        "UK",
+        "China",
+        "Canton",
+        "Macau",
+        "Chinese",
+        "Cantonese",
+        "Fokien",
+        "dictionary",
+        "lexicography",
+        "translation",
+        "bible-translation",
+        "prohibition",
+        "barriers-to-education",
+        "missionary",
+        "history",
+        "language",
+        "perseverance"
+      ]
+    },
     {
       "slug": "ignatius-sancho-taught-himself-to-read-and-write",
       "title": "Ignatius Sancho: The Boy Kept Illiterate on Purpose Who Taught Himself to Read, Write and Compose",
