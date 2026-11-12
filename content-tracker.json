@@ -1,6 +1,25 @@
 {
   "blog": [
     {
+      "slug": "context-dependent-memory-left-it-in-the-room",
+      "title": "You Didn't Forget It, You Left It in the Room: The Science of Context-Dependent Memory",
+      "date": "2026-11-12",
+      "tags": [
+        "context-dependent-memory",
+        "encoding-specificity",
+        "godden-baddeley",
+        "murre-replication",
+        "smith-vela",
+        "encoding-specificity",
+        "marian-neisser",
+        "language-dependent-memory",
+        "environment",
+        "transfer",
+        "science",
+        "technique"
+      ]
+    },
+    {
       "slug": "input-processing-structured-input-grammar",
       "title": "You Heard Every Word and Still Missed the Grammar: The Science of Input Processing",
       "date": "2026-11-10",
@@ -1143,6 +1162,36 @@
     }
   ],
   "stories": [
+    {
+      "slug": "anton-wilhelm-amo-latin-african-philosopher",
+      "title": "Anton Wilhelm Amo: The Child Taken From Axim Who Argued for African Rights in Latin",
+      "date": "2026-11-12",
+      "tags": [
+        "self-education",
+        "Ghana",
+        "Axim",
+        "Nzema",
+        "Germany",
+        "Halle",
+        "Wittenberg",
+        "Jena",
+        "Latin",
+        "Greek",
+        "Hebrew",
+        "Dutch",
+        "French",
+        "English",
+        "polyglot",
+        "philosophy",
+        "doctorate",
+        "De-Jure-Maurorum",
+        "rights",
+        "barriers-to-education",
+        "history",
+        "language",
+        "perseverance"
+      ]
+    },
     {
       "slug": "robert-morrison-learned-chinese-in-secret",
       "title": "Robert Morrison: The Man Who Learned Chinese in Secret, From Tutors Who Could Be Executed for Teaching Him",
